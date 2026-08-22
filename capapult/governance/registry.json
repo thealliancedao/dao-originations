@@ -1,1 +1,20 @@
-
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-22",
+  "dao": "capapult",
+  "daoName": "Capapult (CAPA)",
+  "kind": "anchor-gov",
+  "idPrefix": "c",
+  "govAddress": "terra1sf66d5vap897xlvv2hlcp4l20y4pp42r6ala4snk8mgd246jvufqwe0cnm",
+  "notes": [
+    "Anchor-style gov contract on phoenix-1 (config answered on chain 2026-08-22: quorum 0.3, threshold 0.5, voting_period 100800 blocks). Same chain, same address space as LUNA — a CosmWasm contract, not another layer.",
+    "The DAODAO mirror track (ampCAPA core terra1x0vekyx6wltu8qe26nqzkyur4hf7xqatvdelre4p2vqcnwc83k9q9j7ka8) is watched separately by the site; it is NOT this registry's core.",
+    "Discussion venue: https://common.xyz/capapult/discussions — links are carried from each poll's own `link` field, never assumed.",
+    "contracts below: the Solid USDC collateral market is the only target vetted so far (from poll 14's execute_data). Everything else stays not_yet_verified until added here by the owner."
+  ],
+  "contracts": {
+    "terra1sf66d5vap897xlvv2hlcp4l20y4pp42r6ala4snk8mgd246jvufqwe0cnm": { "name": "CAPA Governance (gov)", "type": "dao", "validActions": ["execute", "propose", "vote"] },
+    "terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar": { "name": "CAPA token (cw20)", "type": "token", "validActions": [] },
+    "terra1shc5n0sqg30fzvg0e2j826j0g73ypmjw9vkf592ghdph5dhau25qha2rks": { "name": "Solid Protocol — USDC collateral market", "type": "protocol", "validActions": ["execute"] }
+  }
+}

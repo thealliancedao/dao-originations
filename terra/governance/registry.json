@@ -1,1 +1,15 @@
-
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-22",
+  "dao": "terra",
+  "daoName": "Terra (LUNA) governance",
+  "kind": "x-gov",
+  "idPrefix": "l",
+  "limit": 60,
+  "notes": [
+    "Cosmos SDK x/gov on phoenix-1 via LCD (/cosmos/gov/v1). Newest `limit` proposals are captured each run; total power = bonded LUNA; quorum/threshold/veto from gov tallying params.",
+    "Per-voter lists are NOT captured (validator + delegator votes run to thousands). The chain tally is the record.",
+    "Messages are stamped not_yet_verified by construction — x/gov messages are SDK types, not contract calls; the help agent's deep walk still denominates any amounts via registries."
+  ],
+  "contracts": {}
+}

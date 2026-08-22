@@ -430,9 +430,9 @@
       "canReceiveFunds": true
     },
     "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec": {
-      "name": "Lion DAO Treasury",
-      "type": "treasury",
-      "description": "Lion DAO core treasury",
+      "name": "Lion DAO Core (DAODAO)",
+      "type": "dao",
+      "description": "The Lion DAO DAODAO core \u2014 owns the proposal modules; treasury lives here too. Was labelled \"Lion DAO Treasury\" until 2026-08-22.",
       "validActions": [
         "execute"
       ],
@@ -448,11 +448,12 @@
       ]
     },
     "terra1xgg9cf94ws2mawr6lyrdvmyxt48xkwgp8gvtsrcg2yktqvk8w2rqxflq06": {
-      "name": "Lion DAO Core",
+      "name": "pixeLions \u03b1 (Lion DAO & pixeLions stewardship msig)",
       "type": "dao",
       "validActions": [
         "execute"
-      ]
+      ],
+      "description": "Stewardship multisig sub-DAO \u2014 its proposals (validator reward swaps etc.) are NOT the Lion DAO main governance feed. Was mislabelled \"Lion DAO Core\" until 2026-08-22."
     },
     "terra1dxh9hpwfnttezvpncm4553zggs30ddt0x6w44yq8gfxwdf90rudqzezfj8": {
       "name": "Lion DAO Pre-Propose",
@@ -533,5 +534,6 @@
     }
   },
   "daoName": "Lion DAO",
-  "_note": "2026-08-22: this file was a copy of adao/registry.json (dao:\"alliancedao\") with Lion DAO entries appended; the cron therefore captured AllianceDAO proposals into lion-dao/. dao/daoName corrected; AllianceDAO entries kept so aDAO targets inside Lion DAO proposals still grade as trusted. Proposal modules are now resolved from \"Lion DAO Core\" on chain (dao-governance 1.1.0)."
+  "_note": "2026-08-22: this file was a copy of adao/registry.json (dao:\"alliancedao\") with Lion DAO entries appended; the cron therefore captured AllianceDAO proposals into lion-dao/. dao/daoName corrected; AllianceDAO entries kept so aDAO targets inside Lion DAO proposals still grade as trusted. Proposal modules are now resolved from \"Lion DAO Core\" on chain (dao-governance 1.1.0). 2026-08-22 (2): coreAddress added = terra1tkersa2\u2026cssgluec (the DAODAO core; matches platform-crons config TRACKED.liondao.coreAddress). The entry \u2026rqxflq06 is the pixeLions \u03b1 stewardship msig, relabelled.",
+  "coreAddress": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec"
 }

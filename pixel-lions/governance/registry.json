@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-22",
+  "dao": "pixellions",
+  "daoName": "Pixel Lions",
+  "_note": "Minimal registry so the dao-governance cron can capture Pixel Lions proposals: the core address is the DAODAO core from the address-catalog config (TRACKED.pixellions.coreAddress); the cron asks the core for its proposal modules on chain. Add vetted contracts here to grade proposal targets as trusted.",
+  "contracts": {
+    "terra1c690mdrwdetnr09zfk3tf9xz9jhrgd9wpjyf3tuccj74ql09eqmq6sh7en": {
+      "name": "Pixel Lions Core",
+      "type": "dao",
+      "protocol": "Pixel Lions",
+      "validActions": [
+        "execute",
+        "propose"
+      ],
+      "description": "DAODAO core (source: platform-crons config TRACKED.pixellions.coreAddress; voting module terra127dehd2d6t7ynnezkxkre2w83ze0t7lmghpu6vn4y5mfmwfj5x9qqdh4sz per the address catalog)"
+    },
+    "terra127dehd2d6t7ynnezkxkre2w83ze0t7lmghpu6vn4y5mfmwfj5x9qqdh4sz": {
+      "name": "Pixel Lions Staking (voting module)",
+      "type": "staking",
+      "protocol": "Pixel Lions",
+      "validActions": [],
+      "description": "NFT staking / voting module the address catalog discovers members from"
+    }
+  },
+  "lpPools": {}
+}

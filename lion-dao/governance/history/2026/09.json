@@ -1,0 +1,4317 @@
+{
+ "dao": "liondao",
+ "daoName": "Lion DAO",
+ "exportedAt": "2026-09-01T00:25:44.439Z",
+ "source": "org dao-governance cron (chain-derived)",
+ "proposalModule": "terra1qj7n3vgttdel0pgynzmneh6k82mzu80tk6gk5qjp6rs0uksvuxlq9eu6cm",
+ "governanceKind": "daodao",
+ "proposalCount": 26,
+ "proposals": {
+  "a1": {
+   "id": "a1",
+   "daoId": "liondao",
+   "title": "Establish ROAR staking rewards for the new DAO",
+   "description": "Distribute 2.1M ROAR per hour - (50.4M) per day - as staking rewards to stakers to match Enterprise daily staking rewards.",
+   "status": "Executed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 12434171,
+   "expiration": {
+    "at_time_iso": "2024-10-12T00:29:35.536Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 83131837827934800,
+    "no": 0,
+    "abstain": 0,
+    "total": 83131837827934800
+   },
+   "voting": {
+    "turnout": 93.04701285649028,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 89343908284462600,
+   "voters": [
+    {
+     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 83101000000000000
+    },
+    {
+     "address": "terra1hch3fmt0kk2verlk26srsy67x8gr920j5cll3g",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 16620648691054
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 11000000000000
+    },
+    {
+     "address": "terra1hzyzys3s7s7xsls5gvsta3z3ylcy7fjcnpgmas",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1834249425284
+    },
+    {
+     "address": "terra1a4j7umpkunf9uarpyjt2d6lkkhs4md82pe5cjd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1259489344819
+    },
+    {
+     "address": "terra1ne8p3j7f8469mj5lnwqyva94lf3ckxtmwjcey7",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 123440473640
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "stargate",
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "raw": {
+      "stargate": {
+       "type_url": "/cosmwasm.wasm.v1.MsgInstantiateContract2",
+       "value": "CkB0ZXJyYTF0a2Vyc2EybXF3eTJoOGV4ajc5OXF4MnhyaGR1MGRreW1rOXBzcDZ2MGs0a3o0dGt4dWNzc2dsdWVjEkB0ZXJyYTF0a2Vyc2EybXF3eTJoOGV4ajc5OXF4MnhyaGR1MGRreW1rOXBzcDZ2MGs0a3o0dGt4dWNzc2dsdWVjGPcYIiJEQU8gUmV3YXJkcyBEaXN0cmlidXRvciAobTFQUXF4bnEpKkx7Im93bmVyIjoidGVycmExdGtlcnNhMm1xd3kyaDhleGo3OTlxeDJ4cmhkdTBka3ltazlwc3A2djBrNGt6NHRreHVjc3NnbHVlYyJ9Oh9kYW8tcmV3YXJkLWRpc3RyaWJ1dG9yLW0xUFFxeG5x"
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "rewards:m1PQqxnq",
+      "value": "terra1zug2ur6d5ls7vgzwkh0m2002jrallfehpsadpltjqr3vhgvp6lnq90rj3w"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1zug2ur6d5ls7vgzwkh0m2002jrallfehpsadpltjqr3vhgvp6lnq90rj3w",
+     "contractName": "Lion DAO Rewards Distributor",
+     "action": "create",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "denom": {
+       "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+      },
+      "emission_rate": {
+       "linear": {
+        "amount": "2100000000000",
+        "duration": {
+         "time": 3600
+        },
+        "continuous": false
+       }
+      },
+      "hook_caller": "terra1xuqh84yz35h70p3ppt76dz5kgwwtwmsv34pg0gw6ld4ntptgjcrqe2e70t",
+      "vp_contract": "terra1vjzdmt363a5a4tzheensxv5ygq9d7m2680l9fhceawquesz26vvqapfr9p",
+      "open_funding": true
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "send",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "amount": "501000000000000",
+      "contract": "terra1zug2ur6d5ls7vgzwkh0m2002jrallfehpsadpltjqr3vhgvp6lnq90rj3w",
+      "msg": "eyJmdW5kX2xhdGVzdCI6e319"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1xuqh84yz35h70p3ppt76dz5kgwwtwmsv34pg0gw6ld4ntptgjcrqe2e70t",
+     "contractName": "Lion DAO ROAR Staking",
+     "action": "add_hook",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "addr": "terra1zug2ur6d5ls7vgzwkh0m2002jrallfehpsadpltjqr3vhgvp6lnq90rj3w"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "stargate": {
+      "type_url": "/cosmwasm.wasm.v1.MsgInstantiateContract2",
+      "value": "CkB0ZXJyYTF0a2Vyc2EybXF3eTJoOGV4ajc5OXF4MnhyaGR1MGRreW1rOXBzcDZ2MGs0a3o0dGt4dWNzc2dsdWVjEkB0ZXJyYTF0a2Vyc2EybXF3eTJoOGV4ajc5OXF4MnhyaGR1MGRreW1rOXBzcDZ2MGs0a3o0dGt4dWNzc2dsdWVjGPcYIiJEQU8gUmV3YXJkcyBEaXN0cmlidXRvciAobTFQUXF4bnEpKkx7Im93bmVyIjoidGVycmExdGtlcnNhMm1xd3kyaDhleGo3OTlxeDJ4cmhkdTBka3ltazlwc3A2djBrNGt6NHRreHVjc3NnbHVlYyJ9Oh9kYW8tcmV3YXJkLWRpc3RyaWJ1dG9yLW0xUFFxeG5x"
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJyZXdhcmRzOm0xUFFxeG5xIiwidmFsdWUiOiJ0ZXJyYTF6dWcydXI2ZDVsczd2Z3p3a2gwbTIwMDJqcmFsbGZlaHBzYWRwbHRqcXIzdmhndnA2bG5xOTByajN3In19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1zug2ur6d5ls7vgzwkh0m2002jrallfehpsadpltjqr3vhgvp6lnq90rj3w",
+       "msg": "eyJjcmVhdGUiOnsiZGVub20iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifSwiZW1pc3Npb25fcmF0ZSI6eyJsaW5lYXIiOnsiYW1vdW50IjoiMjEwMDAwMDAwMDAwMCIsImR1cmF0aW9uIjp7InRpbWUiOjM2MDB9LCJjb250aW51b3VzIjpmYWxzZX19LCJob29rX2NhbGxlciI6InRlcnJhMXh1cWg4NHl6MzVoNzBwM3BwdDc2ZHo1a2d3d3R3bXN2MzRwZzBndzZsZDRudHB0Z2pjcnFlMmU3MHQiLCJ2cF9jb250cmFjdCI6InRlcnJhMXZqemRtdDM2M2E1YTR0emhlZW5zeHY1eWdxOWQ3bTI2ODBsOWZoY2Vhd3F1ZXN6MjZ2dnFhcGZyOXAiLCJvcGVuX2Z1bmRpbmciOnRydWV9fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJzZW5kIjp7ImFtb3VudCI6IjUwMTAwMDAwMDAwMDAwMCIsImNvbnRyYWN0IjoidGVycmExenVnMnVyNmQ1bHM3dmd6d2toMG0yMDAyanJhbGxmZWhwc2FkcGx0anFyM3ZoZ3ZwNmxucTkwcmozdyIsIm1zZyI6ImV5Sm1kVzVrWDJ4aGRHVnpkQ0k2ZTMxOSJ9fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1xuqh84yz35h70p3ppt76dz5kgwwtwmsv34pg0gw6ld4ntptgjcrqe2e70t",
+       "msg": "eyJhZGRfaG9vayI6eyJhZGRyIjoidGVycmExenVnMnVyNmQ1bHM3dmd6d2toMG0yMDAyanJhbGxmZWhwc2FkcGx0anFyM3ZoZ3ZwNmxucTkwcmozdyJ9fQ==",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:41.715Z"
+  },
+  "a2": {
+   "id": "a2",
+   "daoId": "liondao",
+   "title": "Establish LUNA staking rewards for the new DAO",
+   "description": "Distribute 2 LUNA per hour - (48) per day - as staking rewards to stakers as payment from retrospective validator profit share.",
+   "status": "Executed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 12447397,
+   "expiration": {
+    "at_time_iso": "2024-10-12T22:28:36.898Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 83451017131077100,
+    "no": 0,
+    "abstain": 0,
+    "total": 83451017131077100
+   },
+   "voting": {
+    "turnout": 92.46141583251315,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 90254963521478300,
+   "voters": [
+    {
+     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 83101000000000000
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 287980653265226
+    },
+    {
+     "address": "terra1hzyzys3s7s7xsls5gvsta3z3ylcy7fjcnpgmas",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 33284971029025
+    },
+    {
+     "address": "terra1hch3fmt0kk2verlk26srsy67x8gr920j5cll3g",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 16620648691054
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 8711913639973
+    },
+    {
+     "address": "terra1sxvumj356uzmes9r382ytz3w8e42z4kqgxc095",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 2000000000000
+    },
+    {
+     "address": "terra1a4j7umpkunf9uarpyjt2d6lkkhs4md82pe5cjd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1259489344819
+    },
+    {
+     "address": "terra1ne8p3j7f8469mj5lnwqyva94lf3ckxtmwjcey7",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 123440473640
+    },
+    {
+     "address": "terra12826kkk0av98n8sxly079ht7aeh286s5f7h0q3",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 36014633374
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "stargate",
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "raw": {
+      "stargate": {
+       "type_url": "/cosmwasm.wasm.v1.MsgInstantiateContract2",
+       "value": "CkB0ZXJyYTF0a2Vyc2EybXF3eTJoOGV4ajc5OXF4MnhyaGR1MGRreW1rOXBzcDZ2MGs0a3o0dGt4dWNzc2dsdWVjEkB0ZXJyYTF0a2Vyc2EybXF3eTJoOGV4ajc5OXF4MnhyaGR1MGRreW1rOXBzcDZ2MGs0a3o0dGt4dWNzc2dsdWVjGPcYIiJEQU8gUmV3YXJkcyBEaXN0cmlidXRvciAocXR3T0d2ZWIpKkx7Im93bmVyIjoidGVycmExdGtlcnNhMm1xd3kyaDhleGo3OTlxeDJ4cmhkdTBka3ltazlwc3A2djBrNGt6NHRreHVjc3NnbHVlYyJ9Oh9kYW8tcmV3YXJkLWRpc3RyaWJ1dG9yLXF0d09HdmVi"
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "rewards:qtwOGveb",
+      "value": "terra13hykhlkvunwg7lqscda0uwa65na7ehr38csc2ual9ztpeuw8xehqk0p78l"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra13hykhlkvunwg7lqscda0uwa65na7ehr38csc2ual9ztpeuw8xehqk0p78l",
+     "contractName": null,
+     "action": "create",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "denom": {
+       "native": "uluna"
+      },
+      "emission_rate": {
+       "linear": {
+        "amount": "2000000",
+        "duration": {
+         "time": 3600
+        },
+        "continuous": false
+       }
+      },
+      "hook_caller": "terra1xuqh84yz35h70p3ppt76dz5kgwwtwmsv34pg0gw6ld4ntptgjcrqe2e70t",
+      "vp_contract": "terra1vjzdmt363a5a4tzheensxv5ygq9d7m2680l9fhceawquesz26vvqapfr9p",
+      "open_funding": true
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra13hykhlkvunwg7lqscda0uwa65na7ehr38csc2ual9ztpeuw8xehqk0p78l",
+     "contractName": null,
+     "action": "fund_latest",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "1000000000"
+      }
+     ],
+     "args": {}
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1xuqh84yz35h70p3ppt76dz5kgwwtwmsv34pg0gw6ld4ntptgjcrqe2e70t",
+     "contractName": "Lion DAO ROAR Staking",
+     "action": "add_hook",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "addr": "terra13hykhlkvunwg7lqscda0uwa65na7ehr38csc2ual9ztpeuw8xehqk0p78l"
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "1000000000",
+      "to": "terra13hykhlkvunwg7lqscda0uwa65na7ehr38csc2ual9ztpeuw8xehqk0p78l"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "stargate": {
+      "type_url": "/cosmwasm.wasm.v1.MsgInstantiateContract2",
+      "value": "CkB0ZXJyYTF0a2Vyc2EybXF3eTJoOGV4ajc5OXF4MnhyaGR1MGRreW1rOXBzcDZ2MGs0a3o0dGt4dWNzc2dsdWVjEkB0ZXJyYTF0a2Vyc2EybXF3eTJoOGV4ajc5OXF4MnhyaGR1MGRreW1rOXBzcDZ2MGs0a3o0dGt4dWNzc2dsdWVjGPcYIiJEQU8gUmV3YXJkcyBEaXN0cmlidXRvciAocXR3T0d2ZWIpKkx7Im93bmVyIjoidGVycmExdGtlcnNhMm1xd3kyaDhleGo3OTlxeDJ4cmhkdTBka3ltazlwc3A2djBrNGt6NHRreHVjc3NnbHVlYyJ9Oh9kYW8tcmV3YXJkLWRpc3RyaWJ1dG9yLXF0d09HdmVi"
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJyZXdhcmRzOnF0d09HdmViIiwidmFsdWUiOiJ0ZXJyYTEzaHlraGxrdnVud2c3bHFzY2RhMHV3YTY1bmE3ZWhyMzhjc2MydWFsOXp0cGV1dzh4ZWhxazBwNzhsIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra13hykhlkvunwg7lqscda0uwa65na7ehr38csc2ual9ztpeuw8xehqk0p78l",
+       "msg": "eyJjcmVhdGUiOnsiZGVub20iOnsibmF0aXZlIjoidWx1bmEifSwiZW1pc3Npb25fcmF0ZSI6eyJsaW5lYXIiOnsiYW1vdW50IjoiMjAwMDAwMCIsImR1cmF0aW9uIjp7InRpbWUiOjM2MDB9LCJjb250aW51b3VzIjpmYWxzZX19LCJob29rX2NhbGxlciI6InRlcnJhMXh1cWg4NHl6MzVoNzBwM3BwdDc2ZHo1a2d3d3R3bXN2MzRwZzBndzZsZDRudHB0Z2pjcnFlMmU3MHQiLCJ2cF9jb250cmFjdCI6InRlcnJhMXZqemRtdDM2M2E1YTR0emhlZW5zeHY1eWdxOWQ3bTI2ODBsOWZoY2Vhd3F1ZXN6MjZ2dnFhcGZyOXAiLCJvcGVuX2Z1bmRpbmciOnRydWV9fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra13hykhlkvunwg7lqscda0uwa65na7ehr38csc2ual9ztpeuw8xehqk0p78l",
+       "msg": "eyJmdW5kX2xhdGVzdCI6e319",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "1000000000"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1xuqh84yz35h70p3ppt76dz5kgwwtwmsv34pg0gw6ld4ntptgjcrqe2e70t",
+       "msg": "eyJhZGRfaG9vayI6eyJhZGRyIjoidGVycmExM2h5a2hsa3Z1bndnN2xxc2NkYTB1d2E2NW5hN2VocjM4Y3NjMnVhbDl6dHBldXc4eGVocWswcDc4bCJ9fQ==",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:41.821Z"
+  },
+  "a3": {
+   "id": "a3",
+   "daoId": "liondao",
+   "title": "Create Cross Chain Accounts",
+   "description": "Create cross chain accounts for all other available chains",
+   "status": "Executed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 12447543,
+   "expiration": {
+    "at_time_iso": "2024-10-12T22:43:13.354Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 82948893690603470,
+    "no": 0,
+    "abstain": 0,
+    "total": 82948893690603470
+   },
+   "voting": {
+    "turnout": 92.41586247677208,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 89756121370886900,
+   "voters": [
+    {
+     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 82601000000000000
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 287980653265226
+    },
+    {
+     "address": "terra1hzyzys3s7s7xsls5gvsta3z3ylcy7fjcnpgmas",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 33284971029025
+    },
+    {
+     "address": "terra1hch3fmt0kk2verlk26srsy67x8gr920j5cll3g",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 16620648691054
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 8711913639973
+    },
+    {
+     "address": "terra1a4j7umpkunf9uarpyjt2d6lkkhs4md82pe5cjd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1259489344819
+    },
+    {
+     "address": "terra12826kkk0av98n8sxly079ht7aeh286s5f7h0q3",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 36014633374
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1pmdg4yq0ew57fdpwckcsey5jw60tth49cm2vpw0r5l6zj368xvhshjurcl",
+     "contractName": null,
+     "action": "execute",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "msgs": [],
+      "timeout_seconds": "259200",
+      "callback": {
+       "msg": "OWN4RFE1RDV4ai1JVjlUOXEzeV9L",
+       "receiver": "terra1xftzcyz2s2t0d35985j0w0csqffzczxfm5k3gw6dgd34etw88sxqz6t03k"
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1eumwktcszm8p5p3apuxq4mrk008rx8sakntq68a5x6l6my33jl2qfvsfge",
+     "contractName": "Polytone Note (→ Neutron)",
+     "action": "execute",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "msgs": [],
+      "timeout_seconds": "259200",
+      "callback": {
+       "msg": "ZTJuM0I4a011ZnNabTQtS1JVUEdf",
+       "receiver": "terra1hu8esz9yhfrhj2eyq70refpmmdem95my2rpc2d896nt2a3p34s0qf5chle"
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra13wdx8mgcj73ltfgfq2mazwrryxadzcmwy0l2xmllpgs03hq0q8lqqyy2kn",
+     "contractName": null,
+     "action": "execute",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "msgs": [],
+      "timeout_seconds": "259200",
+      "callback": {
+       "msg": "dDRBY0trRjljd1VwNWJCbklEdlMy",
+       "receiver": "terra1hudgkhufhp7a20jnk8vvc2x6l8f55tpx7tr8wkqq996zjv9v3yqqcpyaar"
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1ts8j0cwnykrh39nc97mxmzesvnukyru3uua3hych0s345a0wz32qhklzfw",
+     "contractName": null,
+     "action": "execute",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "msgs": [],
+      "timeout_seconds": "259200",
+      "callback": {
+       "msg": "czhkVmRhWEQwUmN3Y2RWSFJSMnlN",
+       "receiver": "terra1z4qyl5t3wtv7006chg3ar8hpyzuqsuyj5uqujhskplwtun28ucss23uap7"
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1vf2janv5s6ywsa8lj4m5q7jdw3wfqpmgtkgdllh24l2shz0qyv4qvtjkuk",
+     "contractName": null,
+     "action": "execute",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "msgs": [],
+      "timeout_seconds": "259200",
+      "callback": {
+       "msg": "eEN5OGZfVTI4dk1jYjZNRHZKTnR0",
+       "receiver": "terra1yu9encxx42k6rswr7skl43dhfxqzljddlk3wj250q7uykxzflw7qykt6wt"
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1dfwrwcjmsnprmr9938sg3d2885vm84cg2jfxtznf7kr59nrrxdtsdgnqu8",
+     "contractName": null,
+     "action": "execute",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "msgs": [],
+      "timeout_seconds": "259200",
+      "callback": {
+       "msg": "ZnhPanBSblAzRDVSNUhsSWN2WDNy",
+       "receiver": "terra1eqk2urjf0yvtpeaqu0r9zhkzptau9ulmwypjt6f3e7ktwtha48gsu3x2ee"
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1r7fej5936y57hzhavw6wt6lld5vq27av3ftl7jjvlgcc4lh0ehrs2n9cvy",
+     "contractName": "Polytone Note (→ Cosmos Hub)",
+     "action": "execute",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "msgs": [],
+      "timeout_seconds": "259200",
+      "callback": {
+       "msg": "NFhGaE8zQXRUR3dXYmZEQ0U3Z1NH",
+       "receiver": "terra13ynfm5p6k3yaavm9rfyffsa4e5rtxsgl9mmtxnqtnwpcy5t5t75ql66wr8"
+      }
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1pmdg4yq0ew57fdpwckcsey5jw60tth49cm2vpw0r5l6zj368xvhshjurcl",
+       "msg": "eyJleGVjdXRlIjp7Im1zZ3MiOltdLCJ0aW1lb3V0X3NlY29uZHMiOiIyNTkyMDAiLCJjYWxsYmFjayI6eyJtc2ciOiJPV040UkZFMVJEVjRhaTFKVmpsVU9YRXplVjlMIiwicmVjZWl2ZXIiOiJ0ZXJyYTF4ZnR6Y3l6MnMydDBkMzU5ODVqMHcwY3NxZmZ6Y3p4Zm01azNndzZkZ2QzNGV0dzg4c3hxejZ0MDNrIn19fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1eumwktcszm8p5p3apuxq4mrk008rx8sakntq68a5x6l6my33jl2qfvsfge",
+       "msg": "eyJleGVjdXRlIjp7Im1zZ3MiOltdLCJ0aW1lb3V0X3NlY29uZHMiOiIyNTkyMDAiLCJjYWxsYmFjayI6eyJtc2ciOiJaVEp1TTBJNGEwMTFabk5hYlRRdFMxSlZVRWRmIiwicmVjZWl2ZXIiOiJ0ZXJyYTFodThlc3o5eWhmcmhqMmV5cTcwcmVmcG1tZGVtOTVteTJycGMyZDg5Nm50MmEzcDM0czBxZjVjaGxlIn19fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra13wdx8mgcj73ltfgfq2mazwrryxadzcmwy0l2xmllpgs03hq0q8lqqyy2kn",
+       "msg": "eyJleGVjdXRlIjp7Im1zZ3MiOltdLCJ0aW1lb3V0X3NlY29uZHMiOiIyNTkyMDAiLCJjYWxsYmFjayI6eyJtc2ciOiJkRFJCWTB0clJqbGpkMVZ3TldKQ2JrbEVkbE15IiwicmVjZWl2ZXIiOiJ0ZXJyYTFodWRna2h1ZmhwN2EyMGpuazh2dmMyeDZsOGY1NXRweDd0cjh3a3FxOTk2emp2OXYzeXFxY3B5YWFyIn19fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1ts8j0cwnykrh39nc97mxmzesvnukyru3uua3hych0s345a0wz32qhklzfw",
+       "msg": "eyJleGVjdXRlIjp7Im1zZ3MiOltdLCJ0aW1lb3V0X3NlY29uZHMiOiIyNTkyMDAiLCJjYWxsYmFjayI6eyJtc2ciOiJjemhrVm1SaFdFUXdVbU4zWTJSV1NGSlNNbmxOIiwicmVjZWl2ZXIiOiJ0ZXJyYTF6NHF5bDV0M3d0djcwMDZjaGczYXI4aHB5enVxc3V5ajV1cXVqaHNrcGx3dHVuMjh1Y3NzMjN1YXA3In19fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1vf2janv5s6ywsa8lj4m5q7jdw3wfqpmgtkgdllh24l2shz0qyv4qvtjkuk",
+       "msg": "eyJleGVjdXRlIjp7Im1zZ3MiOltdLCJ0aW1lb3V0X3NlY29uZHMiOiIyNTkyMDAiLCJjYWxsYmFjayI6eyJtc2ciOiJlRU41T0daZlZUSTRkazFqWWpaTlJIWktUblIwIiwicmVjZWl2ZXIiOiJ0ZXJyYTF5dTllbmN4eDQyazZyc3dyN3NrbDQzZGhmeHF6bGpkZGxrM3dqMjUwcTd1eWt4emZsdzdxeWt0Nnd0In19fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1dfwrwcjmsnprmr9938sg3d2885vm84cg2jfxtznf7kr59nrrxdtsdgnqu8",
+       "msg": "eyJleGVjdXRlIjp7Im1zZ3MiOltdLCJ0aW1lb3V0X3NlY29uZHMiOiIyNTkyMDAiLCJjYWxsYmFjayI6eyJtc2ciOiJabmhQYW5CU2JsQXpSRFZTTlVoc1NXTjJXRE55IiwicmVjZWl2ZXIiOiJ0ZXJyYTFlcWsydXJqZjB5dnRwZWFxdTByOXpoa3pwdGF1OXVsbXd5cGp0NmYzZTdrdHd0aGE0OGdzdTN4MmVlIn19fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1r7fej5936y57hzhavw6wt6lld5vq27av3ftl7jjvlgcc4lh0ehrs2n9cvy",
+       "msg": "eyJleGVjdXRlIjp7Im1zZ3MiOltdLCJ0aW1lb3V0X3NlY29uZHMiOiIyNTkyMDAiLCJjYWxsYmFjayI6eyJtc2ciOiJORmhHYUU4elFYUlVSM2RYWW1aRVEwVTNaMU5IIiwicmVjZWl2ZXIiOiJ0ZXJyYTEzeW5mbTVwNmszeWFhdm05cmZ5ZmZzYTRlNXJ0eHNnbDltbXR4bnF0bndwY3k1dDV0NzVxbDY2d3I4In19fQ==",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:41.925Z"
+  },
+  "a4": {
+   "id": "a4",
+   "daoId": "liondao",
+   "title": "Whitelist Terra NFTs for Treasury",
+   "description": "Whitelist NFT contracts for the treasury",
+   "status": "Executed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 12448757,
+   "expiration": {
+    "at_time_iso": "2024-10-13T00:44:55.469Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 84094337098232530,
+    "no": 0,
+    "abstain": 0,
+    "total": 84094337098232530
+   },
+   "voting": {
+    "turnout": 92.29537796124046,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 91114353671695260,
+   "voters": [
+    {
+     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 82601000000000000
+    },
+    {
+     "address": "terra1w7ayljrk3hf9xnvsg042l2vdyuyptd7wf2rpx8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1045443407629053
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 387980653265226
+    },
+    {
+     "address": "terra1hzyzys3s7s7xsls5gvsta3z3ylcy7fjcnpgmas",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 33284971029025
+    },
+    {
+     "address": "terra1hch3fmt0kk2verlk26srsy67x8gr920j5cll3g",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 16620648691054
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 8711913639973
+    },
+    {
+     "address": "terra1a4j7umpkunf9uarpyjt2d6lkkhs4md82pe5cjd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1259489344819
+    },
+    {
+     "address": "terra12826kkk0av98n8sxly079ht7aeh286s5f7h0q3",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 36014633374
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw721:terra1q2hjgq5sm7w04saj70gv0ur5tlz7r20854dfmsk8uv5u8cqnkuzskk7shc",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw721:terra1x7rf4nquswmmrjtzlxg6dk3d70ef69prth2q7vk3v9vdprepdh0sjxrvl7",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw721:terra1phr9fngjv7a8an4dhmhd0u0f98wazxfnzccqtyheq4zqrrp4fpuqw3apw9",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw721:terra1hh9rgaxtmfqfkeqkruckwah6qc4ajlxgnweexyjeh4dsptkfnhmqeelzfl",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw721:terra17z7fpaa8kah698xn5tarrcucvualdy4wsztkfc404g3garucpu6qmxp50g",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw721:terra1vn0qwkp9l53q73ajsrnexdw97ekzscexh2q5rduk2kajqrvzwtkqj4nc08",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw721:terra1zcafgvq74ef8zu5mc62njfprsf3cr33xvan7r4nja269t280djrqkyrjsx",
+      "value": "1"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzcyMTp0ZXJyYTFxMmhqZ3E1c203dzA0c2FqNzBndjB1cjV0bHo3cjIwODU0ZGZtc2s4dXY1dThjcW5rdXpza2s3c2hjIiwidmFsdWUiOiIxIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzcyMTp0ZXJyYTF4N3JmNG5xdXN3bW1yanR6bHhnNmRrM2Q3MGVmNjlwcnRoMnE3dmszdjl2ZHByZXBkaDBzanhydmw3IiwidmFsdWUiOiIxIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzcyMTp0ZXJyYTFwaHI5Zm5nanY3YThhbjRkaG1oZDB1MGY5OHdhenhmbnpjY3F0eWhlcTR6cXJycDRmcHVxdzNhcHc5IiwidmFsdWUiOiIxIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzcyMTp0ZXJyYTFoaDlyZ2F4dG1mcWZrZXFrcnVja3dhaDZxYzRhamx4Z253ZWV4eWplaDRkc3B0a2ZuaG1xZWVsemZsIiwidmFsdWUiOiIxIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzcyMTp0ZXJyYTE3ejdmcGFhOGthaDY5OHhuNXRhcnJjdWN2dWFsZHk0d3N6dGtmYzQwNGczZ2FydWNwdTZxbXhwNTBnIiwidmFsdWUiOiIxIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzcyMTp0ZXJyYTF2bjBxd2twOWw1M3E3M2Fqc3JuZXhkdzk3ZWt6c2NleGgycTVyZHVrMmthanFydnp3dGtxajRuYzA4IiwidmFsdWUiOiIxIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzcyMTp0ZXJyYTF6Y2FmZ3ZxNzRlZjh6dTVtYzYybmpmcHJzZjNjcjMzeHZhbjdyNG5qYTI2OXQyODBkanJxa3lyanN4IiwidmFsdWUiOiIxIn19",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:42.026Z"
+  },
+  "a5": {
+   "id": "a5",
+   "daoId": "liondao",
+   "title": "Whitelist tokens to be displayed in treasury",
+   "description": "Whitelisting a number of CW20 tokens so that they are visible in the treasury",
+   "status": "Executed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 12461394,
+   "expiration": {
+    "at_time_iso": "2024-10-13T21:52:03.164Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 74203850671942320,
+    "no": 0,
+    "abstain": 0,
+    "total": 74203850671942320
+   },
+   "voting": {
+    "turnout": 82.4469603324067,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 90001924113114530,
+   "voters": [
+    {
+     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 68151000000000000
+    },
+    {
+     "address": "terra1hch3fmt0kk2verlk26srsy67x8gr920j5cll3g",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 3290725017080349
+    },
+    {
+     "address": "terra1d0zzmhwgs79u7fr98sgnmp7f9t2x2wj6mmnu2s",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1206716193363982
+    },
+    {
+     "address": "terra1wa4d647a6ccf8a042gzpw68p3tjqqlq9puezg7",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 800000000000000
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 387980653265226
+    },
+    {
+     "address": "terra1n75apcsmzejuwu6qn2zath5maaw83d0s4gmx4j",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 247636636216954
+    },
+    {
+     "address": "terra1ur6629jtzrk7fr94vlg9dythm5nnukay7m00sv",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 104087344996930
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 8711913639973
+    },
+    {
+     "address": "terra1y5mneh2gamuztzza42pdd89u47sdx9kqdy022l",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 3682816874628
+    },
+    {
+     "address": "terra1xxyc7ku9yp7w5kvhd2h6szp6hy7pfkg72srn22",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 2014592526087
+    },
+    {
+     "address": "terra1a4j7umpkunf9uarpyjt2d6lkkhs4md82pe5cjd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1259489344819
+    },
+    {
+     "address": "terra12826kkk0av98n8sxly079ht7aeh286s5f7h0q3",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 36014633374
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra1dx9tpwg5cqw0udzx5zv2g35qkx45neefpzl0755qdcud320u6ylqfmcrp9",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra1j7zej67gl6kjmgc2tl2hggp4xcvchnrn5reffc489u6ffsvm7aeq5k4sas",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra10aa3zdkrc7jwuf8ekl3zq7e7m42vmzqehcmu74e4egc7xkm5kr2s0muyst",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra15hhqg8gyz04zapynqtk7uvlsp7lzay7etrt9ann0276v94yae63sxygeat",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra1t4p3u8khpd7f8qzurwyafxt648dya6mp6vur3vaapswt6m24gkuqrfdhar",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra1pez3qw6pa24a06wee404yy5mp37j57n3s9zjkdfjeapwqf78dntql0ngsy",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct",
+      "value": "1"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw20:terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+      "value": "1"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMWR4OXRwd2c1Y3F3MHVkeng1enYyZzM1cWt4NDVuZWVmcHpsMDc1NXFkY3VkMzIwdTZ5bHFmbWNycDkiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMWo3emVqNjdnbDZram1nYzJ0bDJoZ2dwNHhjdmNobnJuNXJlZmZjNDg5dTZmZnN2bTdhZXE1azRzYXMiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMXNlN3J2dWVyeXM0a2Qyc250NnZxc3doOXd1Z3U0OXZoeXpsczh5bWMwMndsMzdnMnAybXM1eXo0OTAiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMTBhYTN6ZGtyYzdqd3VmOGVrbDN6cTdlN200MnZtenFlaGNtdTc0ZTRlZ2M3eGttNWtyMnMwbXV5c3QiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMTVoaHFnOGd5ejA0emFweW5xdGs3dXZsc3A3bHpheTdldHJ0OWFubjAyNzZ2OTR5YWU2M3N4eWdlYXQiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMXQ0cDN1OGtocGQ3ZjhxenVyd3lhZnh0NjQ4ZHlhNm1wNnZ1cjN2YWFwc3d0Nm0yNGdrdXFyZmRoYXIiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMTBzZTkwNmF3cGh0Y2NmNHZkODNtMHVscG1wdDl2NG1zdWFrbXB5MHB3dm10eG11cDNrZHEyNXJheW4iLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMTdhajR0eTRzejR5aGdtMDhuYThkcmMwdjAzdjJqd3Izd2F4Y3Fyd2hhamo3Mjl6aGw3enFucGMwbWwiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMXBlejNxdzZwYTI0YTA2d2VlNDA0eXk1bXAzN2o1N24zczl6amtkZmplYXB3cWY3OGRudHFsMG5nc3kiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMWVjZ2F6eWQwd2FhajNnN2w5Y215NWd1bGh4a3BzMmdteHU5Z2hkdWN2dXlwanE2OG1xMnM1bHZzY3QiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzIwOnRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYiLCJ2YWx1ZSI6IjEifX0=",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:42.135Z"
+  },
+  "a6": {
+   "id": "a6",
+   "daoId": "liondao",
+   "title": "Whitelist Galactic Punks",
+   "description": "Whitelist Galactic Punks NFTs - was missed off previous NFT whitelist prop",
+   "status": "Executed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 12490516,
+   "expiration": {
+    "at_time_iso": "2024-10-15T22:20:30.451Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 59289584657073930,
+    "no": 0,
+    "abstain": 0,
+    "total": 59289584657073930
+   },
+   "voting": {
+    "turnout": 65.86109712180969,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 90022163687037000,
+   "voters": [
+    {
+     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 58201000000000000
+    },
+    {
+     "address": "terra1gtmkcgwddsrmfd0s72l46yj9xj4u44ja98f5yk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 356834642493847
+    },
+    {
+     "address": "terra1hzyzys3s7s7xsls5gvsta3z3ylcy7fjcnpgmas",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 298256893856582
+    },
+    {
+     "address": "terra1zsqu60y738u0jgk36sdrptq44ejke6a7e392sd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 205867528445206
+    },
+    {
+     "address": "terra12hdw3zhlgvfjhwefwh6tfq2wu3vs66p62rf7ws",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100000000000000
+    },
+    {
+     "address": "terra1j5ul9gvnvle86z2vfu39kvawx7vz5d9gttu7mt",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50682885610771
+    },
+    {
+     "address": "terra1z75yypurfmnektxkl3v2y7e3xgnutfqc0ngur5",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 33134131404276
+    },
+    {
+     "address": "terra10s2nj7d9dkqypschw9rrqddl4v5f7ywe8nrnvd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 20020717123414
+    },
+    {
+     "address": "terra1qgjywmavwajy24te4ja9kx0lpzpvvwup4el57d",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 13927506107884
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 9156619031945
+    },
+    {
+     "address": "terra14698rl89hk8h2k23u99dgflw4tsxha8prm4stg",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 592622000000
+    },
+    {
+     "address": "terra1zstf4e0au48fy56kkztsfea2m4fl4nd040etn8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 111111000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "set_item",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "key": "cw721:terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+      "value": "1"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJzZXRfaXRlbSI6eyJrZXkiOiJjdzcyMTp0ZXJyYTE2ZHM4OThqNTMwa240bm5sYzd4bGo2aGN4enFwY3h4azRtajhna2NsM3Zzd2tzdTZzM3pzenM4a3AyIiwidmFsdWUiOiIxIn19",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:42.236Z"
+  },
+  "a7": {
+   "id": "a7",
+   "daoId": "liondao",
+   "title": "Release arbLUNA from treasury to provide liquidity to arbLUNA/LUNA pool",
+   "description": "With the single sided liquidity alliance bucket going live in 24 hours there is an arbLUNA/LUNA pool that has been added and is currently attracting some vote power with no liquidity. As it stands Lion DAO owns about 25% of all arbLUNA in circulation, so it's a good opportunity for us to farm some rewards by providing liquidity to this pool. This prop releases arbLUNA from the treasury and sends it to the ops wallet to provide liquidity on liquidity alliance. We likely don't have enough LUNA to fully pair, so any unused arbLUNA will be returned to the treasury.",
+   "status": "Executed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 12564450,
+   "expiration": {
+    "at_time_iso": "2024-10-21T00:32:18.346Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 53083816744456296,
+    "no": 0,
+    "abstain": 123479567196627860,
+    "total": 176563383941084160
+   },
+   "voting": {
+    "turnout": 84.2374778080716,
+    "yesPercent": 30.06502002825759,
+    "noPercent": 0,
+    "abstainPercent": 69.93497997174241,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 209601935546277630,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 123479567196627860
+    },
+    {
+     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 48081000000000000
+    },
+    {
+     "address": "terra1d0zzmhwgs79u7fr98sgnmp7f9t2x2wj6mmnu2s",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1206716193363982
+    },
+    {
+     "address": "terra1l67whaslfrxhhqxyhj3r68vx2gv6gsewfwj5tr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1000000000000000
+    },
+    {
+     "address": "terra1wa4d647a6ccf8a042gzpw68p3tjqqlq9puezg7",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 800000000000000
+    },
+    {
+     "address": "terra1tyvr2gfjhavcwx7gncrq9q74pn272lzftuc74z",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 500522945170276
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 387980653265226
+    },
+    {
+     "address": "terra1hzyzys3s7s7xsls5gvsta3z3ylcy7fjcnpgmas",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 376998470704850
+    },
+    {
+     "address": "terra1n75apcsmzejuwu6qn2zath5maaw83d0s4gmx4j",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 247636636216954
+    },
+    {
+     "address": "terra1nj74mncupt0xhpxljls09gg7ufy0nx68fyarfy",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 157502278149339
+    },
+    {
+     "address": "terra1cx8j8aym6lnj5z7m6xm6hd06jxzt9xpdyhryfq",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 150000000000000
+    },
+    {
+     "address": "terra1a4j7umpkunf9uarpyjt2d6lkkhs4md82pe5cjd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 103265266283348
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 45249288636706
+    },
+    {
+     "address": "terra10s2nj7d9dkqypschw9rrqddl4v5f7ywe8nrnvd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 26945012665618
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490",
+     "contractName": "arbLUNA Token",
+     "action": "transfer",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "recipient": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+      "amount": "16134180000"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490",
+       "msg": "eyJ0cmFuc2ZlciI6eyJyZWNpcGllbnQiOiJ0ZXJyYTFrc2s2Nmxjdnp3YWFuYzQ3bnZuM2F0aGo0eXpjcGF5OHo4cnUwNCIsImFtb3VudCI6IjE2MTM0MTgwMDAwIn19",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:42.339Z"
+  },
+  "a8": {
+   "id": "a8",
+   "daoId": "liondao",
+   "title": "Release ampCAPA & XXX from Treasury",
+   "description": "Release ampCAPA from treasury to stake in Liquidity Alliance single sided. Expected high APR %\n\nRelease XXX to pair with ROAR in XXX/ROAR LP at request of XXX DAO - will be a small commit of around $50 of ROAR & seems a reasonable request to support another Terra based DAO that previously airdropped to ROAR stakers.",
+   "status": "Executed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 13104477,
+   "expiration": {
+    "at_time_iso": "2024-11-26T23:15:50.629Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 61252672042499060,
+    "no": 0,
+    "abstain": 107275441323728350,
+    "total": 168528113366227400
+   },
+   "voting": {
+    "turnout": 72.79177391389787,
+    "yesPercent": 36.34567006003992,
+    "noPercent": 0,
+    "abstainPercent": 63.654329939960085,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 231520822071971680,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 107275441323728350
+    },
+    {
+     "address": "terra1nrt0tcqc3kazztzfhyd2pf9q59p49ywu9g36w8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 60002000000000000
+    },
+    {
+     "address": "terra1hch3fmt0kk2verlk26srsy67x8gr920j5cll3g",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 824588598088261
+    },
+    {
+     "address": "terra1n75apcsmzejuwu6qn2zath5maaw83d0s4gmx4j",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100000000216954
+    },
+    {
+     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100000000000000
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100000000000000
+    },
+    {
+     "address": "terra15y0hjy77v7tr5xwxhw3a5r4ahxs7drf6ymg54d",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 74148415035812
+    },
+    {
+     "address": "terra1vjgada9t78eh4v8whp9p8cg4evq4erusx9w6w8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra1s8qjggdfxhxgxc3vxc7jhrnz9wpktqdgn9tp2c",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1935029158031
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "bank.send",
+     "to": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+     "toName": null,
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "amount": [
+      {
+       "denom": "factory/terra186rpfczl7l2kugdsqqedegl4es4hp624phfc7ddy8my02a4e8lgq5rlx7y/ampCAPA",
+       "amount": "401516028393"
+      }
+     ]
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn",
+     "contractName": null,
+     "action": "transfer",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+      "amount": "11832899396849813000"
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "factory/terra186rpfczl7l2kugdsqqedegl4es4hp624phfc7ddy8my02a4e8lgq5rlx7y/ampCAPA",
+      "amount": "401516028393",
+      "to": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "bank": {
+      "send": {
+       "to_address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+       "amount": [
+        {
+         "denom": "factory/terra186rpfczl7l2kugdsqqedegl4es4hp624phfc7ddy8my02a4e8lgq5rlx7y/ampCAPA",
+         "amount": "401516028393"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra10se906awphtccf4vd83m0ulpmpt9v4msuakmpy0pwvmtxmup3kdq25rayn",
+       "msg": "eyJ0cmFuc2ZlciI6eyJyZWNpcGllbnQiOiJ0ZXJyYTFrc2s2Nmxjdnp3YWFuYzQ3bnZuM2F0aGo0eXpjcGF5OHo4cnUwNCIsImFtb3VudCI6IjExODMyODk5Mzk2ODQ5ODEzMDAwIn19",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:42.449Z"
+  },
+  "a9": {
+   "id": "a9",
+   "daoId": "liondao",
+   "title": "Lion DAO Validator Vote: Prop 4832 - Suspension of Single Asset LP Incentives for ampWHALE-WHALE LP and boneWHALE-WHALE LP",
+   "description": "How should the Lion DAO validator vote on this proposal? Link to the discussion: https://common.xyz/terra/discussion/26632-optimizing-terras-liquidity-incentives\n\nVote YES, NO or ABSTAIN & the Lion DAO validator will vote according to the outcome.",
+   "status": "Passed",
+   "proposer": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
+   "startHeight": 14395184,
+   "expiration": {
+    "at_time_iso": "2025-02-23T01:24:50.476Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 32412210873666,
+    "no": 0,
+    "abstain": 116470935053451740,
+    "total": 116503347264325400
+   },
+   "voting": {
+    "turnout": 54.99688970746648,
+    "yesPercent": 0.02782084088977156,
+    "noPercent": 0,
+    "abstainPercent": 99.97217915911023,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed",
+   "totalPower": 211836247256922050,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 116370935053451740
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 100000000000000
+    },
+    {
+     "address": "terra1247xf3nz6atlsmxdz43h37c83tcdnuknc80f48",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 32412210873666
+    }
+   ],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "fetchedAt": "2026-09-01T00:25:42.556Z"
+  },
+  "a10": {
+   "id": "a10",
+   "daoId": "liondao",
+   "title": "Top Up ROAR Rewards for 90D",
+   "description": "In the absence of our Alpha Lion, this proposal seeks to top up the ROAR staking rewards for an additional 90 days using treasury funds. Unfortunately, there is insufficient Luna in the treasury to also top up the Luna rewards.",
+   "status": "Executed",
+   "proposer": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+   "startHeight": 15107981,
+   "expiration": {
+    "at_time_iso": "2025-04-12T21:33:06.360Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 2629390123538257,
+    "no": 0,
+    "abstain": 111887826794394200,
+    "total": 114517216917932460
+   },
+   "voting": {
+    "turnout": 55.688178203712646,
+    "yesPercent": 2.296065337863198,
+    "noPercent": 0,
+    "abstainPercent": 97.7039346621368,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 205640084865081440,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 111887826794394200
+    },
+    {
+     "address": "terra1xaujrunqtuxhpvr0hc8ky7tmg4cjm8sg4as6w5",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1008811266920754
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1000000000000000
+    },
+    {
+     "address": "terra13lzly6934ymemk6k3tzvlu3tl7v7gzq39auhfu",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 125393235601898
+    },
+    {
+     "address": "terra1qghactqzymfyep4r2lvu3zfzs5eswz39vymlwe",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 108793468405751
+    },
+    {
+     "address": "terra1n75apcsmzejuwu6qn2zath5maaw83d0s4gmx4j",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100000000216954
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100000000000000
+    },
+    {
+     "address": "terra142qcgrmqk3x8nh49de76w66lynmrapqjlxvpm8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 66281041392900
+    },
+    {
+     "address": "terra1vjgada9t78eh4v8whp9p8cg4evq4erusx9w6w8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 66000000000000
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra1a4j7umpkunf9uarpyjt2d6lkkhs4md82pe5cjd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 4000000000000
+    },
+    {
+     "address": "terra1zstf4e0au48fy56kkztsfea2m4fl4nd040etn8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 111111000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "send",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "amount": "4536000000000000",
+      "contract": "terra1zug2ur6d5ls7vgzwkh0m2002jrallfehpsadpltjqr3vhgvp6lnq90rj3w",
+      "msg": "eyJmdW5kIjp7ImlkIjoxfX0="
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJzZW5kIjp7ImFtb3VudCI6IjQ1MzYwMDAwMDAwMDAwMDAiLCJjb250cmFjdCI6InRlcnJhMXp1ZzJ1cjZkNWxzN3ZnendraDBtMjAwMmpyYWxsZmVocHNhZHBsdGpxcjN2aGd2cDZsbnE5MHJqM3ciLCJtc2ciOiJleUptZFc1a0lqcDdJbWxrSWpveGZYMD0ifX0=",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:42.666Z"
+  },
+  "a11": {
+   "id": "a11",
+   "daoId": "liondao",
+   "title": "Update SubDAOs & Vetoer",
+   "description": "This proposal seeks to officially recognize the pixeLions DAO and the pixeLions Council MultiSig DAO as sub-DAOs of the Lion DAO.\n\nFurther, it seeks to enlist the pixeLions Council MultiSig DAO as \"Vetoer\" to further protect the Lion DAO from malicious proposals in the temporary absence of our Alpha Lion.",
+   "status": "Executed",
+   "proposer": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+   "startHeight": 15366832,
+   "expiration": {
+    "at_time_iso": "2025-04-30T13:32:10.832Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 5225267822208161,
+    "no": 0,
+    "abstain": 111816536231310940,
+    "total": 117041804053519100
+   },
+   "voting": {
+    "turnout": 57.46445005696531,
+    "yesPercent": 4.46444572899682,
+    "noPercent": 0,
+    "abstainPercent": 95.53555427100318,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 203676888819946800,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 111816536231310940
+    },
+    {
+     "address": "terra1d0zzmhwgs79u7fr98sgnmp7f9t2x2wj6mmnu2s",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1380898662171919
+    },
+    {
+     "address": "terra1xaujrunqtuxhpvr0hc8ky7tmg4cjm8sg4as6w5",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1008811266920754
+    },
+    {
+     "address": "terra1x0d0pp36t00k7nhcrwhm9h8jj7d2f76n8aydgz",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1000000000331950
+    },
+    {
+     "address": "terra1p72dpkr49tpzjs0z8h2g2r8xt5gmdawc9ygv87",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 208402359483847
+    },
+    {
+     "address": "terra1mjtfsg7lpyzugpd94py4zpxgjm2h3ln5zc9u7z",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 201486210170802
+    },
+    {
+     "address": "terra1gtmkcgwddsrmfd0s72l46yj9xj4u44ja98f5yk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200745327355857
+    },
+    {
+     "address": "terra1j8ftr0fcdll2v59vt0d6ypc9m7lyelglhq7kez",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200619345479180
+    },
+    {
+     "address": "terra1egvndf6x8h7yx42vrum6rjnyjy3mpet02u6vac",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200231461465945
+    },
+    {
+     "address": "terra125ydx33wlgquhne5468plaqp4m2kk20na0l4qk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200140113716007
+    },
+    {
+     "address": "terra1md9s3ma54y47k43daca6fr3hl9l05pwy3wd3pr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200109560636869
+    },
+    {
+     "address": "terra1n75apcsmzejuwu6qn2zath5maaw83d0s4gmx4j",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100000000216954
+    },
+    {
+     "address": "terra1r8w7rvsg6j2c22jdq0jp02cgyspa7r5hzc95zk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100000000000000
+    },
+    {
+     "address": "terra1vjgada9t78eh4v8whp9p8cg4evq4erusx9w6w8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 73000000000000
+    },
+    {
+     "address": "terra142qcgrmqk3x8nh49de76w66lynmrapqjlxvpm8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 66281041392900
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra1ey9z5wwr6nf8mh96ruhwy6sc5gmuntfuyfdqdx",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 30542472865177
+    },
+    {
+     "address": "terra1a4j7umpkunf9uarpyjt2d6lkkhs4md82pe5cjd",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 4000000000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+     "contractName": "Lion DAO Core (DAODAO)",
+     "action": "update_sub_daos",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "to_add": [
+       {
+        "addr": "terra1xgg9cf94ws2mawr6lyrdvmyxt48xkwgp8gvtsrcg2yktqvk8w2rqxflq06"
+       },
+       {
+        "addr": "terra1c690mdrwdetnr09zfk3tf9xz9jhrgd9wpjyf3tuccj74ql09eqmq6sh7en"
+       }
+      ],
+      "to_remove": []
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1qj7n3vgttdel0pgynzmneh6k82mzu80tk6gk5qjp6rs0uksvuxlq9eu6cm",
+     "contractName": "Lion DAO Sub-Proposal Module",
+     "action": "update_config",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "threshold": {
+       "threshold_quorum": {
+        "quorum": {
+         "percent": "0.2"
+        },
+        "threshold": {
+         "majority": {}
+        }
+       }
+      },
+      "max_voting_period": {
+       "time": 172800
+      },
+      "only_members_execute": false,
+      "allow_revoting": true,
+      "veto": {
+       "vetoer": "terra1xgg9cf94ws2mawr6lyrdvmyxt48xkwgp8gvtsrcg2yktqvk8w2rqxflq06",
+       "timelock_duration": {
+        "time": 172800
+       },
+       "early_execute": true,
+       "veto_before_passed": true
+      },
+      "dao": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+      "close_proposal_on_execution_failure": true,
+      "min_voting_period": null
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
+       "msg": "eyJ1cGRhdGVfc3ViX2Rhb3MiOnsidG9fYWRkIjpbeyJhZGRyIjoidGVycmExeGdnOWNmOTR3czJtYXdyNmx5cmR2bXl4dDQ4eGt3Z3A4Z3Z0c3JjZzJ5a3Rxdms4dzJycXhmbHEwNiJ9LHsiYWRkciI6InRlcnJhMWM2OTBtZHJ3ZGV0bnIwOXpmazN0Zjl4ejlqaHJnZDl3cGp5ZjN0dWNjajc0cWwwOWVxbXE2c2g3ZW4ifV0sInRvX3JlbW92ZSI6W119fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1qj7n3vgttdel0pgynzmneh6k82mzu80tk6gk5qjp6rs0uksvuxlq9eu6cm",
+       "msg": "eyJ1cGRhdGVfY29uZmlnIjp7InRocmVzaG9sZCI6eyJ0aHJlc2hvbGRfcXVvcnVtIjp7InF1b3J1bSI6eyJwZXJjZW50IjoiMC4yIn0sInRocmVzaG9sZCI6eyJtYWpvcml0eSI6e319fX0sIm1heF92b3RpbmdfcGVyaW9kIjp7InRpbWUiOjE3MjgwMH0sIm9ubHlfbWVtYmVyc19leGVjdXRlIjpmYWxzZSwiYWxsb3dfcmV2b3RpbmciOnRydWUsInZldG8iOnsidmV0b2VyIjoidGVycmExeGdnOWNmOTR3czJtYXdyNmx5cmR2bXl4dDQ4eGt3Z3A4Z3Z0c3JjZzJ5a3Rxdms4dzJycXhmbHEwNiIsInRpbWVsb2NrX2R1cmF0aW9uIjp7InRpbWUiOjE3MjgwMH0sImVhcmx5X2V4ZWN1dGUiOnRydWUsInZldG9fYmVmb3JlX3Bhc3NlZCI6dHJ1ZX0sImRhbyI6InRlcnJhMXRrZXJzYTJtcXd5Mmg4ZXhqNzk5cXgyeHJoZHUwZGt5bWs5cHNwNnYwazRrejR0a3h1Y3NzZ2x1ZWMiLCJjbG9zZV9wcm9wb3NhbF9vbl9leGVjdXRpb25fZmFpbHVyZSI6dHJ1ZSwibWluX3ZvdGluZ19wZXJpb2QiOm51bGx9fQ==",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:42.777Z"
+  },
+  "a12": {
+   "id": "a12",
+   "daoId": "liondao",
+   "title": "Signal Proposal - Allow multisig team to use LUNA from validator rewards in defi",
+   "description": "The Lion DAO multisig stewardship team (comprised of Kiruse, Usaf, Llewyn, Bobo, and Speerbot) currently collects LUNA from validator activities and sends 1,440 LUNA per month to ROAR stakers on DAODAO. Of these stakers, two wallets provide 83.9% of ROAR staked in Lion DAO: the Eris ampROAR Hub and a DAO leadership wallet.\n\nThe multisig team requests authorization to end the distribution of 1,440 LUNA/month and instead use it in various Treasury and community-supporting defi activities. ROAR stakers would continue to receive normal ROAR rewards.\n\nInstead of sending LUNA as staking rewards, the multisig team could use the LUNA in various defi activities on behalf of the DAO and its members, including purchasing vote share on Terra Liquidity Alliance to increase our LP APY, conducting OTC deals with partners, and providing it as liquidity for yield (these examples are not an exhaustive list). Any future uses of LUNA would weigh benefits to Lion DAO treasury, liquidity providers, token holders, and Terra as a whole.\n\nVoting yes would end LUNA rewards for ROAR staking and allow the multisig team to use that LUNA to engage in other activities on behalf of the DAO.\n\nVoting no would continue LUNA rewards for ROAR staking.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 16701180,
+   "expiration": {
+    "at_time_iso": "2025-07-30T13:53:12.704Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 4205043922118598,
+    "no": 0,
+    "abstain": 119579276442038930,
+    "total": 123784320364157520
+   },
+   "voting": {
+    "turnout": 57.82720881997532,
+    "yesPercent": 3.3970731589816068,
+    "noPercent": 0,
+    "abstainPercent": 96.6029268410184,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 214058957522083550,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 119579276442038930
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1599682106157489
+    },
+    {
+     "address": "terra1aex4h5d2qrxg4f2jq9lsejhm9d0jeshnx40xt4",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1067604026373780
+    },
+    {
+     "address": "terra1xaujrunqtuxhpvr0hc8ky7tmg4cjm8sg4as6w5",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1008811266920754
+    },
+    {
+     "address": "terra15rxcrh6jde9gyj8ht8kkmkj5h32d2kfk22ezgy",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 395946522666575
+    },
+    {
+     "address": "terra1vjgada9t78eh4v8whp9p8cg4evq4erusx9w6w8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 73000000000000
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 10000000000000
+    }
+   ],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "fetchedAt": "2026-09-01T00:25:42.888Z"
+  },
+  "a13": {
+   "id": "a13",
+   "daoId": "liondao",
+   "title": "Signal Proposal - Allow Multisig Team to Contribute ROAR on Terra Liquidity Alliance",
+   "description": "The Lion DAO multisig team (Kiruse, Usaf, Llewyn, Bobo, and Speerbot) requests authorization from the community to use ROAR held in the multisig wallet to provide liquidity on Terra Liquidity Alliance.\n\nAllowing the multisig team to provide liquidity would generate yield for use in future defi activities on behalf of the DAO and community, including the purchase of TLA vote share to increase LP APYs, conduct OTC deals with partners, and other activities.\n\nThe multisig team seeks to provide an initial 5B ROAR in the ROAR-ampROAR LP. Any initial, marginal impact on APY could be counter-balanced by increased vote share over time.\n\nIn engaging in defi activities on behalf of the DAO, the multisig team will weigh the benefits to the Lion DAO, individual liquidity providers, token holders, and Terra as a whole.\n\nVoting yes will authorize the multisig team to participate in Terra Liquidity Alliance on behalf of the DAO.\n\nVoting no will prevent the multisig team from participating in Terra Liquidity Alliance on behalf of the DAO.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 16701516,
+   "expiration": {
+    "at_time_iso": "2025-07-30T14:26:08.177Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 5585942584290517,
+    "no": 0,
+    "abstain": 119579276442038930,
+    "total": 125165219026329440
+   },
+   "voting": {
+    "turnout": 58.47231084147304,
+    "yesPercent": 4.462855278602175,
+    "noPercent": 0,
+    "abstainPercent": 95.53714472139782,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 214058957522083550,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 119579276442038930
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1599682106157489
+    },
+    {
+     "address": "terra1d0zzmhwgs79u7fr98sgnmp7f9t2x2wj6mmnu2s",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1380898662171919
+    },
+    {
+     "address": "terra1aex4h5d2qrxg4f2jq9lsejhm9d0jeshnx40xt4",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1067604026373780
+    },
+    {
+     "address": "terra1xaujrunqtuxhpvr0hc8ky7tmg4cjm8sg4as6w5",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1008811266920754
+    },
+    {
+     "address": "terra15rxcrh6jde9gyj8ht8kkmkj5h32d2kfk22ezgy",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 395946522666575
+    },
+    {
+     "address": "terra1vjgada9t78eh4v8whp9p8cg4evq4erusx9w6w8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 73000000000000
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 10000000000000
+    }
+   ],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "fetchedAt": "2026-09-01T00:25:42.998Z"
+  },
+  "a14": {
+   "id": "a14",
+   "daoId": "liondao",
+   "title": "Fund ROAR rewards to Lion DAO stakers through 2025",
+   "description": "Requesting 6.5B ROAR from the Treasury to fund ROAR Reward Distribution contract on DAODAO for Lion DAO stakers through the end of 2025 at the current rate of 2,100,000 ROAR/hour.\n\nThis proposal will continue the ROAR rewards distribution at the rate originally determined by Ryan Lion, and maintain them uninterrupted through the end of this year.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 17103628,
+   "expiration": {
+    "at_time_iso": "2025-08-27T00:46:13.203Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 8292694674437576,
+    "no": 0,
+    "abstain": 125014885239790720,
+    "total": 133307579914228290
+   },
+   "voting": {
+    "turnout": 60.28070402576316,
+    "yesPercent": 6.22072254238896,
+    "noPercent": 0,
+    "abstainPercent": 93.77927745761104,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 221144696414385660,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 125014885239790720
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1599682106157489
+    },
+    {
+     "address": "terra1aex4h5d2qrxg4f2jq9lsejhm9d0jeshnx40xt4",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1072043115630632
+    },
+    {
+     "address": "terra1w7ayljrk3hf9xnvsg042l2vdyuyptd7wf2rpx8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1045443407629053
+    },
+    {
+     "address": "terra1xaujrunqtuxhpvr0hc8ky7tmg4cjm8sg4as6w5",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1008811266920754
+    },
+    {
+     "address": "terra1x0d0pp36t00k7nhcrwhm9h8jj7d2f76n8aydgz",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1000000000331950
+    },
+    {
+     "address": "terra1rk6hzjndt6wtpgc846gystt5604ykgua4lrsxh",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 260734107948191
+    },
+    {
+     "address": "terra1g655nxkfvgaayk0yw99zykgeezvyd2w5n4khyr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 250000000000000
+    },
+    {
+     "address": "terra1m0dmgmteqt5fs75sly64cv5hku0lkll7ctfcvq",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 226192946192792
+    },
+    {
+     "address": "terra1p72dpkr49tpzjs0z8h2g2r8xt5gmdawc9ygv87",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 208402359483847
+    },
+    {
+     "address": "terra1nf6lk8v6x0jxhj40pvw8x5gz75m4ufhfhsmp4j",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 204720652696909
+    },
+    {
+     "address": "terra1mjtfsg7lpyzugpd94py4zpxgjm2h3ln5zc9u7z",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 201486210170802
+    },
+    {
+     "address": "terra1gtmkcgwddsrmfd0s72l46yj9xj4u44ja98f5yk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200745327355857
+    },
+    {
+     "address": "terra1j8ftr0fcdll2v59vt0d6ypc9m7lyelglhq7kez",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200619345479180
+    },
+    {
+     "address": "terra1egvndf6x8h7yx42vrum6rjnyjy3mpet02u6vac",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200231461465945
+    },
+    {
+     "address": "terra125ydx33wlgquhne5468plaqp4m2kk20na0l4qk",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200140113716007
+    },
+    {
+     "address": "terra1md9s3ma54y47k43daca6fr3hl9l05pwy3wd3pr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 200109560636869
+    },
+    {
+     "address": "terra18au39029aa4mey00fap4l74c936l8efjuqhf6u",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 100801566216324
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra15cpnqu2xwu2kcjn89hkajyuwnv8eadqxrllrsw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 30000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 25000000000000
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 7531126404975
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "send",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "amount": "6500000000000000",
+      "contract": "terra1zug2ur6d5ls7vgzwkh0m2002jrallfehpsadpltjqr3vhgvp6lnq90rj3w",
+      "msg": "eyJmdW5kIjp7ImlkIjoxfX0="
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJzZW5kIjp7ImFtb3VudCI6IjY1MDAwMDAwMDAwMDAwMDAiLCJjb250cmFjdCI6InRlcnJhMXp1ZzJ1cjZkNWxzN3ZnendraDBtMjAwMmpyYWxsZmVocHNhZHBsdGpxcjN2aGd2cDZsbnE5MHJqM3ciLCJtc2ciOiJleUptZFc1a0lqcDdJbWxrSWpveGZYMD0ifX0=",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.100Z"
+  },
+  "a15": {
+   "id": "a15",
+   "daoId": "liondao",
+   "title": "Continue Incentives on Lion DAO's LUNA-ROAR Astroport LP on Terra Liquidity Alliance",
+   "description": "Authorize Lion DAO to continue the current level of bribes on our LUNA-ROAR Astroport LP on Terra Liquidity Alliance for an additional 10 weeks.\n\nAs originally crafted by Ryan Lion, Lion DAO has been offering 175M ROAR per week to TLA voters as incentives. With the new automated bribe voting system available from Votion, it is more important than ever to maintain attractive incentives for voters.\n\nThis proposal will authorize a total of 1.75B ROAR in incentives on this pool over the next 10 weeks.\n",
+   "status": "Execution Failed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 17107098,
+   "expiration": {
+    "at_time_iso": "2025-08-27T06:26:03.617Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 4264990456473237,
+    "no": 0,
+    "abstain": 125014885239790720,
+    "total": 129279875696263950
+   },
+   "voting": {
+    "turnout": 58.458853423555304,
+    "yesPercent": 3.299036631574121,
+    "noPercent": 0,
+    "abstainPercent": 96.70096336842589,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "rejected",
+   "outcomeReason": "Execution failed",
+   "totalPower": 221146786372262560,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 125014885239790720
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1599682106157489
+    },
+    {
+     "address": "terra1aex4h5d2qrxg4f2jq9lsejhm9d0jeshnx40xt4",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1072043115630632
+    },
+    {
+     "address": "terra1x0d0pp36t00k7nhcrwhm9h8jj7d2f76n8aydgz",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1000000000331950
+    },
+    {
+     "address": "terra1rk6hzjndt6wtpgc846gystt5604ykgua4lrsxh",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 260734107948191
+    },
+    {
+     "address": "terra1g655nxkfvgaayk0yw99zykgeezvyd2w5n4khyr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 250000000000000
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 25000000000000
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 7531126404975
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "1750000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "1750000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "project",
+      "for_info": {
+       "cw20": "terra1vczn40ch624g2kserhzqu2n69j3h7h7c5nfeznw96pnxjuly5h5s25u9dm"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 148,
+        "end": 157
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIxNzUwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMTc1MDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoicHJvamVjdCIsImZvcl9pbmZvIjp7ImN3MjAiOiJ0ZXJyYTF2Y3puNDBjaDYyNGcya3Nlcmh6cXUybjY5ajNoN2g3YzVuZmV6bnc5NnBueGp1bHk1aDVzMjV1OWRtIn0sImRpc3RyaWJ1dGlvbiI6eyJmdW5jIjp7ImZ1bmNfdHlwZSI6ImxpbmVhciIsInN0YXJ0IjoxNDgsImVuZCI6MTU3fX19fQ==",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.205Z"
+  },
+  "a16": {
+   "id": "a16",
+   "daoId": "liondao",
+   "title": "Continue Incentives on Lion DAO's ROAR-ampROAR WhiteWhale LP on Terra Liquidity Alliance",
+   "description": "Authorize Lion DAO to continue the current level of bribes on our ROAR-ampROAR WhiteWhale LP on Terra Liquidity Alliance for an additional 10 weeks.\n\nAs originally crafted by Ryan Lion, Lion DAO has been offering 175M ROAR per week to TLA voters as incentives on this pool. With the new automated bribe voting system available from Votion, it is more important than ever to maintain attractive incentives for voters.\n\nThis proposal will authorize a total of 1.75B ROAR in incentives on this pool over the next 10 weeks.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 17107215,
+   "expiration": {
+    "at_time_iso": "2025-08-27T06:37:29.181Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 4264990456473237,
+    "no": 0,
+    "abstain": 125014885239790720,
+    "total": 129279875696263950
+   },
+   "voting": {
+    "turnout": 58.458853423555304,
+    "yesPercent": 3.299036631574121,
+    "noPercent": 0,
+    "abstainPercent": 96.70096336842589,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 221146786372262560,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 125014885239790720
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1599682106157489
+    },
+    {
+     "address": "terra1aex4h5d2qrxg4f2jq9lsejhm9d0jeshnx40xt4",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1072043115630632
+    },
+    {
+     "address": "terra1x0d0pp36t00k7nhcrwhm9h8jj7d2f76n8aydgz",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1000000000331950
+    },
+    {
+     "address": "terra1rk6hzjndt6wtpgc846gystt5604ykgua4lrsxh",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 260734107948191
+    },
+    {
+     "address": "terra1g655nxkfvgaayk0yw99zykgeezvyd2w5n4khyr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 250000000000000
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 25000000000000
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 7531126404975
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "1750000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "1750000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "single",
+      "for_info": {
+       "native": "factory/terra1d8ap3zyd6tfnruuuwvs0t927lr4zwptruhulfwnxjpqzudvyn8usfgl8ze/uLP"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 148,
+        "end": 157
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIxNzUwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMTc1MDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoic2luZ2xlIiwiZm9yX2luZm8iOnsibmF0aXZlIjoiZmFjdG9yeS90ZXJyYTFkOGFwM3p5ZDZ0Zm5ydXV1d3ZzMHQ5MjdscjR6d3B0cnVodWxmd254anBxenVkdnluOHVzZmdsOHplL3VMUCJ9LCJkaXN0cmlidXRpb24iOnsiZnVuYyI6eyJmdW5jX3R5cGUiOiJsaW5lYXIiLCJzdGFydCI6MTQ4LCJlbmQiOjE1N319fX0=",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.328Z"
+  },
+  "a17": {
+   "id": "a17",
+   "daoId": "liondao",
+   "title": "Continue Incentives on Lion DAO's LUNA-ROAR Astroport LP on Terra Liquidity Alliance (SECOND ATTEMPT AFTER PASSED VOTE BUT FAILED EXECUTION)",
+   "description": "Authorize Lion DAO to continue the current level of bribes on our LUNA-ROAR Astroport LP on Terra Liquidity Alliance for an additional 10 weeks.\n\nAs originally crafted by Ryan Lion, Lion DAO has been offering 175M ROAR per week to TLA voters as incentives. With the new automated bribe voting system available from Votion, it is more important than ever to maintain attractive incentives for voters.\n\nThis proposal will authorize a total of 1.75B ROAR in incentives on this pool over the next 10 weeks.\n\n(THIS IS A SECOND ATTEMPT OF PROP A15 AFTER A PASSING VOTE BUT FAILED EXECUTION)",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 17167075,
+   "expiration": {
+    "at_time_iso": "2025-08-31T08:12:33.733Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 1354850696801138,
+    "no": 0,
+    "abstain": 124545998830247890,
+    "total": 125900849527049020
+   },
+   "voting": {
+    "turnout": 57.05072703546973,
+    "yesPercent": 1.0761251428331757,
+    "noPercent": 0,
+    "abstainPercent": 98.92387485716682,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 220682287622335840,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 124545998830247890
+    },
+    {
+     "address": "terra1aex4h5d2qrxg4f2jq9lsejhm9d0jeshnx40xt4",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1072256900027291
+    },
+    {
+     "address": "terra1g655nxkfvgaayk0yw99zykgeezvyd2w5n4khyr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 250000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 25000000000000
+    },
+    {
+     "address": "terra1rr0mlysgrclyhl0mau2uhjsftjtwm9j3g8tan8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 7531126404975
+    },
+    {
+     "address": "terra1dr9xlcr5s7dt7apycdxe82g5l66pyh3djad20w",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 62670368872
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "1750000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "1750000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "project",
+      "for_info": {
+       "cw20": "terra1vczn40ch624g2kserhzqu2n69j3h7h7c5nfeznw96pnxjuly5h5s25u9dm"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 148,
+        "end": 157
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIxNzUwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMTc1MDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoicHJvamVjdCIsImZvcl9pbmZvIjp7ImN3MjAiOiJ0ZXJyYTF2Y3puNDBjaDYyNGcya3Nlcmh6cXUybjY5ajNoN2g3YzVuZmV6bnc5NnBueGp1bHk1aDVzMjV1OWRtIn0sImRpc3RyaWJ1dGlvbiI6eyJmdW5jIjp7ImZ1bmNfdHlwZSI6ImxpbmVhciIsInN0YXJ0IjoxNDgsImVuZCI6MTU3fX19fQ==",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.436Z"
+  },
+  "a18": {
+   "id": "a18",
+   "daoId": "liondao",
+   "title": "Fund Continuing ROAR Distribution for Lion DAO Stakers for Six+ Months",
+   "description": "Requesting 10B ROAR from the Treasury to fund ROAR Reward Distribution contract on DAODAO for Lion DAO stakers for over six months at the current rate of 2,100,000 ROAR/hour.\n\nThis proposal will continue the ROAR rewards distribution at the rate originally determined by Ryan Lion, and maintain them uninterrupted for at least the next six months.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 19601471,
+   "expiration": {
+    "at_time_iso": "2026-02-11T19:58:58.474Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 1984342687514719,
+    "no": 0,
+    "abstain": 127363979725724590,
+    "total": 129348322413239310
+   },
+   "voting": {
+    "turnout": 59.01667731669444,
+    "yesPercent": 1.5341077877880647,
+    "noPercent": 0,
+    "abstainPercent": 98.46589221221194,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 219172492072253100,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 127363979725724590
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1659342687514719
+    },
+    {
+     "address": "terra1g655nxkfvgaayk0yw99zykgeezvyd2w5n4khyr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 250000000000000
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 25000000000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "send",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "amount": "10000000000000000",
+      "contract": "terra1zug2ur6d5ls7vgzwkh0m2002jrallfehpsadpltjqr3vhgvp6lnq90rj3w",
+      "msg": "eyJmdW5kIjp7ImlkIjoxfX0="
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJzZW5kIjp7ImFtb3VudCI6IjEwMDAwMDAwMDAwMDAwMDAwIiwiY29udHJhY3QiOiJ0ZXJyYTF6dWcydXI2ZDVsczd2Z3p3a2gwbTIwMDJqcmFsbGZlaHBzYWRwbHRqcXIzdmhndnA2bG5xOTByajN3IiwibXNnIjoiZXlKbWRXNWtJanA3SW1sa0lqb3hmWDA9In19",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.542Z"
+  },
+  "a19": {
+   "id": "a19",
+   "daoId": "liondao",
+   "title": "Restart Voting Incentives on Lion DAO's ROAR-ampROAR WhiteWhale LP",
+   "description": "Authorize Lion DAO to continue the current level of bribes on our ROAR-ampROAR WhiteWhale LP for an additional 10 weeks.\n\nAs originally crafted by Ryan Lion, Lion DAO has been offering 175M ROAR per week to TLA voters as incentives on this pool.\n\nThis proposal will authorize a total of 1.75B ROAR in incentives on this pool over the next 10 weeks.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 19601663,
+   "expiration": {
+    "at_time_iso": "2026-02-11T20:17:33.625Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 1984342687514719,
+    "no": 0,
+    "abstain": 127363979725724590,
+    "total": 129348322413239310
+   },
+   "voting": {
+    "turnout": 59.01667731669444,
+    "yesPercent": 1.5341077877880647,
+    "noPercent": 0,
+    "abstainPercent": 98.46589221221194,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 219172492072253100,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 127363979725724590
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1659342687514719
+    },
+    {
+     "address": "terra1g655nxkfvgaayk0yw99zykgeezvyd2w5n4khyr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 250000000000000
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 25000000000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "1750000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "1750000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "single",
+      "for_info": {
+       "native": "factory/terra1d8ap3zyd6tfnruuuwvs0t927lr4zwptruhulfwnxjpqzudvyn8usfgl8ze/uLP"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 173,
+        "end": 182
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIxNzUwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMTc1MDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoic2luZ2xlIiwiZm9yX2luZm8iOnsibmF0aXZlIjoiZmFjdG9yeS90ZXJyYTFkOGFwM3p5ZDZ0Zm5ydXV1d3ZzMHQ5MjdscjR6d3B0cnVodWxmd254anBxenVkdnluOHVzZmdsOHplL3VMUCJ9LCJkaXN0cmlidXRpb24iOnsiZnVuYyI6eyJmdW5jX3R5cGUiOiJsaW5lYXIiLCJzdGFydCI6MTczLCJlbmQiOjE4Mn19fX0=",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.655Z"
+  },
+  "a20": {
+   "id": "a20",
+   "daoId": "liondao",
+   "title": "Restart Incentives on Lion DAO's LUNA-ROAR Astroport LP",
+   "description": "Authorize Lion DAO to continue the current level of bribes on our LUNA-ROAR Astroport LP on Terra Liquidity Alliance for an additional 10 weeks.\n\nAs originally crafted by Ryan Lion, Lion DAO has been offering 175M ROAR per week to TLA voters as incentives.\n\nThis proposal will authorize a total of 1.75B ROAR in incentives on this pool over the next 10 weeks.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 19601788,
+   "expiration": {
+    "at_time_iso": "2026-02-11T20:29:37.472Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 1984342687514719,
+    "no": 0,
+    "abstain": 127363979725724590,
+    "total": 129348322413239310
+   },
+   "voting": {
+    "turnout": 59.01667731669444,
+    "yesPercent": 1.5341077877880647,
+    "noPercent": 0,
+    "abstainPercent": 98.46589221221194,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 219172492072253100,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 127363979725724590
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1659342687514719
+    },
+    {
+     "address": "terra1g655nxkfvgaayk0yw99zykgeezvyd2w5n4khyr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 250000000000000
+    },
+    {
+     "address": "terra1hwsm9fm0j79lgfgd37z8fe6gsxl4d4mxtc5td8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 50000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 25000000000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "1750000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "1750000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "project",
+      "for_info": {
+       "cw20": "terra1vczn40ch624g2kserhzqu2n69j3h7h7c5nfeznw96pnxjuly5h5s25u9dm"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 173,
+        "end": 182
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIxNzUwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMTc1MDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoicHJvamVjdCIsImZvcl9pbmZvIjp7ImN3MjAiOiJ0ZXJyYTF2Y3puNDBjaDYyNGcya3Nlcmh6cXUybjY5ajNoN2g3YzVuZmV6bnc5NnBueGp1bHk1aDVzMjV1OWRtIn0sImRpc3RyaWJ1dGlvbiI6eyJmdW5jIjp7ImZ1bmNfdHlwZSI6ImxpbmVhciIsInN0YXJ0IjoxNzMsImVuZCI6MTgyfX19fQ==",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.777Z"
+  },
+  "a21": {
+   "id": "a21",
+   "daoId": "liondao",
+   "title": "Transfer Galactic Punks NFTs to pixeLions Ops Wallet for Purpose of Staking on DAODAO",
+   "description": "Given the upcoming (and significant) $WBTC distribution for Galactic Punks NFTs stakers, and the difficulty in passing multiple governance proposals in a timely manner (GP will be requiring regular transactions from stakers to prove onchain activity for multiple rewards distributions), we propose moving the GP NFTs from the Lion DAO treasury to the active and maintained pixeLions operational wallet. This move is for the sole purpose of qualifying for and claiming rewards on those NFTs. All $WBTC rewards would then be returned from the pixeLions ops wallet to the Lion DAO treasury upon receipt of $WBTC rewards from DAODAO.\n\nImportant: we're suggesting transferring the GP NFTs to the pixeLions ops wallet instead of the traditional Lion DAO ops wallet. The Lion DAO ops wallet is currently dormant and the multisig team does not have access to it.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 20193864,
+   "expiration": {
+    "at_time_iso": "2026-03-23T16:58:37.697Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 2562000450493374,
+    "no": 0,
+    "abstain": 127019362214486420,
+    "total": 129581362664979790
+   },
+   "voting": {
+    "turnout": 59.22056961111579,
+    "yesPercent": 1.9771365247309374,
+    "noPercent": 0,
+    "abstainPercent": 98.02286347526906,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 218811408799177060,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 127019362214486420
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1659342687514719
+    },
+    {
+     "address": "terra12uxkacq0cuj7r8nqrgqxyx6pxfduy46qphjhu9",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 500000000000000
+    },
+    {
+     "address": "terra1g655nxkfvgaayk0yw99zykgeezvyd2w5n4khyr",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 250000000000000
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 125000000000000
+    },
+    {
+     "address": "terra1y5mneh2gamuztzza42pdd89u47sdx9kqdy022l",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 15595257199859
+    },
+    {
+     "address": "terra1caqnsrs6tm3rmvxm477t7apvxqlz02qx6nr5rl",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 12062505778796
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+     "contractName": null,
+     "action": "transfer_nft",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1tgvlyhnqyxgwuw07h986jtnjhkcz72es3u33a9",
+      "token_id": "10087"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+     "contractName": null,
+     "action": "transfer_nft",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1tgvlyhnqyxgwuw07h986jtnjhkcz72es3u33a9",
+      "token_id": "9368"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+     "contractName": null,
+     "action": "transfer_nft",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1tgvlyhnqyxgwuw07h986jtnjhkcz72es3u33a9",
+      "token_id": "10756"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+     "contractName": null,
+     "action": "transfer_nft",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1tgvlyhnqyxgwuw07h986jtnjhkcz72es3u33a9",
+      "token_id": "1141"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+     "contractName": null,
+     "action": "transfer_nft",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1tgvlyhnqyxgwuw07h986jtnjhkcz72es3u33a9",
+      "token_id": "2220"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+       "msg": "eyJ0cmFuc2Zlcl9uZnQiOnsicmVjaXBpZW50IjoidGVycmExdGd2bHlobnF5eGd3dXcwN2g5ODZqdG5qaGtjejcyZXMzdTMzYTkiLCJ0b2tlbl9pZCI6IjEwMDg3In19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+       "msg": "eyJ0cmFuc2Zlcl9uZnQiOnsicmVjaXBpZW50IjoidGVycmExdGd2bHlobnF5eGd3dXcwN2g5ODZqdG5qaGtjejcyZXMzdTMzYTkiLCJ0b2tlbl9pZCI6IjkzNjgifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+       "msg": "eyJ0cmFuc2Zlcl9uZnQiOnsicmVjaXBpZW50IjoidGVycmExdGd2bHlobnF5eGd3dXcwN2g5ODZqdG5qaGtjejcyZXMzdTMzYTkiLCJ0b2tlbl9pZCI6IjEwNzU2In19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+       "msg": "eyJ0cmFuc2Zlcl9uZnQiOnsicmVjaXBpZW50IjoidGVycmExdGd2bHlobnF5eGd3dXcwN2g5ODZqdG5qaGtjejcyZXMzdTMzYTkiLCJ0b2tlbl9pZCI6IjExNDEifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra16ds898j530kn4nnlc7xlj6hcxzqpcxxk4mj8gkcl3vswksu6s3zszs8kp2",
+       "msg": "eyJ0cmFuc2Zlcl9uZnQiOnsicmVjaXBpZW50IjoidGVycmExdGd2bHlobnF5eGd3dXcwN2g5ODZqdG5qaGtjejcyZXMzdTMzYTkiLCJ0b2tlbl9pZCI6IjIyMjAifX0=",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.885Z"
+  },
+  "a22": {
+   "id": "a22",
+   "daoId": "liondao",
+   "title": "Send 5B ROAR to pixeLions DAO Treasury to Fund Reward Distribution",
+   "description": "This proposal seeks to move 5B ROAR to the pixeLions treasury to restart ROAR rewards distributions to pixeLions holders.",
+   "status": "Executed",
+   "proposer": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+   "startHeight": 20434770,
+   "expiration": {
+    "at_time_iso": "2026-04-08T19:06:26.785Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 130970104143325,
+    "no": 0,
+    "abstain": 130678319410731260,
+    "total": 130809289514874600
+   },
+   "voting": {
+    "turnout": 58.81418140460693,
+    "yesPercent": 0.10012293823248089,
+    "noPercent": 0,
+    "abstainPercent": 99.89987706176751,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 222411136890580400,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 130678319410731260
+    },
+    {
+     "address": "terra16d6pzemu64ckee4l9t2ryrpjdgdrmxzd5jaajp",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 125000000000000
+    },
+    {
+     "address": "terra1sg09zu2xxp4sp0pg9qsfugjy4y060wvc7630ys",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 5970104143325
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "transfer",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "recipient": "terra1c690mdrwdetnr09zfk3tf9xz9jhrgd9wpjyf3tuccj74ql09eqmq6sh7en",
+      "amount": "5000000000000000"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJ0cmFuc2ZlciI6eyJyZWNpcGllbnQiOiJ0ZXJyYTFjNjkwbWRyd2RldG5yMDl6ZmszdGY5eHo5amhyZ2Q5d3BqeWYzdHVjY2o3NHFsMDllcW1xNnNoN2VuIiwiYW1vdW50IjoiNTAwMDAwMDAwMDAwMDAwMCJ9fQ==",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:43.991Z"
+  },
+  "a23": {
+   "id": "a23",
+   "daoId": "liondao",
+   "title": "Continue Voting Incentives on Lion DAO's ROAR-ampROAR WhiteWhale LP",
+   "description": "Authorize Lion DAO to continue the current level of bribes on our ROAR-ampROAR WhiteWhale LP for an additional 10 weeks.\n\nAs originally crafted by Ryan Lion, Lion DAO has been offering 175M ROAR per week to TLA voters as incentives on this pool.\n\nThis proposal will authorize a total of 1.75B ROAR in incentives on this pool over the next 10 weeks.",
+   "status": "Rejected",
+   "proposer": "terra1xzf6rm7hwa095g43jpjt27qj9682jhun4kadg7",
+   "startHeight": 22455053,
+   "expiration": {
+    "at_time_iso": "2026-08-22T05:40:38.491Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 5000000000000,
+    "no": 1665312791658044,
+    "abstain": 132141467042441740,
+    "total": 133811779834099790
+   },
+   "voting": {
+    "turnout": 59.61891200030352,
+    "yesPercent": 0.003736591805444195,
+    "noPercent": 1.2445188261621685,
+    "abstainPercent": 98.75174458203239,
+    "quorumReached": true,
+    "thresholdReached": false,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "rejected",
+   "outcomeReason": "Did not reach pass threshold (0.3% yes < 50% needed)",
+   "totalPower": 224445189193352900,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 132141467042441740
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "no",
+     "power": 1659342687514719
+    },
+    {
+     "address": "terra1sg09zu2xxp4sp0pg9qsfugjy4y060wvc7630ys",
+     "name": "Unknown Member",
+     "vote": "no",
+     "power": 5970104143325
+    },
+    {
+     "address": "terra1xzf6rm7hwa095g43jpjt27qj9682jhun4kadg7",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 5000000000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "1750000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "1750000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "single",
+      "for_info": {
+       "native": "factory/terra1d8ap3zyd6tfnruuuwvs0t927lr4zwptruhulfwnxjpqzudvyn8usfgl8ze/uLP"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 199,
+        "end": 209
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIxNzUwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMTc1MDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoic2luZ2xlIiwiZm9yX2luZm8iOnsibmF0aXZlIjoiZmFjdG9yeS90ZXJyYTFkOGFwM3p5ZDZ0Zm5ydXV1d3ZzMHQ5MjdscjR6d3B0cnVodWxmd254anBxenVkdnluOHVzZmdsOHplL3VMUCJ9LCJkaXN0cmlidXRpb24iOnsiZnVuYyI6eyJmdW5jX3R5cGUiOiJsaW5lYXIiLCJzdGFydCI6MTk5LCJlbmQiOjIwOX19fX0=",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:44.096Z"
+  },
+  "a24": {
+   "id": "a24",
+   "daoId": "liondao",
+   "title": "Continue Incentives on Lion DAO's LUNA-ROAR Astroport LP",
+   "description": "Authorize Lion DAO to continue the current level of bribes on our LUNA-ROAR Astroport LP on Terra Liquidity Alliance for an additional 10 weeks.\n\nAs originally crafted by Ryan Lion, Lion DAO has been offering 175M ROAR per week to TLA voters as incentives.\n\nThis proposal will authorize a total of 1.75B ROAR in incentives on this pool over the next 10 weeks.",
+   "status": "Execution Failed",
+   "proposer": "terra1xzf6rm7hwa095g43jpjt27qj9682jhun4kadg7",
+   "startHeight": 22455061,
+   "expiration": {
+    "at_time_iso": "2026-08-22T05:41:25.167Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 1670312791658044,
+    "no": 0,
+    "abstain": 132141467042441740,
+    "total": 133811779834099790
+   },
+   "voting": {
+    "turnout": 59.61891200030352,
+    "yesPercent": 1.2482554179676126,
+    "noPercent": 0,
+    "abstainPercent": 98.75174458203239,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "rejected",
+   "outcomeReason": "Execution failed",
+   "totalPower": 224445189193352900,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 132141467042441740
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1659342687514719
+    },
+    {
+     "address": "terra1sg09zu2xxp4sp0pg9qsfugjy4y060wvc7630ys",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 5970104143325
+    },
+    {
+     "address": "terra1xzf6rm7hwa095g43jpjt27qj9682jhun4kadg7",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 5000000000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "1750000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "1750000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "project",
+      "for_info": {
+       "cw20": "terra1vczn40ch624g2kserhzqu2n69j3h7h7c5nfeznw96pnxjuly5h5s25u9dm"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 199,
+        "end": 209
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIxNzUwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMTc1MDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoicHJvamVjdCIsImZvcl9pbmZvIjp7ImN3MjAiOiJ0ZXJyYTF2Y3puNDBjaDYyNGcya3Nlcmh6cXUybjY5ajNoN2g3YzVuZmV6bnc5NnBueGp1bHk1aDVzMjV1OWRtIn0sImRpc3RyaWJ1dGlvbiI6eyJmdW5jIjp7ImZ1bmNfdHlwZSI6ImxpbmVhciIsInN0YXJ0IjoxOTksImVuZCI6MjA5fX19fQ==",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:44.200Z"
+  },
+  "a25": {
+   "id": "a25",
+   "daoId": "liondao",
+   "title": "Continue Incentives on Lion DAO's LUNA-ROAR Astroport LP on Terra Liquidity Alliance (SECOND ATTEMPT AFTER PASSED VOTE BUT FAILED EXECUTION)",
+   "description": "Due to incorrect start and end date parameters, the previous incentive proposal did not execute. We are using this opportunity to resubmit with a stronger, more competitive rate.\n\nTo stay ahead of competing pools on the Terra Liquidity Alliance (TLA), we are proposing to double our bribe budget:\n\nPool: LUNA-ROAR Astroport LP\n\nWeekly Bribe: 350M ROAR (up from 175M ROAR)\n\nDuration: 10 Weeks\n\nTotal Allocation: 3.5B ROAR\n\nHead to the governance portal to cast your vote!",
+   "status": "Executed",
+   "proposer": "terra1xzf6rm7hwa095g43jpjt27qj9682jhun4kadg7",
+   "startHeight": 22515459,
+   "expiration": {
+    "at_time_iso": "2026-08-26T06:01:07.911Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 3084925112390204,
+    "no": 0,
+    "abstain": 131934135458797820,
+    "total": 135019060571188030
+   },
+   "voting": {
+    "turnout": 60.21242889601262,
+    "yesPercent": 2.284807122297888,
+    "noPercent": 0,
+    "abstainPercent": 97.71519287770211,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 224237857609708960,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 131934135458797820
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1659342687514719
+    },
+    {
+     "address": "terra1d0zzmhwgs79u7fr98sgnmp7f9t2x2wj6mmnu2s",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1420582424875485
+    },
+    {
+     "address": "terra1xzf6rm7hwa095g43jpjt27qj9682jhun4kadg7",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 5000000000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "3500000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "3500000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "project",
+      "for_info": {
+       "cw20": "terra1vczn40ch624g2kserhzqu2n69j3h7h7c5nfeznw96pnxjuly5h5s25u9dm"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 200,
+        "end": 209
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIzNTAwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMzUwMDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoicHJvamVjdCIsImZvcl9pbmZvIjp7ImN3MjAiOiJ0ZXJyYTF2Y3puNDBjaDYyNGcya3Nlcmh6cXUybjY5ajNoN2g3YzVuZmV6bnc5NnBueGp1bHk1aDVzMjV1OWRtIn0sImRpc3RyaWJ1dGlvbiI6eyJmdW5jIjp7ImZ1bmNfdHlwZSI6ImxpbmVhciIsInN0YXJ0IjoyMDAsImVuZCI6MjA5fX19fQ==",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:44.311Z"
+  },
+  "a26": {
+   "id": "a26",
+   "daoId": "liondao",
+   "title": "Redirect Voting Incentives to ROAR-ampROAR Astroport LP",
+   "description": "Summary\nThis proposal authorizes Lion DAO to redirect voting incentives to the ROAR-ampROAR Astroport LP and allocate a total of 3.5 Billion ROAR over the next 10 weeks (350M ROAR/week) to deepen liquidity and maximize gauge voting weight.\n\nMotivation & Context\n\nMigration to Astroport: The previous proposal for the White Whale LP did not pass. Due to current inactivity surrounding Backbone infrastructure, redirecting incentives to Astroport consolidates liquidity in a more active trading environment.\n\nIncreased Incentive Rate: To remain competitive with other ecosystem gauges and attract maximum voting power, this proposal increases the weekly incentive from 175M ROAR to 350M ROAR per week.\n\nProposal Details\n\nTarget Pool: ROAR-ampROAR Astroport LP (Migrated from White Whale)\n\nWeekly Allocation: 350,000,000 ROAR (increased from 175M ROAR)\n\nDuration: 10 Weeks\n\nTotal Spend: 3,500,000,000 ROAR (3.5B ROAR)",
+   "status": "Executed",
+   "proposer": "terra1xzf6rm7hwa095g43jpjt27qj9682jhun4kadg7",
+   "startHeight": 22515582,
+   "expiration": {
+    "at_time_iso": "2026-08-26T06:12:57.683Z"
+   },
+   "live": false,
+   "pending": false,
+   "votes": {
+    "yes": 3084925112390204,
+    "no": 0,
+    "abstain": 131934135458797820,
+    "total": 135019060571188030
+   },
+   "voting": {
+    "turnout": 60.21242889601262,
+    "yesPercent": 2.284807122297888,
+    "noPercent": 0,
+    "abstainPercent": 97.71519287770211,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 20,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 224237857609708960,
+   "voters": [
+    {
+     "address": "terra1vklefn7n6cchn0u962w3gaszr4vf52wjvd4y95t2sydwpmpdtszsqvk9wy",
+     "name": "Unknown Member",
+     "vote": "abstain",
+     "power": 131934135458797820
+    },
+    {
+     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1659342687514719
+    },
+    {
+     "address": "terra1d0zzmhwgs79u7fr98sgnmp7f9t2x2wj6mmnu2s",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 1420582424875485
+    },
+    {
+     "address": "terra1xzf6rm7hwa095g43jpjt27qj9682jhun4kadg7",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 5000000000000
+    }
+   ],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+     "contractName": "ROAR Token",
+     "action": "increase_allowance",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "spender": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+      "amount": "3500000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+     "contractName": "TLA Bribe Manager",
+     "action": "add_bribe",
+     "trusted": true,
+     "actionAllowed": false,
+     "verificationStatus": "trusted",
+     "funds": [
+      {
+       "denom": "uluna",
+       "amount": "10000000"
+      }
+     ],
+     "args": {
+      "bribe": {
+       "amount": "3500000000000000",
+       "info": {
+        "cw20": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv"
+       }
+      },
+      "gauge": "single",
+      "for_info": {
+       "native": "terra1hqq6pnx74q0wae7eqqu2wgddzr2xn8l9gvd33sfwqfew50qawj0sfn69fh"
+      },
+      "distribution": {
+       "func": {
+        "func_type": "linear",
+        "start": 200,
+        "end": 209
+       }
+      }
+     }
+    }
+   ],
+   "treasuryImpact": {
+    "outflows": [
+     {
+      "denom": "uluna",
+      "amount": "10000000",
+      "to": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh"
+     }
+    ]
+   },
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lxx40s29qvkrcj8fsa3yzyehy7w50umdvvnls2r830rys6lu2zns63eelv",
+       "msg": "eyJpbmNyZWFzZV9hbGxvd2FuY2UiOnsic3BlbmRlciI6InRlcnJhMXR1dXdtOHlyajU0cWVnMGM4eHUwMGFoYTlyeWF0eWh0Y3pxOHFxMnE4dG50dXcwYXV6YXM5MDM3d2giLCJhbW91bnQiOiIzNTAwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1tuuwm8yrj54qeg0c8xu00aha9ryatyhtczq8qq2q8tntuw0auzas9037wh",
+       "msg": "eyJhZGRfYnJpYmUiOnsiYnJpYmUiOnsiYW1vdW50IjoiMzUwMDAwMDAwMDAwMDAwMCIsImluZm8iOnsiY3cyMCI6InRlcnJhMWx4eDQwczI5cXZrcmNqOGZzYTN5enllaHk3dzUwdW1kdnZubHMycjgzMHJ5czZsdTJ6bnM2M2VlbHYifX0sImdhdWdlIjoic2luZ2xlIiwiZm9yX2luZm8iOnsibmF0aXZlIjoidGVycmExaHFxNnBueDc0cTB3YWU3ZXFxdTJ3Z2RkenIyeG44bDlndmQzM3Nmd3FmZXc1MHFhd2owc2ZuNjlmaCJ9LCJkaXN0cmlidXRpb24iOnsiZnVuYyI6eyJmdW5jX3R5cGUiOiJsaW5lYXIiLCJzdGFydCI6MjAwLCJlbmQiOjIwOX19fX0=",
+       "funds": [
+        {
+         "denom": "uluna",
+         "amount": "10000000"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "fetchedAt": "2026-09-01T00:25:44.439Z"
+  }
+ }
+}

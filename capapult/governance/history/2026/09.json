@@ -1,0 +1,786 @@
+{
+ "dao": "capapult",
+ "daoName": "Capapult (CAPA)",
+ "exportedAt": "2026-09-01T00:25:38.327Z",
+ "source": "org dao-governance cron (chain-derived, anchor-gov)",
+ "governanceKind": "anchor-gov",
+ "govAddress": "terra1sf66d5vap897xlvv2hlcp4l20y4pp42r6ala4snk8mgd246jvufqwe0cnm",
+ "proposalCount": 14,
+ "proposals": {
+  "c14": {
+   "id": "c14",
+   "daoId": "capapult",
+   "title": "Increase USDC Collateral Cap to 100,000 USDC",
+   "description": "The 60,000 USDC collateral cap has filled up, confirming once again that demand for stablecoin-backed borrowing on Solid Protocol continues to outpace the available supply. To support continued growth, onboard new borrowers, and deepen liquidity, we propose increasing the USDC collateral cap from 60,000 USD to 100,000 USD.",
+   "link": "https://common.xyz/capapult/discussion/1294996-Increase%20USDC%20Collateral%20Cap%20to%20100,000%20USD",
+   "status": "Passed",
+   "proposer": "terra18hhej6usenw44squvdr8fxxp0c83nlffva5mcl",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 21409761,
+    "at_time_iso": "2026-06-11T16:45:53.461Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 155553697939762,
+    "no": 0,
+    "abstain": 0,
+    "total": 155553697939762
+   },
+   "voting": {
+    "turnout": 90.85282509912315,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed",
+   "totalPower": 171215036813713,
+   "voters": [],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1shc5n0sqg30fzvg0e2j826j0g73ypmjw9vkf592ghdph5dhau25qha2rks",
+     "contractName": "Solid Protocol — USDC collateral market",
+     "action": "update_config",
+     "trusted": true,
+     "actionAllowed": true,
+     "verificationStatus": "trusted",
+     "funds": [],
+     "args": {
+      "max_deposit": "100000000000"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1shc5n0sqg30fzvg0e2j826j0g73ypmjw9vkf592ghdph5dhau25qha2rks",
+       "msg": "eyJ1cGRhdGVfY29uZmlnIjogeyJtYXhfZGVwb3NpdCI6ICIxMDAwMDAwMDAwMDAifX0=",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:36.935Z"
+  },
+  "c13": {
+   "id": "c13",
+   "daoId": "capapult",
+   "title": "Increase USDC Collateral Cap to 100,000 USDC",
+   "description": "Following the rapid fill-up of the last cap for USDC collateral, it’s clear there is strong demand for stablecoin-backed borrowing on Solid Protocol. To support continued growth, user adoption, and liquidity expansion, we propose increasing the USDC collateral cap to 100,000 USD.",
+   "link": "https://common.xyz/capapult/discussion/1294996-Increase%20USDC%20Collateral%20Cap%20to%20100,000%20USD",
+   "status": "Open",
+   "proposer": "terra127cphudgx75grhaw0wwawx668u8ux2h9zwn553",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 17549798,
+    "at_time_iso": "2025-09-27T22:49:22.258Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": true,
+   "votes": {
+    "yes": 417745729612,
+    "no": 0,
+    "abstain": 0,
+    "total": 417745729612
+   },
+   "voting": {
+    "turnout": 0.28987291467425036,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": false,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "pending",
+   "outcomeReason": "Voting in progress",
+   "totalPower": 144113405725212,
+   "voters": [
+    {
+     "address": "terra1f9g3dywpf9ypdhh4xd4mnt3m36e2405m9fn44u",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 386277989275
+    },
+    {
+     "address": "terra1azcvu7gejyn6sn4vtrnfz8zq74cq557ll96k83",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 20839687139
+    },
+    {
+     "address": "terra1vjgada9t78eh4v8whp9p8cg4evq4erusx9w6w8",
+     "name": "Unknown Member",
+     "vote": "yes",
+     "power": 10628053198
+    }
+   ],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.047Z"
+  },
+  "c12": {
+   "id": "c12",
+   "daoId": "capapult",
+   "title": "Allocate 300k CAPA per week to bribe on TLA",
+   "description": "This proposal suggests allocating 300k CAPA tokens per week for one year from the Solid protocol’s community pool as incentives (bribes) to the CAPA and SOLID liquidity pools on Terra Liquidity Alliance (TLA) on the following pools:\n\nLuna - Capa (astroport)\n\nUSDC - Solid (astroport)\n\nampCapa",
+   "link": "https://tinyurl.com/5y5eesmt",
+   "status": "Executed",
+   "proposer": "terra127cphudgx75grhaw0wwawx668u8ux2h9zwn553",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 17330868,
+    "at_time_iso": "2025-09-13T09:19:43.808Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 136026532657900,
+    "no": 10319339147,
+    "abstain": 0,
+    "total": 136036851997047
+   },
+   "voting": {
+    "turnout": 90.7810663586494,
+    "yesPercent": 99.99241430612697,
+    "noPercent": 0.00758569387302788,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 149851568673588,
+   "voters": [],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+     "contractName": null,
+     "action": "spend",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1jlpfg4gnmflvjedx9cerrkjs72gmv57as0yhw0",
+      "amount": "15600000000000"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+       "msg": "eyJzcGVuZCI6eyJyZWNpcGllbnQiOiJ0ZXJyYTFqbHBmZzRnbm1mbHZqZWR4OWNlcnJranM3MmdtdjU3YXMweWh3MCIsImFtb3VudCI6IjE1NjAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.156Z"
+  },
+  "c11": {
+   "id": "c11",
+   "daoId": "capapult",
+   "title": "Increase USDC Collateral Cap to 60,000 USDC",
+   "description": "Following the rapid fill-up of the last cap for USDC collateral, it’s clear there is strong demand for stablecoin-backed borrowing on Solid Protocol. To support continued growth, user adoption, and liquidity expansion, we propose increasing the USDC collateral cap to 60,000 USD.",
+   "link": "https://common.xyz/capapult",
+   "status": "Executed",
+   "proposer": "terra127cphudgx75grhaw0wwawx668u8ux2h9zwn553",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 15992605,
+    "at_time_iso": "2025-06-16T08:57:41.289Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 136729675468638,
+    "no": 0,
+    "abstain": 0,
+    "total": 136729675468638
+   },
+   "voting": {
+    "turnout": 90.88574857338433,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 150441271172716,
+   "voters": [],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.257Z"
+  },
+  "c10": {
+   "id": "c10",
+   "daoId": "capapult",
+   "title": "Increase USDC Collateral Cap to 20,000 USDC",
+   "description": "Following the rapid fill-up of the initial 5,000 USD cap for USDC collateral, it’s clear there is strong demand for stablecoin-backed borrowing on Solid Protocol. To support continued growth, user adoption, and liquidity expansion, we propose increasing the USDC collateral cap to 20,000 USD.",
+   "link": "https://common.xyz/capapult/discussion/1227156-increase-usdc-collateral-cap-to-20000-usd",
+   "status": "Executed",
+   "proposer": "terra127cphudgx75grhaw0wwawx668u8ux2h9zwn553",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 15771877,
+    "at_time_iso": "2025-06-01T16:35:49.834Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 138829788376665,
+    "no": 0,
+    "abstain": 0,
+    "total": 138829788376665
+   },
+   "voting": {
+    "turnout": 90.82691494885219,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 152850934609906,
+   "voters": [],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.360Z"
+  },
+  "c9": {
+   "id": "c9",
+   "daoId": "capapult",
+   "title": "Listing USDC as Collateral",
+   "description": "This proposal aims to list USDC as as collateral asset with a max cap.\n\nDetails:\n\n- Max Cap: 5000 USDC\n- Max LTV: 95%",
+   "link": "https://common.xyz/capapult/discussion/383176-listing-usdc-as-collateral-on-solid-protocol",
+   "status": "Executed",
+   "proposer": "terra127cphudgx75grhaw0wwawx668u8ux2h9zwn553",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 15290886,
+    "at_time_iso": "2025-04-30T16:45:21.493Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 117925989185003,
+    "no": 0,
+    "abstain": 0,
+    "total": 117925989185003
+   },
+   "voting": {
+    "turnout": 78.78172250890317,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 149686990115856,
+   "voters": [],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.465Z"
+  },
+  "c8": {
+   "id": "c8",
+   "daoId": "capapult",
+   "title": "Proposal to Allocate 15 Million CAPA to Phoenix Directive (PD)",
+   "description": "This proposal aims to ensure the seamless operation and growth of the Solid protocol on the Terra blockchain. It includes upgrading server infrastructure, maintaining and optimizing the oracle, integrating Keplr, and improving the front-end user experience. These upgrades are critical for enhancing protocol efficiency and user satisfaction. Your support will enable us to continue delivering a robust and reliable service for the community.",
+   "link": "https://commonwealth.im/capapult/discussion/25723",
+   "status": "Executed",
+   "proposer": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 13248548,
+    "at_time_iso": "2024-12-15T20:25:19.378Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 109183913154203,
+    "no": 0,
+    "abstain": 0,
+    "total": 109183913154203
+   },
+   "voting": {
+    "turnout": 77.60891730832397,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 140684752398282,
+   "voters": [],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+     "contractName": null,
+     "action": "spend",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1k8ug6dkzntczfzn76wsh24tdjmx944yj6mk063wum7n20cwd7lxq4lppjg",
+      "amount": "15000000000000"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+       "msg": "eyJzcGVuZCI6eyJyZWNpcGllbnQiOiJ0ZXJyYTFrOHVnNmRrem50Y3pmem43NndzaDI0dGRqbXg5NDR5ajZtazA2M3d1bTduMjBjd2Q3bHhxNGxwcGpnIiwiYW1vdW50IjoiMTUwMDAwMDAwMDAwMDAifX0K",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.583Z"
+  },
+  "c7": {
+   "id": "c7",
+   "daoId": "capapult",
+   "title": "Support for the indictment process",
+   "description": "A vote for yes means Rove DAO will continue the process for the indictment on the initial charge of the August 1, 2024 minter.\n\nA vote for no, means Rove DAO will cease the indictment process for the initial charge.\n",
+   "link": "https://t.me/SolidTG/9748",
+   "status": "Rejected",
+   "proposer": "terra1gl8pr2xghfetskkd60ev6sy79mnlylmcdf8ppe",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 12892696,
+    "at_time_iso": "2024-11-22T04:20:57.861Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 0,
+    "no": 0,
+    "abstain": 0,
+    "total": 0
+   },
+   "voting": {
+    "turnout": 0,
+    "yesPercent": 0,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": false,
+    "thresholdReached": false,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "rejected",
+   "outcomeReason": "Did not reach quorum (0% < 30% needed)",
+   "totalPower": 141052847599263,
+   "voters": [],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.701Z"
+  },
+  "c6": {
+   "id": "c6",
+   "daoId": "capapult",
+   "title": "Adjustment of Solid Minting Rate",
+   "description": "The proposed adjustment entails updating the increase factor from 2 to 1. This modification aims to enhance the stability of Solid’s value. Consequently, the Mint Fee will be calculated utilizing the formula 1 - Price of Solid.\n\nThe primary rationale behind this proposal is to ensure the reliability and stability of Solid as a form of value for its users. By augmenting the minting fee function, the intention is to discourage the continuous minting of Solid when its value is below the peg.\n\nIt’s imperative to highlight that this update will not impact existing positions",
+   "link": "https://commonwealth.im/capapult/discussion/16586-adjustment-of-solid-minting-rate",
+   "status": "Executed",
+   "proposer": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 9600054,
+    "at_time_iso": "2024-04-17T04:03:48.675Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 37857233072635,
+    "no": 2000000000000,
+    "abstain": 0,
+    "total": 39857233072635
+   },
+   "voting": {
+    "turnout": 36.26482626024738,
+    "yesPercent": 94.98209021094053,
+    "noPercent": 5.01790978905947,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 109906036186710,
+   "voters": [],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.807Z"
+  },
+  "c5": {
+   "id": "c5",
+   "daoId": "capapult",
+   "title": "Add wBNB and wSOL as Collateral Options to mint SOLID",
+   "description": "This proposal suggests adding SOL (wSOL) and BNB (wBNB) as collateral options for minting SOLID aiming to:\n\n1. Increase liquidity in SOLID pools.\n2. Attract more users and generate additional fees.\n3. Diversify the collateral portfolio beyond the current options.\n4. Enhance overall protocol usage and engagement.",
+   "link": "https://medium.com/@solid.online/5-governance-proposal-add-new-collateral-options-to-mint-solid-0f01b8b2ff62",
+   "status": "Executed",
+   "proposer": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 8999811,
+    "at_time_iso": "2024-03-08T05:51:05.768Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 58715245002839,
+    "no": 0,
+    "abstain": 0,
+    "total": 58715245002839
+   },
+   "voting": {
+    "turnout": 51.86905477534125,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 113198987830317,
+   "voters": [],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:37.915Z"
+  },
+  "c4": {
+   "id": "c4",
+   "daoId": "capapult",
+   "title": "Expanding Collateral Options to mint SOLID",
+   "description": "This proposal suggests adding Bitcoin (WBTC) and Ethereum (WETH) as collateral options for minting SOLID aiming to:\n\n1. Increase liquidity in SOLID pools.\n2. Attract more users and generate additional fees.\n3. Diversify the collateral portfolio beyond the current LUNA option.\n4. Enhance overall protocol usage and engagement.",
+   "link": "https://commonwealth.im/capapult/discussion/14460-add-collateral-options-to-mint-solid",
+   "status": "Executed",
+   "proposer": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 8282395,
+    "at_time_iso": "2024-01-20T12:35:16.191Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 66263229749229,
+    "no": 0,
+    "abstain": 0,
+    "total": 66263229749229
+   },
+   "voting": {
+    "turnout": 59.299522166408934,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 111743277733804,
+   "voters": [],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:38.021Z"
+  },
+  "c3": {
+   "id": "c3",
+   "daoId": "capapult",
+   "title": "Update Market - Flash Mint",
+   "description": "The Flash Mint allows anyone to mint SOLID with the one condition that they pay it all back in the same block with a small fee (0.025%).\n\nVote yes to add this new feature to the market contract, no otherwise.",
+   "link": "https://commonwealth.im/capapult/discussion/12345-3-governance-proposal-upgrade-market-contract-with-the-flashmint",
+   "status": "Executed",
+   "proposer": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 6314166,
+    "at_time_iso": "2023-09-11T14:33:34.349Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 7727569385507,
+    "no": 474690622623,
+    "abstain": 0,
+    "total": 8202260008130
+   },
+   "voting": {
+    "turnout": 36.75759067407387,
+    "yesPercent": 94.21268501422179,
+    "noPercent": 5.787314985778204,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 22314465822471,
+   "voters": [],
+   "decodedActions": [],
+   "treasuryImpact": null,
+   "rawMsgs": [],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:38.122Z"
+  },
+  "c2": {
+   "id": "c2",
+   "daoId": "capapult",
+   "title": "Incentivizing Pools on Astroport",
+   "description": "The proposal involves allocating 10 million CAPA, to incentivize two liquidity pools on Astroport:\n\nSOLID - axlUSDC 7 M CAPA for 2 years\n\nCAPA - SOLID 3 M CAPA for 2 years\n\nNote: By voting \"yes\" on this proposal, you agree to spend 10 million Capa from the community pool.",
+   "link": "https://commonwealth.im/capapult/discussion/11520-2-governance-proposal-incentivizing-pools-on-astroport",
+   "status": "Executed",
+   "proposer": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 5450208,
+    "at_time_iso": "2023-07-16T03:21:36.105Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 9964784311588,
+    "no": 93477321446,
+    "abstain": 0,
+    "total": 10058261633034
+   },
+   "voting": {
+    "turnout": 42.71304789284474,
+    "yesPercent": 99.0706413806239,
+    "noPercent": 0.9293586193760925,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 23548452122329,
+   "voters": [],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+     "contractName": null,
+     "action": "spend",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+      "amount": "10000000000000"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+       "msg": "eyJzcGVuZCI6eyJyZWNpcGllbnQiOiJ0ZXJyYTF0MzgwdzUyNGxqaGhuM3Jrdzd3bXVjaGtkaHJjd2wyNWRkN3MzdCIsImFtb3VudCI6IjEwMDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:38.224Z"
+  },
+  "c1": {
+   "id": "c1",
+   "daoId": "capapult",
+   "title": "Upgrade Governance to enable rewards",
+   "description": "This proposal involves upgrading the Governance to enable CAPA rewards. As described in the linked proposal.",
+   "link": "https://commonwealth.im/capapult/discussion/11359-1-governance-proposal-upgrade-governance-to-enablerewards",
+   "status": "Executed",
+   "proposer": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 5131149,
+    "at_time_iso": "2023-06-24T22:01:21.899Z",
+    "estimated": true,
+    "estimate_basis": "height 22632319 + 5.75s/block"
+   },
+   "live": false,
+   "votes": {
+    "yes": 10738616821695,
+    "no": 0,
+    "abstain": 0,
+    "total": 10738616821695
+   },
+   "voting": {
+    "turnout": 57.270591037717544,
+    "yesPercent": 100,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": true,
+    "thresholdReached": true,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "passed",
+   "outcomeReason": "Proposal passed and executed",
+   "totalPower": 18750665266616,
+   "voters": [],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+     "contractName": null,
+     "action": "update_config",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "spend_limit": "25000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+     "contractName": null,
+     "action": "spend",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "recipient": "terra1t380w524ljhhn3rkw7wmuchkdhrcwl25dd7s3t",
+      "amount": "25000000000000"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra1uz33y5dfazxspyfdvw30dwmpa5hhm4908tetpq5t0sm0z0c63rlspfkaau",
+     "contractName": null,
+     "action": "update_config",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "staking_reward_contract": "terra1rga2lt3tymfcnq4zq0ju8j9rjku8nqf6qyz4tgudv4kmdt749l3qjs2vqa"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+       "msg": "eyJ1cGRhdGVfY29uZmlnIjp7InNwZW5kX2xpbWl0IjoiMjUwMDAwMDAwMDAwMDAifX0=",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1lz00m57pleaq3j8f6qqpr20v7rd93hpnmlj44zdk0t03d7ajzw5smu50jv",
+       "msg": "eyJzcGVuZCI6eyJyZWNpcGllbnQiOiJ0ZXJyYTF0MzgwdzUyNGxqaGhuM3Jrdzd3bXVjaGtkaHJjd2wyNWRkN3MzdCIsImFtb3VudCI6IjI1MDAwMDAwMDAwMDAwIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra1uz33y5dfazxspyfdvw30dwmpa5hhm4908tetpq5t0sm0z0c63rlspfkaau",
+       "msg": "eyJ1cGRhdGVfY29uZmlnIjp7InN0YWtpbmdfcmV3YXJkX2NvbnRyYWN0IjoidGVycmExcmdhMmx0M3R5bWZjbnE0enEwanU4ajlyamt1OG5xZjZxeXo0dGd1ZHY0a21kdDc0OWwzcWpzMnZxYSJ9fQ==",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-09-01T00:25:38.327Z"
+  }
+ }
+}

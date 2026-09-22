@@ -1,1 +1,26 @@
-
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-22",
+  "dao": "phoenixdirective",
+  "daoName": "Phoenix Directive Stewardship",
+  "idPrefix": "pd",
+  "_note": "Onboarded 2026-09-22 after A265 (OTC 1,313,452 LUNA → 70,000 USDC) and A266 (Estima grant, 125,000 USDC in milestones) executed early and never reached the Alert Center — the cron discovers DAOs by folder, and this folder did not exist. The core address is the PD DAO (DAODAO core, the same address that holds VE_GUARDIAN in the Eris ve3 config per known_contracts.json); the cron asks the core for its proposal modules on chain. The setup contract is where PD's OTC sales and milestone grants are configured — proposals target it with {setup:{name, action:{otc|milestone}}}. Add vetted contracts to grade proposal targets as trusted.",
+  "contracts": {
+    "terra1k8ug6dkzntczfzn76wsh24tdjmx944yj6mk063wum7n20cwd7lxq4lppjg": {
+      "name": "Phoenix Directive DAO (core / treasury)",
+      "type": "dao",
+      "protocol": "Phoenix Directive",
+      "validActions": ["execute", "propose"],
+      "description": "DAODAO core; holds the treasury the OTC sales draw from (source: tla-core docs/curated/known_contracts.json)"
+    },
+    "terra16st8yfprkdl06kccktshd3p2vccq93xcn9mkhjl8s4jumyjtd4kqye0m": {
+      "name": "PD setup contract (OTC sales · milestone grants)",
+      "type": "treasury-tool",
+      "protocol": "Phoenix Directive",
+      "validActions": ["setup"],
+      "description": "Every PD OTC (LUNA → USDC) and milestone grant is a `setup` on this contract — seen in A265 and A266 (2026-09-20). Its state is the OTC ledger to read."
+    }
+  },
+  "lpPools": {},
+  "coreAddress": "terra1k8ug6dkzntczfzn76wsh24tdjmx944yj6mk063wum7n20cwd7lxq4lppjg"
+}

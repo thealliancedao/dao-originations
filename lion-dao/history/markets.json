@@ -1,0 +1,47 @@
+{
+ "product": "lion-dao/history/markets",
+ "engine": "history-forward 1.0.0",
+ "updatedAt": "2026-09-26T10:11:33.778Z",
+ "day_count": 1,
+ "first_day": "2026-09-26",
+ "last_day": "2026-09-26",
+ "note": "one row per UTC day, rewritten by each hourly positions run — the last run of the day is the row that stays. Every figure names its source (row.sources) or why it is missing (row.reasons). pixeLions and Burning Lions floors: nft-collections/<slug>/snapshots/floor-history.json. Chain supplies and stakes: history/daily.json.",
+ "days": {
+  "2026-09-26": {
+   "day": "2026-09-26",
+   "capturedAt": "2026-09-26T10:11:33.778Z",
+   "sources": {
+    "roar_usd": "network-and-prices ROAR",
+    "roar_chg_24h_pct": "network-and-prices (astroport)",
+    "luna_usd": "network-and-prices LUNA",
+    "pyroar_in_roar": "pyROAR pair pool (live)",
+    "pyroar_usd": "pyROAR pair × ROAR",
+    "pyroar_pair_depth_usd": "pyROAR pair reserves",
+    "roar_holders": "roar/holders.json @ 2026-09-26",
+    "pyroar_holders": "burn/holders.json @ 2026-09-26",
+    "roar20_holders": "roar20/holders.json @ 2026-09-26",
+    "bl_minted": "cw721 num_tokens",
+    "bl_holders": "cw721 owner_of per token"
+   },
+   "reasons": {
+    "roar20_usd": "the ROAR20 market capture had no answer this run",
+    "roar20_volume_24h_usd": "no volume figure",
+    "roar20_market_cap_usd": "no market cap figure"
+   },
+   "roar_usd": 3.34986063461e-7,
+   "roar_chg_24h_pct": 2.905776012041954,
+   "luna_usd": 0.054646,
+   "pyroar_in_roar": 0.0015629817395846903,
+   "pyroar_usd": 5.235771002049012e-10,
+   "pyroar_pair_depth_usd": 7.555871945917785,
+   "roar20_usd": null,
+   "roar20_volume_24h_usd": null,
+   "roar20_market_cap_usd": null,
+   "roar_holders": 1803,
+   "pyroar_holders": 1285,
+   "roar20_holders": 139,
+   "bl_minted": 7,
+   "bl_holders": 5
+  }
+ }
+}

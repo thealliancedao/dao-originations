@@ -1,8 +1,8 @@
 {
  "product": "roar20/holders",
- "engine": "1.3.0",
+ "engine": "1.4.0",
  "tenant": "liondao",
- "capturedAt": "2026-09-26T08:23:33.281Z",
+ "capturedAt": "2026-09-27T05:23:55.767Z",
  "chain": "solana",
  "token": {
   "mint": "3Egc6tdNcKZEfb4XDMPAktbrrpxSdyCtxxsoT3Rbpump",
@@ -23,14 +23,14 @@
   {
    "rank": 1,
    "owner": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
-   "label": null,
+   "label": "Raydium AMM v4 pool (vault authority)",
    "amount": 714465879.932067,
    "share_pct": 73.22987181252513,
    "accounts": 1,
    "frozen_accounts": 0,
-   "kind": "wallet",
-   "owner_program": null,
-   "kind_source": "chain: System Program owns the account"
+   "kind": "program",
+   "owner_program": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+   "kind_source": "registry: tenants.json roar20.known_owners (Raydium's published AMM v4 authority — a keyless PDA that owns every AMM v4 pool's vaults; ROAR20 graduated from pump.fun into an AMM v4 pool, so the ROAR20 it holds is that pool's liquidity, not a wallet's)"
   },
   {
    "rank": 2,
@@ -1691,16 +1691,17 @@
  ],
  "kinds": {
   "program": {
-   "holders": 2,
-   "amount": 1347327.899123,
+   "holders": 3,
+   "amount": 715813207.83119,
    "programs": [
+    "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
     "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
     "REFER4ZgmyYx9c6He5XfaTMiGfdLwRnkV4RPp9t9iF3"
    ]
   },
   "wallet": {
-   "holders": 58,
-   "amount": 972787315.8079387
+   "holders": 57,
+   "amount": 258321435.87587202
   },
   "unclassified": {
    "holders": 79,
@@ -1711,9 +1712,9 @@
   {
    "rank": 1,
    "owner": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
-   "label": null,
-   "kind": "wallet",
-   "owner_program": null,
+   "label": "Raydium AMM v4 pool (vault authority)",
+   "kind": "program",
+   "owner_program": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
    "amount": 714465879.932067,
    "share_pct": 73.22987181252513
   },
@@ -1801,12 +1802,6 @@
  ],
  "top10_wallets": [
   {
-   "rank": 1,
-   "owner": "5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1",
-   "amount": 714465879.932067,
-   "share_pct": 73.22987181252513
-  },
-  {
    "rank": 2,
    "owner": "CVUDWs6rdz4vt2G1BRdw3JggwVz9eJk92Km1pDxFuNj8",
    "amount": 25160151.658486,
@@ -1859,13 +1854,19 @@
    "owner": "4C3VGLGGGPTaRUrWoyCQ3dQtza9VFRSeZYt6C5uZ74wm",
    "amount": 11329882.821103,
    "share_pct": 1.1612673046320865
+  },
+  {
+   "rank": 11,
+   "owner": "GkMwiGviQXTdHJdgyEmKkjK2PEUDDBSKrd2p6197Gcik",
+   "amount": 10213360.614543,
+   "share_pct": 1.046828280518016
   }
  ],
  "concentration": {
   "top1_pct": 73.22987181252513,
   "top10_pct": 89.08493307471859,
-  "top10_wallets_pct": 89.08493307471859,
-  "program_owned_pct": 0.13809567694344949
+  "top10_wallets_pct": 16.90188954271149,
+  "program_owned_pct": 73.36796748946858
  },
  "supply_gate": {
   "supply": 975648136.816574,

@@ -4177,6 +4177,35 @@
     "jailed": false,
     "status": "BOND_STATUS_BONDED"
    }
+  },
+  {
+   "day": "2026-09-27",
+   "height": 23026494,
+   "block_time": "2026-09-27T09:20:50.972908384Z",
+   "reads": {
+    "pyroar_supply": "ok",
+    "roar_supply": "ok",
+    "roar_staked": "ok",
+    "pixelions_staked": "ok",
+    "validator": "ok"
+   },
+   "pyroar_supply": 109690675868.39,
+   "roar_supply": 893210193781.61,
+   "roar_staked": 223767673659.35922,
+   "pixelions_staked": 2933,
+   "validator": {
+    "rank": 10,
+    "of": 98,
+    "tokens_luna": 8457105.422013,
+    "delegator_shares": 8457105.422013,
+    "commission_rate": 0.075,
+    "jailed": false,
+    "status": "BOND_STATUS_BONDED"
+   },
+   "provisional": true,
+   "method": "latest_state_at_capture",
+   "captured_at": "2026-09-27T09:21:04.299Z",
+   "method_note": "today so far — rewritten by every hourly run; the last run of the day stays unless the state at the day's last block (or the archive) replaces it"
   }
  ],
  "sources": {
@@ -4198,10 +4227,15 @@
    "stopped": null,
    "days_read": 7,
    "days_skipped": 0
+  },
+  "forward": {
+   "engine": "history-forward 1.1.0",
+   "node": "https://terra-lcd.publicnode.com",
+   "method": "closed UTC days at their last block when the node serves them; today (and any closed day the node will not serve) = the latest state, rewritten every hourly run and marked provisional"
   }
  },
- "day_count": 167,
+ "day_count": 168,
  "first_day": "2023-09-01",
- "last_day": "2026-09-25",
- "updated_at": "2026-09-26T10:35:59.472Z"
+ "last_day": "2026-09-27",
+ "updated_at": "2026-09-27T09:21:04.300Z"
 }

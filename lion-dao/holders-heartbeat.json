@@ -1,12 +1,16 @@
 {
  "product": "lion-dao/holders",
  "engine": "1.4.0",
- "status": "ok",
- "capturedAt": "2026-10-07T21:39:46.784Z",
+ "status": "ok_with_errors",
+ "capturedAt": "2026-10-08T18:41:10.073Z",
  "written": [
-  "burn/holders.json",
   "roar20/holders.json",
   "roar/holders.json"
  ],
- "errors": []
+ "errors": [
+  {
+   "product": "burn/holders",
+   "reason": "publish failed: read ECONNABORTED"
+  }
+ ]
 }

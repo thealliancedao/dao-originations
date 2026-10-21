@@ -3,24 +3,24 @@
  "product": "lion-dao/positions",
  "engine": "1.5.4",
  "tenant": "liondao",
- "capturedAt": "2026-10-21T06:20:47.600Z",
- "startedAt": "2026-10-21T06:20:42.148Z",
+ "capturedAt": "2026-10-21T07:21:00.132Z",
+ "startedAt": "2026-10-21T07:20:55.419Z",
  "prices": {
-  "luna_usd": 0.04417741,
+  "luna_usd": 0.04435339,
   "source": "network-and-prices",
   "captured_at": null
  },
  "validator": {
   "operator": "terravaloper1pet430t7ykswxuyhh56d4gk6rt7qgu9as6a5r0",
-  "commission_unclaimed_luna": 1473.7993934406436,
-  "commission_unclaimed_usd": 65.10864006177863
+  "commission_unclaimed_luna": 1502.05998599442,
+  "commission_unclaimed_usd": 66.62145236220505
  },
  "pl_rewards": {
   "distributor": "terra1krewrx5uye0ux786w9jd2qx4wqz5pz2y5mqxw2k58p4xjhnw5lfqm450m7",
   "source": "DAODAO rewards distributor: distributions + pending_rewards (raw kept)",
   "staked_count": 2935,
   "staked_source": "nft-collections/pixel-lions summary daodao_staked_count",
-  "block_seconds": 5.75878675,
+  "block_seconds": 5.758343849999999,
   "distributions": [
    {
     "id": 1,
@@ -33,10 +33,10 @@
     "ends_at": "2026-12-24T17:17:54.404Z",
     "started_at": "2026-06-07T17:17:43.404Z",
     "continuous": false,
-    "price_usd": 3.24878036618e-7,
+    "price_usd": 3.27037580785e-7,
     "price_source": "network-and-prices (astroport, matched by denom)",
     "per_token_per_year": 1554513.4855195913,
-    "per_token_usd_per_year": 0.5050272890718086,
+    "per_token_usd_per_year": 0.5083843296019853,
     "raw": {
      "id": 1,
      "denom": {
@@ -244,9 +244,9 @@
    ]
   },
   "apr": {
-   "usd_per_token_per_year": 0.5050272890718086,
+   "usd_per_token_per_year": 0.5083843296019853,
    "floor_usd": 5.34,
-   "apr_pct_at_floor": 9.457439870258588,
+   "apr_pct_at_floor": 9.520305797789987,
    "floor_source": "nft-collections/pixel-lions nft-analytics listings_by_marketplace (lowest venue floor, USD at today's prices)",
    "note": "Σ over distributions of (rate per year ÷ staked count × price) ÷ floor; a distribution whose rate did not parse contributes nothing and says so on its row",
    "unpriced": [
@@ -306,7 +306,7 @@
       "amount_raw": "13000002",
       "amount_human": 13.000002,
       "luna_equivalent": 13.000002,
-      "usd_value": 0.57430641835482
+      "usd_value": 0.57659415870678
      }
     ],
     "custody": [],
@@ -326,7 +326,7 @@
      "total_pending_rewards_usd": 0,
      "total_pending_bribes_usd": 0,
      "total_pending_bribes_count": 0,
-     "total_wallet_balances_usd": 0.57430641835482,
+     "total_wallet_balances_usd": 0.57659415870678,
      "total_locked_luna_equivalent": 0,
      "total_locked_usd": 0,
      "total_potential_vp_gain_human": 0,
@@ -337,7 +337,7 @@
      "inactive_take_exposure_usd": 0,
      "custody_usd": 0,
      "total_includes_custody": true,
-     "total_portfolio_value_usd": 0.57430641835482
+     "total_portfolio_value_usd": 0.57659415870678
     }
    },
    "balances": [
@@ -349,11 +349,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "298564000000000000",
      "amount_human": 298564000000,
-     "price_usd": 3.24878036618e-7,
+     "price_usd": 3.27037580785e-7,
      "price_source": "astroport",
      "price_key": "ROAR",
      "price_match": "denom",
-     "usd_value": 96996.88612481655,
+     "usd_value": 97641.64826949274,
      "unpriced_reason": null
     },
     {
@@ -363,11 +363,11 @@
      "symbol_reason": null,
      "amount_raw": "273333",
      "amount_human": 0.00273333,
-     "price_usd": 82484,
+     "price_usd": 82548,
      "price_source": "astroport",
      "price_key": "WBTC",
      "price_match": "denom",
-     "usd_value": 225.45599172,
+     "usd_value": 225.63092484,
      "unpriced_reason": null
     },
     {
@@ -377,27 +377,12 @@
      "symbol_reason": null,
      "amount_raw": "13000002",
      "amount_human": 13.000002,
-     "price_usd": 0.04417741,
+     "price_usd": 0.04435339,
      "price_source": "astroport",
      "price_key": "LUNA",
      "price_match": "denom",
-     "usd_value": 0.57430641835482,
+     "usd_value": 0.57659415870678,
      "unpriced_reason": null
-    },
-    {
-     "kind": "cw20",
-     "denom": "terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun",
-     "symbol": "DROGO",
-     "symbol_reason": null,
-     "symbol_source": "tenants.json known_cw20s",
-     "amount_raw": "110000000000000000",
-     "amount_human": 110000000000,
-     "price_usd": null,
-     "price_source": null,
-     "price_key": null,
-     "price_match": null,
-     "usd_value": null,
-     "unpriced_reason": "symbol_not_in_price_feed"
     },
     {
      "kind": "cw20",
@@ -407,6 +392,21 @@
      "symbol_source": "tenants.json known_cw20s",
      "amount_raw": "6238945134455",
      "amount_human": 6238945.134455,
+     "price_usd": null,
+     "price_source": null,
+     "price_key": null,
+     "price_match": null,
+     "usd_value": null,
+     "unpriced_reason": "symbol_not_in_price_feed"
+    },
+    {
+     "kind": "cw20",
+     "denom": "terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun",
+     "symbol": "DROGO",
+     "symbol_reason": null,
+     "symbol_source": "tenants.json known_cw20s",
+     "amount_raw": "110000000000000000",
+     "amount_human": 110000000000,
      "price_usd": null,
      "price_source": null,
      "price_key": null,
@@ -429,13 +429,13 @@
     "source": "tla-core/votion/snapshots/vaults.json"
    },
    "nfts": {
-    "pixel-lions": {
-     "held_total": 5,
+    "burning-lions": {
+     "held_total": 0,
      "staked_daodao": 0,
      "floor_usd": null
     },
-    "burning-lions": {
-     "held_total": 0,
+    "pixel-lions": {
+     "held_total": 5,
      "staked_daodao": 0,
      "floor_usd": null
     }
@@ -481,7 +481,7 @@
     "source": "dex-data/credia markets + vproxy balances + terra1y6hfmr… portfolio{address}"
    },
    "totals": {
-    "balances_usd": 97222.91642295489,
+    "balances_usd": 97867.85578849145,
     "tla_usd": 0,
     "tla_staked_usd": 0,
     "tla_compounder_usd": 0,
@@ -492,7 +492,7 @@
     "credia_collateral_usd": 0,
     "credia_debt_usd": 0,
     "credia_net_usd": 0,
-    "known_usd": 97222.91642295489,
+    "known_usd": 97867.85578849145,
     "liabilities_usd": 0,
     "unpriced_rows": 2,
     "receipt_rows": 0
@@ -527,14 +527,14 @@
       "stake_config_kind": "default",
       "source": "staking_contract",
       "amplp_shares_raw": "445081360378",
-      "amplp_balance_raw": "367761656201",
+      "amplp_balance_raw": "367757445169",
       "user_shares_human": 445081.360378,
-      "user_balance_human": 367761.656201,
-      "pool_total_shares": "143447638611728",
-      "user_pct_of_pool": 0.31027444207897265,
-      "estimated_position_usd": 460.7880126608845,
-      "pool_apr_pct": 29.248450592992707,
-      "user_pct_of_tla_bucket": 0.31027444207897265,
+      "user_balance_human": 367757.445169,
+      "pool_total_shares": "143455497062328",
+      "user_pct_of_pool": 0.3102574453348572,
+      "estimated_position_usd": 459.70395587913686,
+      "pool_apr_pct": 29.247203397864414,
+      "user_pct_of_tla_bucket": 0.3102574453348572,
       "pct_basis": "shares_over_bucket_shares",
       "usd_basis": "staked_in_tla_usd_x_bucket_pct",
       "underlying_token_amounts": [],
@@ -553,27 +553,27 @@
       "stake_config_kind": "default",
       "source": "staking_contract",
       "amplp_shares_raw": "17369789836141876",
-      "amplp_balance_raw": "14215945832110360",
+      "amplp_balance_raw": "14215783053314429",
       "user_shares_human": 17369789836.141876,
-      "user_balance_human": 14215945832.11036,
-      "pool_total_shares": "109984988584426027",
-      "user_pct_of_pool": 13.418955357637536,
-      "estimated_position_usd": 10370.084160963534,
-      "pool_apr_pct": 59.52323019350963,
-      "user_pct_of_tla_bucket": 15.792873245432562,
+      "user_balance_human": 14215783053.314428,
+      "pool_total_shares": "109993769823784933",
+      "user_pct_of_pool": 13.417891448969904,
+      "estimated_position_usd": 10337.762137082213,
+      "pool_apr_pct": 59.519569576704924,
+      "user_pct_of_tla_bucket": 15.79161243765813,
       "pct_basis": "lp_amount_over_pool_supply",
       "underlying_token_amounts": [
        {
         "symbol": "ampROAR",
-        "amount_human": 13181364464.616291,
-        "usd_value": 5149.8890246684,
-        "price_usd": 3.9069468403613507e-7
+        "amount_human": 13180318496.33998,
+        "usd_value": 5137.39105541517,
+        "price_usd": 3.8977745923528053e-7
        },
        {
         "symbol": "ROAR",
-        "amount_human": 15933704961.404144,
-        "usd_value": 5188.69215551312,
-        "price_usd": 3.25642540017e-7
+        "amount_human": 15934606679.791655,
+        "usd_value": 5176.803732410781,
+        "price_usd": 3.24878036618e-7
        }
       ],
       "status": "active",
@@ -591,26 +591,26 @@
       "stake_config_kind": "compounder",
       "source": "asset_compounder",
       "user_amplp_raw": "6537689470",
-      "user_lp_raw": "30385579660",
+      "user_lp_raw": "30392775545",
       "user_amplp_human": 6537.68947,
-      "user_lp_human": 30385.57966,
-      "compounder_total_lp": "36096410260",
+      "user_lp_human": 30392.775545,
+      "compounder_total_lp": "36104958579",
       "compounder_total_amplp": "7766418278",
-      "user_pct_of_pool": 35.324195675417904,
-      "estimated_position_usd": 13288.467874352758,
-      "pool_apr_pct": 50.31054166376544,
+      "user_pct_of_pool": 35.31908162546814,
+      "estimated_position_usd": 13280.82234913503,
+      "pool_apr_pct": 50.23257101842472,
       "underlying_token_amounts": [
        {
         "symbol": "USDt",
-        "amount_human": 6589.132178611451,
-        "usd_value": 6583.360098822987,
-        "price_usd": 0.999124
+        "amount_human": 6588.178238955,
+        "usd_value": 6582.163232222833,
+        "price_usd": 0.999087
        },
        {
         "symbol": "LUNA",
-        "amount_human": 151652.8686435058,
-        "usd_value": 6715.348259046513,
-        "price_usd": 0.04428105
+        "amount_human": 151745.82795581207,
+        "usd_value": 6703.737657393372,
+        "price_usd": 0.04417741
        }
       ],
       "status": "active",
@@ -631,23 +631,23 @@
       "user_lp_raw": "4",
       "user_amplp_human": 0.000001,
       "user_lp_human": 0.000004,
-      "compounder_total_lp": "30194006584",
+      "compounder_total_lp": "30193660352",
       "compounder_total_amplp": "7352770140",
       "user_pct_of_pool": 1.1387944026246164e-8,
-      "estimated_position_usd": 0.000001819429041185297,
-      "pool_apr_pct": 223.3774138031131,
+      "estimated_position_usd": 0.0000018186774368795649,
+      "pool_apr_pct": 223.1180963059189,
       "underlying_token_amounts": [
        {
         "symbol": "LUNA",
         "amount_human": 0.000020395896821583322,
-        "usd_value": 9.031517269513722e-7,
-        "price_usd": 0.04428105
+        "usd_value": 9.010378962047833e-7,
+        "price_usd": 0.04417741
        },
        {
         "symbol": "USDC.n",
         "amount_human": 9.180896096773283e-7,
-        "usd_value": 9.176498447542928e-7,
-        "price_usd": 0.999521
+        "usd_value": 9.176342372309283e-7,
+        "price_usd": 0.999504
        }
       ],
       "status": "active",
@@ -668,23 +668,23 @@
       "user_lp_raw": "1",
       "user_amplp_human": 0.000001,
       "user_lp_human": 0.000001,
-      "compounder_total_lp": "76244196",
+      "compounder_total_lp": "76243323",
       "compounder_total_amplp": "56030702",
       "user_pct_of_pool": 2.0117529136604738e-10,
-      "estimated_position_usd": 1.6770917812143127e-7,
-      "pool_apr_pct": 168.56672642840869,
+      "estimated_position_usd": 1.6720123062826118e-7,
+      "pool_apr_pct": 168.56866057482165,
       "underlying_token_amounts": [
        {
         "symbol": "ampLUNA",
         "amount_human": 7.924030007504537e-7,
-        "usd_value": 8.443601625500167e-8,
-        "price_usd": 0.10655691128760951
+        "usd_value": 8.423839337287334e-8,
+        "price_usd": 0.10630751434950962
        },
        {
         "symbol": "LUNA",
         "amount_human": 0.0000018690889899809364,
-        "usd_value": 8.276522301979535e-8,
-        "price_usd": 0.04428105
+        "usd_value": 8.257151063687371e-8,
+        "price_usd": 0.04417741
        }
       ],
       "status": "inactive",
@@ -702,26 +702,26 @@
       "stake_config_kind": "compounder",
       "source": "asset_compounder",
       "user_amplp_raw": "22216066931",
-      "user_lp_raw": "49062709161",
+      "user_lp_raw": "49066605465",
       "user_amplp_human": 22216.066931,
-      "user_lp_human": 49062.709161,
-      "compounder_total_lp": "500845736071",
+      "user_lp_human": 49066.605465,
+      "compounder_total_lp": "500885510623",
       "compounder_total_amplp": "226787769875",
-      "user_pct_of_pool": 0.8012076777853778,
-      "estimated_position_usd": 6467.628797770794,
-      "pool_apr_pct": 18.20164457301368,
+      "user_pct_of_pool": 0.8012653505952548,
+      "estimated_position_usd": 6463.863671826462,
+      "pool_apr_pct": 18.20056851466349,
       "underlying_token_amounts": [
        {
         "symbol": "LUNA",
-        "amount_human": 91181.87123771706,
-        "usd_value": 4037.628999370911,
-        "price_usd": 0.04428105
+        "amount_human": 91201.06146734548,
+        "usd_value": 4029.026684878123,
+        "price_usd": 0.04417741
        },
        {
         "symbol": "ampLUNA",
-        "amount_human": 23320.935735857,
-        "usd_value": 2485.006880349757,
-        "price_usd": 0.10655691128760951
+        "amount_human": 23317.78815686571,
+        "usd_value": 2478.856099084827,
+        "price_usd": 0.10630751434950962
        }
       ],
       "status": "active",
@@ -739,26 +739,26 @@
       "stake_config_kind": "compounder",
       "source": "asset_compounder",
       "user_amplp_raw": "6972722640",
-      "user_lp_raw": "18805681808",
+      "user_lp_raw": "18811980867",
       "user_amplp_human": 6972.72264,
-      "user_lp_human": 18805.681808,
-      "compounder_total_lp": "45008703131",
+      "user_lp_human": 18811.980867,
+      "compounder_total_lp": "45023779025",
       "compounder_total_amplp": "16688211920",
-      "user_pct_of_pool": 1.4371275890666508,
-      "estimated_position_usd": 2473.70357531693,
-      "pool_apr_pct": 68.1039286993371,
+      "user_pct_of_pool": 1.4375918334647373,
+      "estimated_position_usd": 2467.0082176538317,
+      "pool_apr_pct": 68.09776529803699,
       "underlying_token_amounts": [
        {
         "symbol": "bLUNA",
-        "amount_human": 16173.693227520565,
-        "usd_value": 1267.5480350931202,
-        "price_usd": 0.07837097051750103
+        "amount_human": 16178.917724411196,
+        "usd_value": 1264.9898236959052,
+        "price_usd": 0.07818754290265373
        },
        {
         "symbol": "LUNA",
-        "amount_human": 27069.445450387662,
-        "usd_value": 1198.6634674608886,
-        "price_usd": 0.04428105
+        "amount_human": 27078.836108758158,
+        "usd_value": 1196.2728450994136,
+        "price_usd": 0.04417741
        }
       ],
       "status": "active",
@@ -776,26 +776,26 @@
       "stake_config_kind": "compounder",
       "source": "asset_compounder",
       "user_amplp_raw": "8132673667276",
-      "user_lp_raw": "28513116103776",
+      "user_lp_raw": "28519293183817",
       "user_amplp_human": 8132673.667276,
-      "user_lp_human": 28513116.103776,
-      "compounder_total_lp": "41865026800973",
+      "user_lp_human": 28519293.183817,
+      "compounder_total_lp": "41874096438278",
       "compounder_total_amplp": "11940981820608",
-      "user_pct_of_pool": 15.347895933904201,
-      "estimated_position_usd": 7022.445132453801,
-      "pool_apr_pct": 46.41308639735415,
+      "user_pct_of_pool": 15.348263472897235,
+      "estimated_position_usd": 7016.842353221794,
+      "pool_apr_pct": 46.40335660413771,
       "underlying_token_amounts": [
        {
         "symbol": "ROAR",
-        "amount_human": 10701576050.33969,
-        "usd_value": 3484.888407217711,
-        "price_usd": 3.25642540017e-7
+        "amount_human": 10699353369.596836,
+        "usd_value": 3475.984915796803,
+        "price_usd": 3.24878036618e-7
        },
        {
         "symbol": "LUNA",
-        "amount_human": 80130.68232464071,
-        "usd_value": 3548.270750551532,
-        "price_usd": 0.04428105
+        "amount_human": 80181.85632244797,
+        "usd_value": 3542.2267413178765,
+        "price_usd": 0.04417741
        }
       ],
       "status": "active",
@@ -813,26 +813,26 @@
       "stake_config_kind": "compounder",
       "source": "asset_compounder",
       "user_amplp_raw": "5004803605",
-      "user_lp_raw": "18812226562",
+      "user_lp_raw": "18815534011",
       "user_amplp_human": 5004.803605,
-      "user_lp_human": 18812.226562,
-      "compounder_total_lp": "20005839959",
+      "user_lp_human": 18815.534011,
+      "compounder_total_lp": "20009357261",
       "compounder_total_amplp": "5322352440",
-      "user_pct_of_pool": 30.819564137175192,
-      "estimated_position_usd": 12093.87434350478,
-      "pool_apr_pct": 37.859075593917986,
+      "user_pct_of_pool": 30.82309082862235,
+      "estimated_position_usd": 12055.496461799947,
+      "pool_apr_pct": 37.92158014955636,
       "underlying_token_amounts": [
        {
         "symbol": "ATOM",
-        "amount_human": 3480.1539172506905,
-        "usd_value": 6055.467816016201,
-        "price_usd": 1.74
+        "amount_human": 3481.9453454740415,
+        "usd_value": 6023.765447670092,
+        "price_usd": 1.73
        },
        {
         "symbol": "LUNA",
-        "amount_human": 136573.31870909137,
-        "usd_value": 6047.609954423211,
-        "price_usd": 0.04428105
+        "amount_human": 136551.4372313529,
+        "usd_value": 6032.488828658742,
+        "price_usd": 0.04417741
        }
       ],
       "status": "active",
@@ -850,26 +850,26 @@
       "stake_config_kind": "compounder",
       "source": "asset_compounder",
       "user_amplp_raw": "396473019304745",
-      "user_lp_raw": "985304177258512",
+      "user_lp_raw": "985521832451077",
       "user_amplp_human": 396473019.304745,
-      "user_lp_human": 985304177.258512,
-      "compounder_total_lp": "4801254855229758",
+      "user_lp_human": 985521832.451077,
+      "compounder_total_lp": "4802315459735642",
       "compounder_total_amplp": "1931959746888470",
-      "user_pct_of_pool": 6.801672534913584,
-      "estimated_position_usd": 1298.3984768797936,
-      "pool_apr_pct": 46.8840742551292,
+      "user_pct_of_pool": 6.802651158287019,
+      "estimated_position_usd": 1292.156784865461,
+      "pool_apr_pct": 47.08949880473527,
       "underlying_token_amounts": [
        {
         "symbol": "LUNA",
-        "amount_human": 14625.657997754834,
-        "usd_value": 647.6394930814818,
-        "price_usd": 0.04428105
+        "amount_human": 14630.01879796127,
+        "usd_value": 646.3163387452422,
+        "price_usd": 0.04417741
        },
        {
         "symbol": "INJ",
-        "amount_human": 73.89568126402939,
-        "usd_value": 652.1334654950628,
-        "price_usd": 8.825055190505502
+        "amount_human": 73.906307653155,
+        "usd_value": 644.935179514724,
+        "price_usd": 8.726388856299362
        }
       ],
       "status": "active",
@@ -890,23 +890,23 @@
       "user_lp_raw": "3",
       "user_amplp_human": 0.000001,
       "user_lp_human": 0.000003,
-      "compounder_total_lp": "17487213",
+      "compounder_total_lp": "17487011",
       "compounder_total_amplp": "5252605",
       "user_pct_of_pool": 0.000010861594538558552,
-      "estimated_position_usd": 0.00004041056248070709,
-      "pool_apr_pct": 2504.393642365773,
+      "estimated_position_usd": 0.00004037689153763756,
+      "pool_apr_pct": 2503.5918991979106,
       "underlying_token_amounts": [
        {
         "symbol": "WBTC",
         "amount_human": 2.5515406194309434e-10,
-        "usd_value": 0.00002108210436804817,
-        "price_usd": 82625
+        "usd_value": 0.000021046127645314194,
+        "price_usd": 82484
        },
        {
         "symbol": "LUNA",
         "amount_human": 0.0004357372163919998,
-        "usd_value": 0.000019294901465914965,
-        "price_usd": 0.04428105
+        "usd_value": 0.000019249741660808097,
+        "price_usd": 0.04417741
        }
       ],
       "status": "active",
@@ -924,26 +924,26 @@
       "stake_config_kind": "compounder",
       "source": "asset_compounder",
       "user_amplp_raw": "2737228388227282",
-      "user_lp_raw": "8939004917878906",
+      "user_lp_raw": "8941487854340946",
       "user_amplp_human": 2737228388.227282,
-      "user_lp_human": 8939004917.878906,
-      "compounder_total_lp": "24849154503654606",
+      "user_lp_human": 8941487854.340946,
+      "compounder_total_lp": "24856056711711858",
       "compounder_total_amplp": "7609103222978070",
-      "user_pct_of_pool": 8.437856288378422,
-      "estimated_position_usd": 6520.722181164227,
-      "pool_apr_pct": 59.52323019350963,
+      "user_pct_of_pool": 8.439627488114846,
+      "estimated_position_usd": 6502.27808367088,
+      "pool_apr_pct": 59.519569576704924,
       "underlying_token_amounts": [
        {
         "symbol": "ampROAR",
-        "amount_human": 8288458831.027189,
-        "usd_value": 3238.2568041346813,
-        "price_usd": 3.9069468403613507e-7
+        "amount_human": 8290198106.52583,
+        "usd_value": 3231.332354518772,
+        "price_usd": 3.8977745923528053e-7
        },
        {
         "symbol": "ROAR",
-        "amount_human": 10019134054.964191,
-        "usd_value": 3262.6562624293642,
-        "price_usd": 3.25642540017e-7
+        "amount_human": 10022598935.050434,
+        "usd_value": 3256.1222638288427,
+        "price_usd": 3.24878036618e-7
        }
       ],
       "status": "active",
@@ -959,8 +959,8 @@
       "reward_symbol": "zluna",
       "amount_raw": "72",
       "amount_human": 0.000072,
-      "luna_equivalent": 0.00010634009900166192,
-      "usd_value": 0.000004697830153037009
+      "luna_equivalent": 0.00010634009901339763,
+      "usd_value": 0.00000471654388417984
      },
      {
       "bucket": "single",
@@ -969,8 +969,8 @@
       "reward_symbol": "zluna",
       "amount_raw": "129223552",
       "amount_human": 129.223552,
-      "luna_equivalent": 190.85618490314457,
-      "usd_value": 8.431531931502027
+      "luna_equivalent": 190.8561849242075,
+      "usd_value": 8.465118803855496
      },
      {
       "bucket": "single",
@@ -979,8 +979,8 @@
       "reward_symbol": "zluna",
       "amount_raw": "10893446717",
       "amount_human": 10893.446717,
-      "luna_equivalent": 16089.030588265405,
-      "usd_value": 710.7717008003419
+      "luna_equivalent": 16089.030590040993,
+      "usd_value": 713.6030484820183
      }
     ],
     "voting": {
@@ -1042,7 +1042,7 @@
      "amount_human": 126.647017,
      "asset_symbol": "ampLUNA",
      "luna_equivalent": 304.7605003790419,
-     "usd_value": 13.463529577050089,
+     "usd_value": 13.517161329906793,
      "_raw": {
       "rebase": "126647017"
      }
@@ -1232,11 +1232,11 @@
       "weeks_to_unlock": null,
       "projection": {
        "underlying_at_lock_human": 40965.937758,
-       "underlying_now_human": 41717.553406793944,
-       "voting_power_if_adjusted_human": 417175.53406793944,
-       "potential_vp_gain_human": 7516.156487939453,
-       "potential_vp_gain_pct": 1.8347331708454953,
-       "lst_ratio_used": 3.1221980764276407,
+       "underlying_now_human": 41719.558308175656,
+       "voting_power_if_adjusted_human": 417195.5830817566,
+       "potential_vp_gain_human": 7536.205501756592,
+       "potential_vp_gain_pct": 1.8396272401416929,
+       "lst_ratio_used": 3.1223481259565853,
        "is_lst_lock": true
       }
      }
@@ -1252,8 +1252,8 @@
       "asset_symbol": "LUNA",
       "amount_raw": "35898341",
       "amount_human": 35.898341,
-      "price_usd": 0.04417741,
-      "usd_value": 1.58589572867681
+      "price_usd": 0.04435339,
+      "usd_value": 1.59221311872599
      },
      {
       "gauge": "project",
@@ -1265,8 +1265,8 @@
       "asset_symbol": "ROAR",
       "amount_raw": "432231615892837",
       "amount_human": 432231615.892837,
-      "price_usd": 3.24878036618e-7,
-      "usd_value": 140.4225587354904
+      "price_usd": 3.27037580785e-7,
+      "usd_value": 141.35598200038478
      },
      {
       "gauge": "project",
@@ -1291,8 +1291,8 @@
       "asset_symbol": "ROAR",
       "amount_raw": "282827070919709",
       "amount_human": 282827070.919709,
-      "price_usd": 3.24878036618e-7,
-      "usd_value": 91.88430350281492
+      "price_usd": 3.27037580785e-7,
+      "usd_value": 92.49508105408927
      }
     ],
     "pending_bribes_meta": {
@@ -1306,7 +1306,7 @@
       "amount_raw": "11809381",
       "amount_human": 11.809381,
       "luna_equivalent": 11.809381,
-      "usd_value": 0.52170786628321
+      "usd_value": 0.52378608115159
      },
      {
       "denom": "factory/terra1x8v9fujf3c78q2we23x0vgzmxgtt0hgvuvfsxy4w3ar9kcua4c6qqcnhyh/zluna",
@@ -1314,7 +1314,7 @@
       "amount_raw": "6541438",
       "amount_human": 6.541438,
       "luna_equivalent": 6.541438,
-      "usd_value": 0.28898378851558004
+      "usd_value": 0.29013495077482
      },
      {
       "denom": "factory/terra1ym2495f63mdx63tu96085x2vf3xpy9z9k5urxwhvmf9jldm99q5qr4q6n8/zluna",
@@ -1322,7 +1322,7 @@
       "amount_raw": "1264597",
       "amount_human": 1.264597,
       "luna_equivalent": 1.264597,
-      "usd_value": 0.05586662015377
+      "usd_value": 0.05608916393383
      },
      {
       "denom": "uluna",
@@ -1330,7 +1330,7 @@
       "amount_raw": "1084273897",
       "amount_human": 1084.273897,
       "luna_equivalent": 1084.273897,
-      "usd_value": 47.90041250006677
+      "usd_value": 48.09122302046083
      }
     ],
     "custody": [],
@@ -1344,24 +1344,24 @@
      "inactive_lp_position_count": 1,
      "amplified_lp_position_count": 10,
      "non_amplified_lp_position_count": 2,
-     "amplified_lp_usd": 49165.24042384079,
-     "non_amplified_lp_usd": 10830.872173624419,
-     "total_lp_position_usd": 59996.11259746521,
-     "total_pending_rewards_usd": 719.2032374296741,
-     "total_pending_bribes_usd": 233.89275796698212,
+     "amplified_lp_usd": 49078.467964536176,
+     "non_amplified_lp_usd": 10797.46609296135,
+     "total_lp_position_usd": 59875.93405749752,
+     "total_pending_rewards_usd": 722.0681720024177,
+     "total_pending_bribes_usd": 235.44327617320005,
      "total_pending_bribes_count": 4,
-     "total_wallet_balances_usd": 48.76697077501933,
-     "total_locked_luna_equivalent": 121261.32528716052,
-     "total_locked_usd": 5357.011284354258,
-     "total_potential_vp_gain_human": 30286.50194160528,
+     "total_wallet_balances_usd": 48.96123321632107,
+     "total_locked_luna_equivalent": 121263.33018854223,
+     "total_locked_usd": 5378.439776551187,
+     "total_potential_vp_gain_human": 30306.550955422415,
      "current_vp_human": 1182326.75093,
-     "potential_vp_human": 1212613.2528716053,
-     "vp_gap_human": 30286.50194160528,
-     "inactive_lp_usd": 1.6770917812143127e-7,
-     "inactive_take_exposure_usd": 1.677091781214313e-8,
+     "potential_vp_human": 1212633.3018854226,
+     "vp_gap_human": 30306.550955422415,
+     "inactive_lp_usd": 1.6720123062826118e-7,
+     "inactive_take_exposure_usd": 1.6720123062826118e-8,
      "custody_usd": 0,
      "total_includes_custody": true,
-     "total_portfolio_value_usd": 66354.98684799114
+     "total_portfolio_value_usd": 66260.84651544064
     }
    },
    "balances": [
@@ -1372,11 +1372,11 @@
      "symbol_reason": null,
      "amount_raw": "19349286099",
      "amount_human": 19349.286099,
-     "price_usd": 0.999504,
+     "price_usd": 0.999443,
      "price_source": "astroport",
      "price_key": "USDC.inj",
      "price_match": "denom",
-     "usd_value": 19339.688853094896,
+     "usd_value": 19338.508546642857,
      "unpriced_reason": null
     },
     {
@@ -1386,11 +1386,11 @@
      "symbol_reason": null,
      "amount_raw": "2875193328255860104",
      "amount_human": 2.87519332825586,
-     "price_usd": 3038.49,
+     "price_usd": 3040.18,
      "price_source": "astroport",
      "price_key": "WSTETH",
      "price_match": "denom",
-     "usd_value": 8736.246175972148,
+     "usd_value": 8741.1052526969,
      "unpriced_reason": null
     },
     {
@@ -1400,11 +1400,11 @@
      "symbol_reason": null,
      "amount_raw": "6739931312",
      "amount_human": 6739.931312,
-     "price_usd": 0.999087,
+     "price_usd": 0.99901,
      "price_source": "astroport",
      "price_key": "USDt",
      "price_match": "denom",
-     "usd_value": 6733.777754712143,
+     "usd_value": 6733.25878000112,
      "unpriced_reason": null
     },
     {
@@ -1415,11 +1415,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "19342345661893592",
      "amount_human": 19342345661.893593,
-     "price_usd": 3.24878036618e-7,
+     "price_usd": 3.27037580785e-7,
      "price_source": "astroport",
      "price_key": "ROAR",
      "price_match": "denom",
-     "usd_value": 6283.90328222268,
+     "usd_value": 6325.67393197292,
      "unpriced_reason": null
     },
     {
@@ -1430,11 +1430,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "16027518547",
      "amount_human": 16027.518547,
-     "price_usd": 0.10630751434950962,
+     "price_usd": 0.1067309886178116,
      "price_source": "calculated-eris",
      "price_key": "ampLUNA",
      "price_match": "denom",
-     "usd_value": 1703.845657922234,
+     "usd_value": 1710.6328996116213,
      "unpriced_reason": null
     },
     {
@@ -1444,11 +1444,11 @@
      "symbol_reason": null,
      "amount_raw": "1617168633862894",
      "amount_human": 1617168633.862894,
-     "price_usd": 3.8977745923528053e-7,
+     "price_usd": 3.9236840581721087e-7,
      "price_source": "calculated-eris",
      "price_key": "ampROAR",
      "price_match": "catalog_symbol",
-     "usd_value": 630.3358812620685,
+     "usd_value": 634.5258788063805,
      "unpriced_reason": null
     },
     {
@@ -1458,11 +1458,11 @@
      "symbol_reason": null,
      "amount_raw": "1084273897",
      "amount_human": 1084.273897,
-     "price_usd": 0.04417741,
+     "price_usd": 0.04435339,
      "price_source": "astroport",
      "price_key": "LUNA",
      "price_match": "denom",
-     "usd_value": 47.90041250006677,
+     "usd_value": 48.09122302046083,
      "unpriced_reason": null
     },
     {
@@ -1487,11 +1487,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "14790460160",
      "amount_human": 14790.46016,
-     "price_usd": 0.00113068152503507,
+     "price_usd": 0.001136620394645009,
      "price_source": "astroport",
      "price_key": "CAPA",
      "price_match": "denom",
-     "usd_value": 16.723300049679246,
+     "usd_value": 16.811138664040485,
      "unpriced_reason": null
     },
     {
@@ -1502,11 +1502,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "16220259",
      "amount_human": 16.220259,
-     "price_usd": 1.015007007455714,
+     "price_usd": 1.0178463458711984,
      "price_source": "astroport",
      "price_key": "SOLID",
      "price_match": "denom",
-     "usd_value": 16.463676547746612,
+     "usd_value": 16.509731352234418,
      "unpriced_reason": null
     },
     {
@@ -1516,11 +1516,11 @@
      "symbol_reason": null,
      "amount_raw": "387962974492",
      "amount_human": 3.87962974492e-7,
-     "price_usd": 8.726388856299362,
+     "price_usd": 8.797654721084077,
      "price_source": "coingecko",
      "price_key": "INJ",
      "price_match": "catalog_symbol",
-     "usd_value": 0.0000033855157772637427,
+     "usd_value": 0.0000034131642941453653,
      "unpriced_reason": null
     },
     {
@@ -1947,12 +1947,12 @@
     "source": "tla-core/votion/snapshots/vaults.json"
    },
    "nfts": {
-    "pixel-lions": {
+    "burning-lions": {
      "held_total": 0,
      "staked_daodao": 0,
      "floor_usd": null
     },
-    "burning-lions": {
+    "pixel-lions": {
      "held_total": 0,
      "staked_daodao": 0,
      "floor_usd": null
@@ -1966,22 +1966,22 @@
       "amount_raw": "4150326",
       "vamount_raw": "4142667",
       "amount_human": 0.04150326,
-      "usd_value": 3491.2584000893416,
+      "usd_value": 3492.9807853793413,
       "collateral": true,
-      "lt_value_usd": 2513.706048064326,
-      "ltv_value_usd": 2443.8808800625393,
+      "lt_value_usd": 2514.946165473126,
+      "ltv_value_usd": 2445.086549765539,
       "price_source": "credia portfolio contract (its oracle)"
      },
      {
       "market": "terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490",
       "symbol": "arbLUNA",
-      "amount_raw": "3050014243",
+      "amount_raw": "3050017831",
       "vamount_raw": "3037574582",
-      "amount_human": 3050.014243,
-      "usd_value": 409.6308556700105,
+      "amount_human": 3050.017831,
+      "usd_value": 411.59993465861584,
       "collateral": true,
-      "lt_value_usd": 294.93421608240754,
-      "ltv_value_usd": 286.7415989690073,
+      "lt_value_usd": 296.3519529542034,
+      "ltv_value_usd": 288.11995426103107,
       "price_source": "credia portfolio contract (its oracle)"
      },
      {
@@ -1990,53 +1990,38 @@
       "amount_raw": "33989023204",
       "vamount_raw": "33876160786",
       "amount_human": 33989.023204,
-      "usd_value": 3573.293336611176,
+      "usd_value": 3581.3819695774127,
       "collateral": true,
-      "lt_value_usd": 2572.7712023600466,
-      "ltv_value_usd": 2501.3053356278233,
+      "lt_value_usd": 2578.5950180957375,
+      "ltv_value_usd": 2506.967378704189,
       "price_source": "credia portfolio contract (its oracle)"
      },
      {
       "market": "factory/terra1zly98gvcec54m3caxlqexce7rus6rzgplz7eketsdz7nh750h2rqvu8uzx/32/project/amplp",
       "symbol": null,
-      "amount_raw": "5355982678",
+      "amount_raw": "5355970409",
       "vamount_raw": "5459359045",
-      "amount_human": 5355.982678,
-      "usd_value": 1562.963697103152,
+      "amount_human": 5355.970409,
+      "usd_value": 1569.640591918774,
       "collateral": true,
-      "lt_value_usd": 734.5929376384814,
-      "ltv_value_usd": 703.3336636964184,
+      "lt_value_usd": 737.7310782018237,
+      "ltv_value_usd": 706.3382663634483,
       "price_source": "credia portfolio contract (its oracle)"
      }
     ],
     "collateral_receipts": [
      {
-      "market": "terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct",
-      "symbol": "ampLUNA",
-      "vproxy": "terra16pwqpach70se0rdqd8sffdam3ahcw4zuk2yvcfdl5f563ua0rkaq899rl8",
-      "vamount_raw": "33876160786",
-      "supply_index": 1.003331617753128,
-      "amount_human": 33989.02320468245,
-      "price_usd": 0.10630751434950962,
-      "price_source": "calculated-eris",
-      "price_key": "ampLUNA",
-      "credia_oracle_price_usd": 0.1050462476,
-      "usd_value": 3613.2885720575955,
-      "unpriced_reason": null,
-      "basis": "receipt balance × market supply_index (real = vamount × index), priced by our feed"
-     },
-     {
       "market": "terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490",
       "symbol": "arbLUNA",
       "vproxy": "terra1p7qrurq00dk7tztfctmslx6cwrl6s7efv73xmaj5gpwe83sm5sesxeged7",
       "vamount_raw": "3037574582",
-      "supply_index": 1.0040949044040033,
-      "amount_human": 3050.0131595333205,
-      "price_usd": 0.13793062452355523,
+      "supply_index": 1.004096077662231,
+      "amount_human": 3050.0167233926904,
+      "price_usd": 0.13848672414632154,
       "price_source": "calculated-eris",
       "price_key": "arbLUNA",
-      "credia_oracle_price_usd": 0.1342725931,
-      "usd_value": 420.6902198994928,
+      "credia_oracle_price_usd": 0.134832927,
+      "usd_value": 422.386824614151,
       "unpriced_reason": null,
       "basis": "receipt balance × market supply_index (real = vamount × index), priced by our feed"
      },
@@ -2045,14 +2030,29 @@
       "symbol": null,
       "vproxy": "terra1trnjmu44me88x4t9uefkxqw4u7u6rpz2v3rjcdests8u9e6gdz8qghvzmd",
       "vamount_raw": "5459359045",
-      "supply_index": 0.9810650560350292,
-      "amount_human": 5355.986387398269,
+      "supply_index": 0.9810628232570962,
+      "amount_human": 5355.974197861864,
       "price_usd": null,
       "price_source": null,
       "price_key": null,
-      "credia_oracle_price_usd": 0.2917345185,
+      "credia_oracle_price_usd": 0.2927993125,
       "usd_value": null,
       "unpriced_reason": "not_in_token_catalog",
+      "basis": "receipt balance × market supply_index (real = vamount × index), priced by our feed"
+     },
+     {
+      "market": "terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct",
+      "symbol": "ampLUNA",
+      "vproxy": "terra16pwqpach70se0rdqd8sffdam3ahcw4zuk2yvcfdl5f563ua0rkaq899rl8",
+      "vamount_raw": "33876160786",
+      "supply_index": 1.003331617753128,
+      "amount_human": 33989.02320468245,
+      "price_usd": 0.1067309886178116,
+      "price_source": "calculated-eris",
+      "price_key": "ampLUNA",
+      "credia_oracle_price_usd": 0.1053730682,
+      "usd_value": 3627.6820487894975,
+      "unpriced_reason": null,
       "basis": "receipt balance × market supply_index (real = vamount × index), priced by our feed"
      },
      {
@@ -2060,35 +2060,35 @@
       "symbol": "wBTC.atom",
       "vproxy": "terra1jjvy4s4tyw3ym6s3wk896up6jthvha9vtwaetah3z33sd788lttswhrcpc",
       "vamount_raw": "4142667",
-      "supply_index": 1.0018489410497433,
-      "amount_human": 0.04150326547071717,
-      "price_usd": 82484,
+      "supply_index": 1.0018489647386173,
+      "amount_human": 0.04150326645206833,
+      "price_usd": 82548,
       "price_source": "astroport",
       "price_key": "WBTC",
-      "credia_oracle_price_usd": 84160.6004472743,
-      "usd_value": 3423.355349086635,
+      "credia_oracle_price_usd": 84160.1004472743,
+      "usd_value": 3426.011639085337,
       "unpriced_reason": null,
       "basis": "receipt balance × market supply_index (real = vamount × index), priced by our feed"
      }
     ],
-    "receipts_usd": 7457.334141043723,
+    "receipts_usd": 7476.080512488985,
     "debt": [],
     "health": {
      "lt_health_factor": 100,
      "ltv_health_factor": 100,
-     "total_supplied_usd": 9037.14628947368,
-     "total_collateral_usd": 9037.14628947368,
-     "total_lt_usd": 6116.004404145262,
-     "total_ltv_usd": 5935.261478355788,
+     "total_supplied_usd": 9055.603281534144,
+     "total_collateral_usd": 9055.603281534144,
+     "total_lt_usd": 6127.62421472489,
+     "total_ltv_usd": 5946.512149094207,
      "total_borrowed_usd": 0,
      "max_liquidation_usd": null,
      "unhealthy_prices": [],
      "emode": null,
      "note": "Credia's own view: a health factor under 1 is liquidatable; lt = liquidation threshold, ltv = borrow limit; values in USD at Credia's oracle"
     },
-    "collateral_usd": 9037.14628947368,
+    "collateral_usd": 9055.603281534144,
     "debt_usd": 0,
-    "net_usd": 9037.14628947368,
+    "net_usd": 9055.603281534144,
     "debt_error": null,
     "portfolio_raw": {
      "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
@@ -2099,21 +2099,21 @@
        },
        "vamount": "4142667",
        "amount": "4150326",
-       "value": "3491.258400089341564218",
+       "value": "3492.980785379341564218",
        "collateral": true,
-       "lt_value": "2513.706048064325926236",
-       "ltv_value": "2443.880880062539094952"
+       "lt_value": "2514.946165473125926236",
+       "ltv_value": "2445.086549765539094952"
       },
       {
        "info": {
         "cw20": "terra1se7rvuerys4kd2snt6vqswh9wugu49vhyzls8ymc02wl37g2p2ms5yz490"
        },
        "vamount": "3037574582",
-       "amount": "3050014243",
-       "value": "409.6308556700104502",
+       "amount": "3050017831",
+       "value": "411.5999346586158283",
        "collateral": true,
-       "lt_value": "294.934216082407524144",
-       "ltv_value": "286.74159896900731514"
+       "lt_value": "296.351952954203396376",
+       "ltv_value": "288.11995426103107981"
       },
       {
        "info": {
@@ -2121,28 +2121,28 @@
        },
        "vamount": "33876160786",
        "amount": "33989023204",
-       "value": "3573.293336611176016",
+       "value": "3581.3819695774128872",
        "collateral": true,
-       "lt_value": "2572.77120236004673152",
-       "ltv_value": "2501.3053356278232112"
+       "lt_value": "2578.595018095737278784",
+       "ltv_value": "2506.96737870418902104"
       },
       {
        "info": {
         "native": "factory/terra1zly98gvcec54m3caxlqexce7rus6rzgplz7eketsdz7nh750h2rqvu8uzx/32/project/amplp"
        },
        "vamount": "5459359045",
-       "amount": "5355982678",
-       "value": "1562.9636971031519736",
+       "amount": "5355970409",
+       "value": "1569.6405919187739258",
        "collateral": true,
-       "lt_value": "734.592937638481427592",
-       "ltv_value": "703.33366369641838812"
+       "lt_value": "737.731078201823745126",
+       "ltv_value": "706.33826636344826661"
       }
      ],
      "borrowed": [],
-     "total_supplied_value": "9037.146289473680004018",
-     "total_collateral_value": "9037.146289473680004018",
-     "total_lt_value": "6116.004404145261609492",
-     "total_ltv_value": "5935.261478355788009412",
+     "total_supplied_value": "9055.603281534144205518",
+     "total_collateral_value": "9055.603281534144205518",
+     "total_lt_value": "6127.624214724890346522",
+     "total_ltv_value": "5946.512149094207462412",
      "total_borrowed_value": "0",
      "lt_health_factor": "100",
      "ltv_health_factor": "100",
@@ -2154,18 +2154,18 @@
     "source": "dex-data/credia markets + vproxy balances + terra1y6hfmr… portfolio{address}"
    },
    "totals": {
-    "balances_usd": 43531.33880334144,
-    "tla_usd": 65353.12388181947,
-    "tla_staked_usd": 10830.872173624419,
-    "tla_compounder_usd": 49165.24042384079,
-    "tla_locked_usd": 5357.011284354258,
-    "tla_pending_usd": 966.5595249737063,
+    "balances_usd": 43587.57119185395,
+    "tla_usd": 65254.37383404871,
+    "tla_staked_usd": 10797.46609296135,
+    "tla_compounder_usd": 49078.467964536176,
+    "tla_locked_usd": 5378.439776551187,
+    "tla_pending_usd": 971.0286095055245,
     "delegations_usd": 0,
     "votion_usd": null,
-    "credia_collateral_usd": 9037.14628947368,
+    "credia_collateral_usd": 9055.603281534144,
     "credia_debt_usd": 0,
-    "credia_net_usd": 9037.14628947368,
-    "known_usd": 117921.60897463458,
+    "credia_net_usd": 9055.603281534144,
+    "known_usd": 117897.54830743681,
     "liabilities_usd": 0,
     "unpriced_rows": 18,
     "receipt_rows": 11
@@ -2303,7 +2303,7 @@
      "amount_human": 154.76723,
      "asset_symbol": "ampLUNA",
      "luna_equivalent": 372.42834118294525,
-     "usd_value": 16.452919524058856,
+     "usd_value": 16.518459463540232,
      "_raw": {
       "rebase": "154767230"
      }
@@ -2398,8 +2398,8 @@
       "asset_symbol": "LUNA",
       "amount_raw": "1425561",
       "amount_human": 1.425561,
-      "price_usd": 0.04417741,
-      "usd_value": 0.06297759277701001
+      "price_usd": 0.04435339,
+      "usd_value": 0.06322846300179
      },
      {
       "gauge": "stable",
@@ -2476,8 +2476,8 @@
       "asset_symbol": "ROAR",
       "amount_raw": "301354845060318",
       "amount_human": 301354845.060318,
-      "price_usd": 3.24878036618e-7,
-      "usd_value": 97.9035703885177
+      "price_usd": 3.27037580785e-7,
+      "usd_value": 98.55435948636492
      },
      {
       "gauge": "project",
@@ -2502,8 +2502,8 @@
       "asset_symbol": "LUNA",
       "amount_raw": "6681136",
       "amount_human": 6.681136,
-      "price_usd": 0.04417741,
-      "usd_value": 0.29515528433776
+      "price_usd": 0.04435339,
+      "usd_value": 0.29633103065104
      },
      {
       "gauge": "bluechip",
@@ -2528,8 +2528,8 @@
       "asset_symbol": "LUNA",
       "amount_raw": "77148297",
       "amount_human": 77.148297,
-      "price_usd": 0.04417741,
-      "usd_value": 3.40821194737077
+      "price_usd": 0.04435339,
+      "usd_value": 3.42178850467683
      },
      {
       "gauge": "bluechip",
@@ -2554,8 +2554,8 @@
       "asset_symbol": "ROAR",
       "amount_raw": "219023962862931",
       "amount_human": 219023962.862931,
-      "price_usd": 3.24878036618e-7,
-      "usd_value": 71.15607502720277
+      "price_usd": 3.27037580785e-7,
+      "usd_value": 71.62906694863665
      },
      {
       "gauge": "bluechip",
@@ -2580,8 +2580,8 @@
       "asset_symbol": "LUNA",
       "amount_raw": "29172354",
       "amount_human": 29.172354,
-      "price_usd": 0.04417741,
-      "usd_value": 1.28875904332314
+      "price_usd": 0.04435339,
+      "usd_value": 1.29389279418006
      },
      {
       "gauge": "stable",
@@ -2606,8 +2606,8 @@
       "asset_symbol": "LUNA",
       "amount_raw": "370026",
       "amount_human": 0.370026,
-      "price_usd": 0.04417741,
-      "usd_value": 0.016346790312660002
+      "price_usd": 0.04435339,
+      "usd_value": 0.01641190748814
      }
     ],
     "pending_bribes_meta": {
@@ -2621,7 +2621,7 @@
       "amount_raw": "9436000000",
       "amount_human": 9436,
       "luna_equivalent": 9436,
-      "usd_value": 416.85804076
+      "usd_value": 418.51858804
      }
     ],
     "custody": [],
@@ -2639,11 +2639,11 @@
      "non_amplified_lp_usd": 0,
      "total_lp_position_usd": 0,
      "total_pending_rewards_usd": 0,
-     "total_pending_bribes_usd": 174.13109607384186,
+     "total_pending_bribes_usd": 175.27507913499943,
      "total_pending_bribes_count": 18,
-     "total_wallet_balances_usd": 416.85804076,
+     "total_wallet_balances_usd": 418.51858804,
      "total_locked_luna_equivalent": 9300.310507446531,
-     "total_locked_usd": 410.86363041477347,
+     "total_locked_usd": 412.5002990578739,
      "total_potential_vp_gain_human": 23821.997384465314,
      "current_vp_human": 69181.10769,
      "potential_vp_human": 93003.10507446532,
@@ -2652,7 +2652,7 @@
      "inactive_take_exposure_usd": 0,
      "custody_usd": 0,
      "total_includes_custody": true,
-     "total_portfolio_value_usd": 1001.8527672486152
+     "total_portfolio_value_usd": 1006.2939662328733
     }
    },
    "balances": [
@@ -2663,11 +2663,11 @@
      "symbol_reason": null,
      "amount_raw": "3756617001",
      "amount_human": 3756.617001,
-     "price_usd": 0.999504,
+     "price_usd": 0.999443,
      "price_source": "astroport",
      "price_key": "USDC.inj",
      "price_match": "denom",
-     "usd_value": 3754.753718967504,
+     "usd_value": 3754.524565330443,
      "unpriced_reason": null
     },
     {
@@ -2677,11 +2677,11 @@
      "symbol_reason": null,
      "amount_raw": "3393075644695244",
      "amount_human": 3393075644.695244,
-     "price_usd": 3.8977745923528053e-7,
+     "price_usd": 3.9236840581721087e-7,
      "price_source": "calculated-eris",
      "price_key": "ampROAR",
      "price_match": "catalog_symbol",
-     "usd_value": 1322.5444037824236,
+     "usd_value": 1331.3356815262778,
      "unpriced_reason": null
     },
     {
@@ -2692,11 +2692,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "1831326104696702",
      "amount_human": 1831326104.696702,
-     "price_usd": 3.24878036618e-7,
+     "price_usd": 3.27037580785e-7,
      "price_source": "astroport",
      "price_key": "ROAR",
      "price_match": "denom",
-     "usd_value": 594.9576293011545,
+     "usd_value": 598.9124589084271,
      "unpriced_reason": null
     },
     {
@@ -2706,11 +2706,11 @@
      "symbol_reason": null,
      "amount_raw": "9436000000",
      "amount_human": 9436,
-     "price_usd": 0.04417741,
+     "price_usd": 0.04435339,
      "price_source": "astroport",
      "price_key": "LUNA",
      "price_match": "denom",
-     "usd_value": 416.85804076,
+     "usd_value": 418.51858804,
      "unpriced_reason": null
     },
     {
@@ -2721,11 +2721,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "299492746",
      "amount_human": 299.492746,
-     "price_usd": 0.07818754290265373,
+     "price_usd": 0.07849900171836992,
      "price_source": "calculated-eris",
      "price_key": "bLUNA",
      "price_match": "catalog_symbol",
-     "usd_value": 23.416601926908577,
+     "usd_value": 23.509881582893325,
      "unpriced_reason": null
     },
     {
@@ -2736,11 +2736,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "1185551",
      "amount_human": 1.185551,
-     "price_usd": 0.10630751434950962,
+     "price_usd": 0.1067309886178116,
      "price_source": "calculated-eris",
      "price_key": "ampLUNA",
      "price_match": "denom",
-     "usd_value": 0.1260329799445755,
+     "usd_value": 0.12653503028683516,
      "unpriced_reason": null
     },
     {
@@ -2772,13 +2772,13 @@
     "source": "tla-core/votion/snapshots/vaults.json"
    },
    "nfts": {
-    "pixel-lions": {
-     "held_total": 19,
+    "burning-lions": {
+     "held_total": 0,
      "staked_daodao": 0,
      "floor_usd": null
     },
-    "burning-lions": {
-     "held_total": 0,
+    "pixel-lions": {
+     "held_total": 19,
      "staked_daodao": 0,
      "floor_usd": null
     }
@@ -2824,18 +2824,18 @@
     "source": "dex-data/credia markets + vproxy balances + terra1y6hfmr… portfolio{address}"
    },
    "totals": {
-    "balances_usd": 6112.656427717935,
-    "tla_usd": 410.86363041477347,
+    "balances_usd": 6126.9277104183275,
+    "tla_usd": 412.5002990578739,
     "tla_staked_usd": 0,
     "tla_compounder_usd": 0,
-    "tla_locked_usd": 410.86363041477347,
-    "tla_pending_usd": 190.5840155979007,
+    "tla_locked_usd": 412.5002990578739,
+    "tla_pending_usd": 191.79353859853967,
     "delegations_usd": 0,
     "votion_usd": null,
     "credia_collateral_usd": 0,
     "credia_debt_usd": 0,
     "credia_net_usd": 0,
-    "known_usd": 6523.520058132708,
+    "known_usd": 6539.428009476202,
     "liabilities_usd": 0,
     "unpriced_rows": 1,
     "receipt_rows": 0
@@ -2892,7 +2892,7 @@
       "amount_raw": "38",
       "amount_human": 0.000038,
       "luna_equivalent": 0.000038,
-      "usd_value": 0.0000016787415800000002
+      "usd_value": 0.0000016854288200000001
      }
     ],
     "custody": [],
@@ -2912,7 +2912,7 @@
      "total_pending_rewards_usd": 0,
      "total_pending_bribes_usd": 0,
      "total_pending_bribes_count": 0,
-     "total_wallet_balances_usd": 0.0000016787415800000002,
+     "total_wallet_balances_usd": 0.0000016854288200000001,
      "total_locked_luna_equivalent": 0,
      "total_locked_usd": 0,
      "total_potential_vp_gain_human": 0,
@@ -2923,7 +2923,7 @@
      "inactive_take_exposure_usd": 0,
      "custody_usd": 0,
      "total_includes_custody": true,
-     "total_portfolio_value_usd": 0.0000016787415800000002
+     "total_portfolio_value_usd": 0.0000016854288200000001
     }
    },
    "balances": [
@@ -2935,11 +2935,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "914318675103166",
      "amount_human": 914318675.103166,
-     "price_usd": 3.24878036618e-7,
+     "price_usd": 3.27037580785e-7,
      "price_source": "astroport",
      "price_key": "ROAR",
      "price_match": "denom",
-     "usd_value": 297.0420560106876,
+     "usd_value": 299.01656757228585,
      "unpriced_reason": null
     },
     {
@@ -2949,11 +2949,11 @@
      "symbol_reason": null,
      "amount_raw": "425063094455551",
      "amount_human": 425063094.455551,
-     "price_usd": 3.8977745923528053e-7,
+     "price_usd": 3.9236840581721087e-7,
      "price_source": "calculated-eris",
      "price_key": "ampROAR",
      "price_match": "catalog_symbol",
-     "usd_value": 165.68001297157073,
+     "usd_value": 166.78132874325507,
      "unpriced_reason": null
     },
     {
@@ -2964,11 +2964,11 @@
      "symbol_source": "token-catalog",
      "amount_raw": "121798700",
      "amount_human": 121.7987,
-     "price_usd": 0.07818754290265373,
+     "price_usd": 0.07849900171836992,
      "price_source": "calculated-eris",
      "price_key": "bLUNA",
      "price_match": "catalog_symbol",
-     "usd_value": 9.52314108173745,
+     "usd_value": 9.561076360595221,
      "unpriced_reason": null
     },
     {
@@ -2978,11 +2978,11 @@
      "symbol_reason": null,
      "amount_raw": "98",
      "amount_human": 9.8e-7,
-     "price_usd": 82484,
+     "price_usd": 82548,
      "price_source": "astroport",
      "price_key": "WBTC",
      "price_match": "denom",
-     "usd_value": 0.08083432,
+     "usd_value": 0.08089703999999999,
      "unpriced_reason": null
     },
     {
@@ -2992,11 +2992,11 @@
      "symbol_reason": null,
      "amount_raw": "38",
      "amount_human": 0.000038,
-     "price_usd": 0.04417741,
+     "price_usd": 0.04435339,
      "price_source": "astroport",
      "price_key": "LUNA",
      "price_match": "denom",
-     "usd_value": 0.0000016787415800000002,
+     "usd_value": 0.0000016854288200000001,
      "unpriced_reason": null
     }
    ],
@@ -3014,13 +3014,13 @@
     "source": "tla-core/votion/snapshots/vaults.json"
    },
    "nfts": {
-    "pixel-lions": {
-     "held_total": 1,
+    "burning-lions": {
+     "held_total": 0,
      "staked_daodao": 0,
      "floor_usd": null
     },
-    "burning-lions": {
-     "held_total": 0,
+    "pixel-lions": {
+     "held_total": 1,
      "staked_daodao": 0,
      "floor_usd": null
     }
@@ -3066,7 +3066,7 @@
     "source": "dex-data/credia markets + vproxy balances + terra1y6hfmr… portfolio{address}"
    },
    "totals": {
-    "balances_usd": 472.3260460627373,
+    "balances_usd": 475.439871401565,
     "tla_usd": 0,
     "tla_staked_usd": 0,
     "tla_compounder_usd": 0,
@@ -3077,7 +3077,7 @@
     "credia_collateral_usd": 0,
     "credia_debt_usd": 0,
     "credia_net_usd": 0,
-    "known_usd": 472.3260460627373,
+    "known_usd": 475.439871401565,
     "liabilities_usd": 0,
     "unpriced_rows": 0,
     "receipt_rows": 0
@@ -3102,11 +3102,11 @@
      "symbol_reason": null,
      "amount_raw": "1454563",
      "amount_human": 1.454563,
-     "price_usd": 0.04417741,
+     "price_usd": 0.04435339,
      "price_source": "astroport",
      "price_key": "LUNA",
      "price_match": "denom",
-     "usd_value": 0.06425882602183,
+     "usd_value": 0.06451480001857,
      "unpriced_reason": null
     },
     {
@@ -3116,11 +3116,11 @@
      "symbol_reason": null,
      "amount_raw": "14417",
      "amount_human": 0.014417,
-     "price_usd": 0.999504,
+     "price_usd": 0.999443,
      "price_source": "astroport",
      "price_key": "USDC.n",
      "price_match": "denom",
-     "usd_value": 0.014409849167999998,
+     "usd_value": 0.014408969730999999,
      "unpriced_reason": null
     },
     {
@@ -3130,11 +3130,11 @@
      "symbol_reason": null,
      "amount_raw": "308",
      "amount_human": 0.000308,
-     "price_usd": 0.999087,
+     "price_usd": 0.99901,
      "price_source": "astroport",
      "price_key": "USDt",
      "price_match": "denom",
-     "usd_value": 0.000307718796,
+     "usd_value": 0.00030769508,
      "unpriced_reason": null
     },
     {
@@ -3144,11 +3144,11 @@
      "symbol_reason": null,
      "amount_raw": "30716218",
      "amount_human": 30.716218,
-     "price_usd": 3.8977745923528053e-7,
+     "price_usd": 3.9236840581721087e-7,
      "price_source": "calculated-eris",
      "price_key": "ampROAR",
      "price_match": "catalog_symbol",
-     "usd_value": 0.00001197248940935699,
+     "usd_value": 0.000012052073489393918,
      "unpriced_reason": null
     },
     {
@@ -3172,15 +3172,15 @@
       "validator": "terravaloper1pet430t7ykswxuyhh56d4gk6rt7qgu9as6a5r0",
       "own_validator": true,
       "luna": 1,
-      "usd_value": 0.04417741,
-      "rewards_luna": 0.540263448923874,
-      "rewards_usd": 0.02386743989112404
+      "usd_value": 0.04435339,
+      "rewards_luna": 0.5403057119213011,
+      "rewards_usd": 0.023964389960073114
      }
     ],
     "luna": 1,
-    "usd_value": 0.04417741,
-    "rewards_luna": 0.540263448923874,
-    "rewards_usd": 0.02386743989112404,
+    "usd_value": 0.04435339,
+    "rewards_luna": 0.5403057119213011,
+    "rewards_usd": 0.023964389960073114,
     "price_basis": "LUNA at network-and-prices"
    },
    "votion": {
@@ -3189,12 +3189,12 @@
     "source": "tla-core/votion/snapshots/vaults.json"
    },
    "nfts": {
-    "pixel-lions": {
+    "burning-lions": {
      "held_total": 0,
      "staked_daodao": 0,
      "floor_usd": null
     },
-    "burning-lions": {
+    "pixel-lions": {
      "held_total": 0,
      "staked_daodao": 0,
      "floor_usd": null
@@ -3241,18 +3241,18 @@
     "source": "dex-data/credia markets + vproxy balances + terra1y6hfmr… portfolio{address}"
    },
    "totals": {
-    "balances_usd": 0.07898836647523937,
+    "balances_usd": 0.0792435169030594,
     "tla_usd": null,
     "tla_staked_usd": null,
     "tla_compounder_usd": null,
     "tla_locked_usd": null,
     "tla_pending_usd": null,
-    "delegations_usd": 0.04417741,
+    "delegations_usd": 0.04435339,
     "votion_usd": null,
     "credia_collateral_usd": 0,
     "credia_debt_usd": 0,
     "credia_net_usd": 0,
-    "known_usd": 0.12316577647523937,
+    "known_usd": 0.12359690690305941,
     "liabilities_usd": 0,
     "unpriced_rows": 1,
     "receipt_rows": 0
@@ -3262,7 +3262,7 @@
  "rollup": {
   "by_role": {
    "treasury": {
-    "balances_usd": 97222.91642295489,
+    "balances_usd": 97867.85578849145,
     "tla_usd": 0,
     "tla_staked_usd": 0,
     "tla_compounder_usd": 0,
@@ -3273,85 +3273,85 @@
     "credia_collateral_usd": 0,
     "credia_debt_usd": 0,
     "credia_net_usd": 0,
-    "known_usd": 97222.91642295489,
+    "known_usd": 97867.85578849145,
     "liabilities_usd": 0
    },
    "all": {
-    "balances_usd": 147339.31668844348,
-    "tla_usd": 65763.98751223425,
-    "tla_staked_usd": 10830.872173624419,
-    "tla_compounder_usd": 49165.24042384079,
-    "tla_locked_usd": 5767.874914769031,
-    "tla_pending_usd": 1157.143540571607,
-    "delegations_usd": 0.04417741,
+    "balances_usd": 148057.87380568217,
+    "tla_usd": 65666.87413310658,
+    "tla_staked_usd": 10797.46609296135,
+    "tla_compounder_usd": 49078.467964536176,
+    "tla_locked_usd": 5790.940075609061,
+    "tla_pending_usd": 1162.8221481040641,
+    "delegations_usd": 0.04435339,
     "votion_usd": null,
-    "credia_collateral_usd": 9037.14628947368,
+    "credia_collateral_usd": 9055.603281534144,
     "credia_debt_usd": 0,
-    "credia_net_usd": 9037.14628947368,
-    "known_usd": 222140.49466756143,
+    "credia_net_usd": 9055.603281534144,
+    "known_usd": 222780.39557371289,
     "liabilities_usd": 0
    },
    "ops": {
-    "balances_usd": 44003.66484940417,
-    "tla_usd": 65353.12388181947,
-    "tla_staked_usd": 10830.872173624419,
-    "tla_compounder_usd": 49165.24042384079,
-    "tla_locked_usd": 5357.011284354258,
-    "tla_pending_usd": 966.5595249737063,
+    "balances_usd": 44063.011063255515,
+    "tla_usd": 65254.37383404871,
+    "tla_staked_usd": 10797.46609296135,
+    "tla_compounder_usd": 49078.467964536176,
+    "tla_locked_usd": 5378.439776551187,
+    "tla_pending_usd": 971.0286095055245,
     "delegations_usd": 0,
     "votion_usd": null,
-    "credia_collateral_usd": 9037.14628947368,
+    "credia_collateral_usd": 9055.603281534144,
     "credia_debt_usd": 0,
-    "credia_net_usd": 9037.14628947368,
-    "known_usd": 118393.93502069732,
+    "credia_net_usd": 9055.603281534144,
+    "known_usd": 118372.98817883838,
     "liabilities_usd": 0
    },
    "msig": {
-    "balances_usd": 6112.656427717935,
-    "tla_usd": 410.86363041477347,
+    "balances_usd": 6126.9277104183275,
+    "tla_usd": 412.5002990578739,
     "tla_staked_usd": 0,
     "tla_compounder_usd": 0,
-    "tla_locked_usd": 410.86363041477347,
-    "tla_pending_usd": 190.5840155979007,
+    "tla_locked_usd": 412.5002990578739,
+    "tla_pending_usd": 191.79353859853967,
     "delegations_usd": 0,
     "votion_usd": null,
     "credia_collateral_usd": 0,
     "credia_debt_usd": 0,
     "credia_net_usd": 0,
-    "known_usd": 6523.520058132708,
+    "known_usd": 6539.428009476202,
     "liabilities_usd": 0
    },
    "validator": {
-    "balances_usd": 0.07898836647523937,
+    "balances_usd": 0.0792435169030594,
     "tla_usd": null,
     "tla_staked_usd": null,
     "tla_compounder_usd": null,
     "tla_locked_usd": null,
     "tla_pending_usd": null,
-    "delegations_usd": 0.04417741,
+    "delegations_usd": 0.04435339,
     "votion_usd": null,
     "credia_collateral_usd": 0,
     "credia_debt_usd": 0,
     "credia_net_usd": 0,
-    "known_usd": 0.12316577647523937,
+    "known_usd": 0.12359690690305941,
     "liabilities_usd": 0
    }
   },
   "dao": {
-   "balances_usd": 147339.31668844348,
-   "tla_usd": 65763.98751223425,
-   "tla_staked_usd": 10830.872173624419,
-   "tla_compounder_usd": 49165.24042384079,
-   "tla_locked_usd": 5767.874914769031,
-   "tla_pending_usd": 1157.143540571607,
-   "delegations_usd": 0.04417741,
+   "balances_usd": 148057.87380568217,
+   "tla_usd": 65666.87413310658,
+   "tla_staked_usd": 10797.46609296135,
+   "tla_compounder_usd": 49078.467964536176,
+   "tla_locked_usd": 5790.940075609061,
+   "tla_pending_usd": 1162.8221481040641,
+   "delegations_usd": 0.04435339,
    "votion_usd": null,
-   "credia_collateral_usd": 9037.14628947368,
+   "credia_collateral_usd": 9055.603281534144,
    "credia_debt_usd": 0,
-   "credia_net_usd": 9037.14628947368,
-   "known_usd": 222140.49466756143,
+   "credia_net_usd": 9055.603281534144,
+   "known_usd": 222780.39557371289,
    "liabilities_usd": 0,
-   "validator_commission_unclaimed_usd": 65.10864006177863,
+   "validator_commission_unclaimed_usd": 66.62145236220505,
    "credia_note": "collateral counted in known_usd; debt in liabilities_usd; net when both read (1.1.0)"
   },
   "bases": {
@@ -3366,32 +3366,32 @@
   "reference": "phoenix.money portfolio fixture (docs/fixtures)",
   "reference_as_of": "2026-09-21",
   "theirs_total_usd": 189983.4487827113,
-  "ours_total_known_usd": 222140.49466756143,
+  "ours_total_known_usd": 222780.39557371289,
   "by_section": {
    "balances": {
-    "ours_usd": 147339.31668844348,
+    "ours_usd": 148057.87380568217,
     "theirs_usd": 147375.65835253178,
-    "delta_usd": -36.34166408830788
+    "delta_usd": 682.2154531503911
    },
    "tla": {
-    "ours_usd": 10830.872173624419,
+    "ours_usd": 10797.46609296135,
     "theirs_usd": 10935.536155262493,
-    "delta_usd": -104.66398163807389
+    "delta_usd": -138.07006230114348
    },
    "compounder": {
-    "ours_usd": 49165.24042384079,
+    "ours_usd": 49078.467964536176,
     "theirs_usd": 14424.59058145724,
-    "delta_usd": 34740.64984238355
+    "delta_usd": 34653.877383078936
    },
    "locks": {
-    "ours_usd": 5767.874914769031,
+    "ours_usd": 5790.940075609061,
     "theirs_usd": 7043.262367050593,
-    "delta_usd": -1275.3874522815613
+    "delta_usd": -1252.322291441532
    },
    "credia": {
-    "ours_usd": 9037.14628947368,
+    "ours_usd": 9055.603281534144,
     "theirs_usd": 10204.401326409123,
-    "delta_usd": -1167.255036935443
+    "delta_usd": -1148.7980448749786
    },
    "votion": {
     "ours_usd": null,
@@ -3403,8 +3403,8 @@
    {
     "address": "terra1tkersa2mqwy2h8exj799qx2xrhdu0dkymk9psp6v0k4kz4tkxucssgluec",
     "label": "LD DAODAO",
-    "ours_known_usd": 97222.91642295489,
-    "ours_balances_usd": 97222.91642295489,
+    "ours_known_usd": 97867.85578849145,
+    "ours_balances_usd": 97867.85578849145,
     "ours_tla_usd": 0,
     "theirs_usd": 96121.06360671985,
     "theirs_by_dapp": {
@@ -3419,12 +3419,12 @@
      "creda": 0,
      "solidcapa": 0
     },
-    "delta_usd": 1101.8528162350412,
+    "delta_usd": 1746.7921817715978,
     "sections": {
      "balances": {
-      "ours_usd": 97222.91642295489,
+      "ours_usd": 97867.85578849145,
       "theirs_usd": 96121.06360671984,
-      "delta_usd": 1101.8528162350558
+      "delta_usd": 1746.7921817716124
      },
      "tla": {
       "ours_usd": 0,
@@ -3457,9 +3457,9 @@
    {
     "address": "terra1ksk66lcvzwaanc47nvn3athj4yzcpay8z8ru04",
     "label": "LionDAO ops (Ryan)",
-    "ours_known_usd": 117921.60897463458,
-    "ours_balances_usd": 43531.33880334144,
-    "ours_tla_usd": 65353.12388181947,
+    "ours_known_usd": 117897.54830743681,
+    "ours_balances_usd": 43587.57119185395,
+    "ours_tla_usd": 65254.37383404871,
     "theirs_usd": 86816.71273467127,
     "theirs_by_dapp": {
      "balances": 36829.59027855376,
@@ -3473,32 +3473,32 @@
      "creda": 10204.401326409123,
      "solidcapa": 0
     },
-    "delta_usd": 31104.896239963316,
+    "delta_usd": 31080.835572765543,
     "sections": {
      "balances": {
-      "ours_usd": 43531.33880334144,
+      "ours_usd": 43587.57119185395,
       "theirs_usd": 45153.10850989494,
-      "delta_usd": -1621.769706553503
+      "delta_usd": -1565.5373180409879
      },
      "tla": {
-      "ours_usd": 10830.872173624419,
+      "ours_usd": 10797.46609296135,
       "theirs_usd": 10935.536155262493,
-      "delta_usd": -104.66398163807389
+      "delta_usd": -138.07006230114348
      },
      "compounder": {
-      "ours_usd": 49165.24042384079,
+      "ours_usd": 49078.467964536176,
       "theirs_usd": 13985.437055842105,
-      "delta_usd": 35179.803367998684
+      "delta_usd": 35093.03090869407
      },
      "locks": {
-      "ours_usd": 5357.011284354258,
+      "ours_usd": 5378.439776551187,
       "theirs_usd": 6538.229687262587,
-      "delta_usd": -1181.2184029083282
+      "delta_usd": -1159.7899107114
      },
      "credia": {
-      "ours_usd": 9037.14628947368,
+      "ours_usd": 9055.603281534144,
       "theirs_usd": 10204.401326409123,
-      "delta_usd": -1167.255036935443
+      "delta_usd": -1148.7980448749786
      },
      "votion": {
       "ours_usd": null,
@@ -3572,9 +3572,9 @@
    {
     "address": "terra1xgg9cf94ws2mawr6lyrdvmyxt48xkwgp8gvtsrcg2yktqvk8w2rqxflq06",
     "label": "pixeLions ⍺ msig",
-    "ours_known_usd": 6523.520058132708,
-    "ours_balances_usd": 6112.656427717935,
-    "ours_tla_usd": 410.86363041477347,
+    "ours_known_usd": 6539.428009476202,
+    "ours_balances_usd": 6126.9277104183275,
+    "ours_tla_usd": 412.5002990578739,
     "theirs_usd": 6177.5814539706535,
     "theirs_by_dapp": {
      "balances": 5055.337352780989,
@@ -3587,12 +3587,12 @@
      "votion": 0,
      "creda": 0
     },
-    "delta_usd": 345.9386041620546,
+    "delta_usd": 361.84655550554817,
     "sections": {
      "balances": {
-      "ours_usd": 6112.656427717935,
+      "ours_usd": 6126.9277104183275,
       "theirs_usd": 5672.548774182647,
-      "delta_usd": 440.1076535352877
+      "delta_usd": 454.37893623568016
      },
      "tla": {
       "ours_usd": 0,
@@ -3605,9 +3605,9 @@
       "delta_usd": 0
      },
      "locks": {
-      "ours_usd": 410.86363041477347,
+      "ours_usd": 412.5002990578739,
       "theirs_usd": 505.0326797880057,
-      "delta_usd": -94.16904937323221
+      "delta_usd": -92.53238073013176
      },
      "credia": {
       "ours_usd": 0,
@@ -3625,8 +3625,8 @@
    {
     "address": "terra1tgvlyhnqyxgwuw07h986jtnjhkcz72es3u33a9",
     "label": "pixeLions ops (Lew)",
-    "ours_known_usd": 472.3260460627373,
-    "ours_balances_usd": 472.3260460627373,
+    "ours_known_usd": 475.439871401565,
+    "ours_balances_usd": 475.439871401565,
     "ours_tla_usd": 0,
     "theirs_usd": 868.0909873495176,
     "theirs_by_dapp": {
@@ -3639,12 +3639,12 @@
      "tla-locks": 0,
      "votion": 0
     },
-    "delta_usd": -395.7649412867803,
+    "delta_usd": -392.65111594795263,
     "sections": {
      "balances": {
-      "ours_usd": 472.3260460627373,
+      "ours_usd": 475.439871401565,
       "theirs_usd": 428.9374617343828,
-      "delta_usd": 43.38858432835451
+      "delta_usd": 46.50240966718218
      },
      "tla": {
       "ours_usd": 0,
@@ -3677,15 +3677,15 @@
    {
     "address": "terra1pet430t7ykswxuyhh56d4gk6rt7qgu9as43fnu",
     "label": "validator account",
-    "ours_known_usd": 0.12316577647523937,
-    "ours_balances_usd": 0.07898836647523937,
+    "ours_known_usd": 0.12359690690305941,
+    "ours_balances_usd": 0.0792435169030594,
     "ours_tla_usd": null,
     "theirs_usd": null,
     "theirs_by_dapp": null,
     "delta_usd": null,
     "sections": {
      "balances": {
-      "ours_usd": 0.07898836647523937,
+      "ours_usd": 0.0792435169030594,
       "theirs_usd": null,
       "delta_usd": null
      },
@@ -3721,7 +3721,7 @@
   "note": "per section: their dapp keys mapped onto ours (balances = balances+cw20+astroport+skeleton-swap; credia = their collateral rows, no debt). theirs_amount_but_zero_value lists their own unpriced rows. The fixture is a dated capture (reference_as_of) — balances move after it; a delta is a question, not an error"
  },
  "sources": {
-  "credia_markets_as_of": "2026-10-21T06:02:33.397Z",
+  "credia_markets_as_of": "2026-10-21T07:02:17.908Z",
   "credia_markets": 14,
   "feed_denoms_indexed": 20,
   "known_cw20s": 2

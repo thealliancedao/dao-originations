@@ -1,12 +1,240 @@
 {
  "dao": "capapult",
  "daoName": "Capapult (CAPA)",
- "exportedAt": "2026-10-26T06:25:58.285Z",
+ "exportedAt": "2026-10-26T12:25:57.055Z",
  "source": "org dao-governance cron (chain-derived, anchor-gov)",
  "governanceKind": "anchor-gov",
  "govAddress": "terra1sf66d5vap897xlvv2hlcp4l20y4pp42r6ala4snk8mgd246jvufqwe0cnm",
- "proposalCount": 18,
+ "proposalCount": 19,
  "proposals": {
+  "c19": {
+   "id": "c19",
+   "daoId": "capapult",
+   "title": "Poll #17 step 2: open USDC.inj + BTC.atom collateral",
+   "description": "Second and final execution step for Poll #17. Opens USDC.inj and BTC.atom (WBTC via IBC Eureka) as Solid collateral. Their price feeds are live, and the wrapper and custody contracts are deployed, all owned by governance.\n\nOn execution this poll:\n\n1. Registers oracle sources for the wrapped tokens sUSDC-inj and sWBTC-eureka (wrapper exchange rate x the live USDC.inj / WBTC price), the same way USDC.n is priced today.\n\n2. Whitelists USDC.inj in the overseer at max LTV 0.95 (deposit cap 100,000) and BTC.atom at max LTV 0.5 (deposit cap 0.6 BTC).\n\n3. Adds both to the liquidation queue: USDC.inj with a 15,000 SOLID bid threshold and 5 slots, BTC.atom with 150,000 SOLID and 30 slots, 1% premium per slot.\n\nAfter execution both markets are open for deposits and borrowing. USDC.n stays withdraw-only.",
+   "link": "https://app.solidcapa.com/governance",
+   "status": "Open",
+   "proposer": "terra18hhej6usenw44squvdr8fxxp0c83nlffva5mcl",
+   "startHeight": null,
+   "expiration": {
+    "at_height": 23562329,
+    "at_time_iso": "2026-11-02T04:09:30.372Z",
+    "estimated": true,
+    "estimate_basis": "height 23462282 + 5.75s/block"
+   },
+   "live": true,
+   "votes": {
+    "yes": 0,
+    "no": 0,
+    "abstain": 0,
+    "total": 0
+   },
+   "voting": {
+    "turnout": 0,
+    "yesPercent": 0,
+    "noPercent": 0,
+    "abstainPercent": 0,
+    "quorumReached": false,
+    "thresholdReached": false,
+    "quorumThreshold": 30,
+    "passThreshold": 50
+   },
+   "outcome": "pending",
+   "outcomeReason": "Voting in progress",
+   "totalPower": 177006398307656,
+   "voters": [],
+   "decodedActions": [
+    {
+     "type": "wasm.execute",
+     "contract": "terra199pgv9dymcg9q8xtwsxk7yakazmvlf5ptkqh4zadcv7k0yqsal2q6tq7mv",
+     "contractName": null,
+     "action": "register_asset",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "asset": "terra1cfmtg6kku4xlxucyl8r3vg2cz0phnr2y74gj2vdvqdp3mafkhdwqe0ywn9",
+      "source": {
+       "on_chain_rate": {
+        "base_asset": "ibc/E8481AD838C31D4FC12A504B10F9B4E2F830F8818D2735C2FFC707579B5FA60B",
+        "query": {
+         "wasm": {
+          "smart": {
+           "contract_addr": "terra18p9868ntedvtgnljdrz79pq0n2vy0lrrd9g4pdp7vya5l9zuen0q9tvsy0",
+           "msg": "eyJzdGF0ZSI6e319"
+          }
+         }
+        },
+        "path_key": [
+         {
+          "string": "exchange_rate"
+         }
+        ],
+        "is_inverted": false
+       }
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra199pgv9dymcg9q8xtwsxk7yakazmvlf5ptkqh4zadcv7k0yqsal2q6tq7mv",
+     "contractName": null,
+     "action": "register_asset",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "asset": "terra1e4vylz56rsyq6hh0kyxw4g7mmz0y4jxtyeljg9faj5muvffwucysa72hgc",
+      "source": {
+       "on_chain_rate": {
+        "base_asset": "ibc/88386AC48152D48B34B082648DF836F975506F0B57DBBFC10A54213B1BF484CB",
+        "query": {
+         "wasm": {
+          "smart": {
+           "contract_addr": "terra1w4an9dz00rjsw4gggx6f6srnwq9d5gmu80x46alvrp0fzugqkcfqcwkyyn",
+           "msg": "eyJzdGF0ZSI6e319"
+          }
+         }
+        },
+        "path_key": [
+         {
+          "string": "exchange_rate"
+         }
+        ],
+        "is_inverted": false
+       }
+      }
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra10qnsw3wn4uaxs7en2kynhet2dsyy76lmprh2ptcz85d8hu59gkuqcpndnv",
+     "contractName": null,
+     "action": "whitelist",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "name": "Custody USDC.inj",
+      "symbol": "USDC.inj",
+      "collateral_token": "terra1cfmtg6kku4xlxucyl8r3vg2cz0phnr2y74gj2vdvqdp3mafkhdwqe0ywn9",
+      "custody_contract": "terra149k26g9kfgapfnc309w8942cr6krz6wr7nqlxswv2vsnhqmj0jeq9zuxdm",
+      "max_ltv": "0.95"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra10qnsw3wn4uaxs7en2kynhet2dsyy76lmprh2ptcz85d8hu59gkuqcpndnv",
+     "contractName": null,
+     "action": "whitelist",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "name": "Custody WBTC.eureka",
+      "symbol": "BTC.atom",
+      "collateral_token": "terra1e4vylz56rsyq6hh0kyxw4g7mmz0y4jxtyeljg9faj5muvffwucysa72hgc",
+      "custody_contract": "terra1pa8qc6xckzlpl2d7yrjd7pug2xkk6s00fppsecg9hudksf4qgc7s9cgypm",
+      "max_ltv": "0.5"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra188d4q69nen6vmwt7vcvz8lf54mc80cfvqtrznpmsrawftm86jkmsh4grzp",
+     "contractName": null,
+     "action": "whitelist_collateral",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "collateral_token": "terra1cfmtg6kku4xlxucyl8r3vg2cz0phnr2y74gj2vdvqdp3mafkhdwqe0ywn9",
+      "bid_threshold": "15000000000",
+      "max_slot": 5,
+      "premium_rate_per_slot": "0.01"
+     }
+    },
+    {
+     "type": "wasm.execute",
+     "contract": "terra188d4q69nen6vmwt7vcvz8lf54mc80cfvqtrznpmsrawftm86jkmsh4grzp",
+     "contractName": null,
+     "action": "whitelist_collateral",
+     "trusted": false,
+     "actionAllowed": null,
+     "verificationStatus": "not_yet_verified",
+     "funds": [],
+     "args": {
+      "collateral_token": "terra1e4vylz56rsyq6hh0kyxw4g7mmz0y4jxtyeljg9faj5muvffwucysa72hgc",
+      "bid_threshold": "150000000000",
+      "max_slot": 30,
+      "premium_rate_per_slot": "0.01"
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra199pgv9dymcg9q8xtwsxk7yakazmvlf5ptkqh4zadcv7k0yqsal2q6tq7mv",
+       "msg": "eyJyZWdpc3Rlcl9hc3NldCI6eyJhc3NldCI6InRlcnJhMWNmbXRnNmtrdTR4bHh1Y3lsOHIzdmcyY3owcGhucjJ5NzRnajJ2ZHZxZHAzbWFma2hkd3FlMHl3bjkiLCJzb3VyY2UiOnsib25fY2hhaW5fcmF0ZSI6eyJiYXNlX2Fzc2V0IjoiaWJjL0U4NDgxQUQ4MzhDMzFENEZDMTJBNTA0QjEwRjlCNEUyRjgzMEY4ODE4RDI3MzVDMkZGQzcwNzU3OUI1RkE2MEIiLCJxdWVyeSI6eyJ3YXNtIjp7InNtYXJ0Ijp7ImNvbnRyYWN0X2FkZHIiOiJ0ZXJyYTE4cDk4NjhudGVkdnRnbmxqZHJ6NzlwcTBuMnZ5MGxycmQ5ZzRwZHA3dnlhNWw5enVlbjBxOXR2c3kwIiwibXNnIjoiZXlKemRHRjBaU0k2ZTMxOSJ9fX0sInBhdGhfa2V5IjpbeyJzdHJpbmciOiJleGNoYW5nZV9yYXRlIn1dLCJpc19pbnZlcnRlZCI6ZmFsc2V9fX19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra199pgv9dymcg9q8xtwsxk7yakazmvlf5ptkqh4zadcv7k0yqsal2q6tq7mv",
+       "msg": "eyJyZWdpc3Rlcl9hc3NldCI6eyJhc3NldCI6InRlcnJhMWU0dnlsejU2cnN5cTZoaDBreXh3NGc3bW16MHk0anh0eWVsamc5ZmFqNW11dmZmd3VjeXNhNzJoZ2MiLCJzb3VyY2UiOnsib25fY2hhaW5fcmF0ZSI6eyJiYXNlX2Fzc2V0IjoiaWJjLzg4Mzg2QUM0ODE1MkQ0OEIzNEIwODI2NDhERjgzNkY5NzU1MDZGMEI1N0RCQkZDMTBBNTQyMTNCMUJGNDg0Q0IiLCJxdWVyeSI6eyJ3YXNtIjp7InNtYXJ0Ijp7ImNvbnRyYWN0X2FkZHIiOiJ0ZXJyYTF3NGFuOWR6MDByanN3NGdnZ3g2ZjZzcm53cTlkNWdtdTgweDQ2YWx2cnAwZnp1Z3FrY2ZxY3dreXluIiwibXNnIjoiZXlKemRHRjBaU0k2ZTMxOSJ9fX0sInBhdGhfa2V5IjpbeyJzdHJpbmciOiJleGNoYW5nZV9yYXRlIn1dLCJpc19pbnZlcnRlZCI6ZmFsc2V9fX19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra10qnsw3wn4uaxs7en2kynhet2dsyy76lmprh2ptcz85d8hu59gkuqcpndnv",
+       "msg": "eyJ3aGl0ZWxpc3QiOnsibmFtZSI6IkN1c3RvZHkgVVNEQy5pbmoiLCJzeW1ib2wiOiJVU0RDLmluaiIsImNvbGxhdGVyYWxfdG9rZW4iOiJ0ZXJyYTFjZm10ZzZra3U0eGx4dWN5bDhyM3ZnMmN6MHBobnIyeTc0Z2oydmR2cWRwM21hZmtoZHdxZTB5d245IiwiY3VzdG9keV9jb250cmFjdCI6InRlcnJhMTQ5azI2ZzlrZmdhcGZuYzMwOXc4OTQyY3I2a3J6NndyN25xbHhzd3YydnNuaHFtajBqZXE5enV4ZG0iLCJtYXhfbHR2IjoiMC45NSJ9fQ==",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra10qnsw3wn4uaxs7en2kynhet2dsyy76lmprh2ptcz85d8hu59gkuqcpndnv",
+       "msg": "eyJ3aGl0ZWxpc3QiOnsibmFtZSI6IkN1c3RvZHkgV0JUQy5ldXJla2EiLCJzeW1ib2wiOiJCVEMuYXRvbSIsImNvbGxhdGVyYWxfdG9rZW4iOiJ0ZXJyYTFlNHZ5bHo1NnJzeXE2aGgwa3l4dzRnN21tejB5NGp4dHllbGpnOWZhajVtdXZmZnd1Y3lzYTcyaGdjIiwiY3VzdG9keV9jb250cmFjdCI6InRlcnJhMXBhOHFjNnhja3pscGwyZDd5cmpkN3B1ZzJ4a2s2czAwZnBwc2VjZzlodWRrc2Y0cWdjN3M5Y2d5cG0iLCJtYXhfbHR2IjoiMC41In19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra188d4q69nen6vmwt7vcvz8lf54mc80cfvqtrznpmsrawftm86jkmsh4grzp",
+       "msg": "eyJ3aGl0ZWxpc3RfY29sbGF0ZXJhbCI6eyJjb2xsYXRlcmFsX3Rva2VuIjoidGVycmExY2ZtdGc2a2t1NHhseHVjeWw4cjN2ZzJjejBwaG5yMnk3NGdqMnZkdnFkcDNtYWZraGR3cWUweXduOSIsImJpZF90aHJlc2hvbGQiOiIxNTAwMDAwMDAwMCIsIm1heF9zbG90Ijo1LCJwcmVtaXVtX3JhdGVfcGVyX3Nsb3QiOiIwLjAxIn19",
+       "funds": []
+      }
+     }
+    },
+    {
+     "wasm": {
+      "execute": {
+       "contract_addr": "terra188d4q69nen6vmwt7vcvz8lf54mc80cfvqtrznpmsrawftm86jkmsh4grzp",
+       "msg": "eyJ3aGl0ZWxpc3RfY29sbGF0ZXJhbCI6eyJjb2xsYXRlcmFsX3Rva2VuIjoidGVycmExZTR2eWx6NTZyc3lxNmhoMGt5eHc0ZzdtbXoweTRqeHR5ZWxqZzlmYWo1bXV2ZmZ3dWN5c2E3MmhnYyIsImJpZF90aHJlc2hvbGQiOiIxNTAwMDAwMDAwMDAiLCJtYXhfc2xvdCI6MzAsInByZW1pdW1fcmF0ZV9wZXJfc2xvdCI6IjAuMDEifX0=",
+       "funds": []
+      }
+     }
+    }
+   ],
+   "governanceKind": "anchor-gov",
+   "fetchedAt": "2026-10-26T12:25:55.129Z"
+  },
   "c18": {
    "id": "c18",
    "daoId": "capapult",
@@ -18,9 +246,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23193377,
-    "at_time_iso": "2026-10-08T14:29:57.285Z",
+    "at_time_iso": "2026-10-08T15:06:29.605Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -127,7 +355,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:56.485Z"
+   "fetchedAt": "2026-10-26T12:25:55.234Z"
   },
   "c17": {
    "id": "c17",
@@ -140,9 +368,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23142389,
-    "at_time_iso": "2026-10-05T04:58:45.195Z",
+    "at_time_iso": "2026-10-05T05:42:12.046Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -169,7 +397,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:56.588Z"
+   "fetchedAt": "2026-10-26T12:25:55.334Z"
   },
   "c16": {
    "id": "c16",
@@ -182,9 +410,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23111813,
-    "at_time_iso": "2026-10-03T04:05:38.636Z",
+    "at_time_iso": "2026-10-03T04:53:14.071Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -236,7 +464,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:56.702Z"
+   "fetchedAt": "2026-10-26T12:25:55.444Z"
   },
   "c15": {
    "id": "c15",
@@ -249,9 +477,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23074489,
-    "at_time_iso": "2026-09-30T16:25:12.554Z",
+    "at_time_iso": "2026-09-30T17:17:51.432Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -303,7 +531,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:56.802Z"
+   "fetchedAt": "2026-10-26T12:25:55.544Z"
   },
   "c14": {
    "id": "c14",
@@ -316,9 +544,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 21409761,
-    "at_time_iso": "2026-06-11T18:50:22.622Z",
+    "at_time_iso": "2026-06-11T23:28:35.739Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -369,7 +597,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:56.901Z"
+   "fetchedAt": "2026-10-26T12:25:55.648Z"
   },
   "c13": {
    "id": "c13",
@@ -382,9 +610,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 17549798,
-    "at_time_iso": "2025-09-27T15:29:58.843Z",
+    "at_time_iso": "2025-09-28T04:51:13.459Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -411,7 +639,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.011Z"
+   "fetchedAt": "2026-10-26T12:25:55.749Z"
   },
   "c12": {
    "id": "c12",
@@ -424,9 +652,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 17330868,
-    "at_time_iso": "2025-09-13T01:28:21.471Z",
+    "at_time_iso": "2025-09-13T15:19:15.989Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -478,7 +706,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.115Z"
+   "fetchedAt": "2026-10-26T12:25:55.855Z"
   },
   "c11": {
    "id": "c11",
@@ -491,9 +719,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 15992605,
-    "at_time_iso": "2025-06-15T21:50:49.078Z",
+    "at_time_iso": "2025-06-16T14:43:03.674Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -520,7 +748,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.219Z"
+   "fetchedAt": "2026-10-26T12:25:55.958Z"
   },
   "c10": {
    "id": "c10",
@@ -533,9 +761,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 15771877,
-    "at_time_iso": "2025-06-01T04:56:42.942Z",
+    "at_time_iso": "2025-06-01T22:18:52.056Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -562,7 +790,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.322Z"
+   "fetchedAt": "2026-10-26T12:25:56.060Z"
   },
   "c9": {
    "id": "c9",
@@ -575,9 +803,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 15290886,
-    "at_time_iso": "2025-04-30T03:55:58.714Z",
+    "at_time_iso": "2025-04-30T22:23:18.285Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -604,7 +832,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.439Z"
+   "fetchedAt": "2026-10-26T12:25:56.174Z"
   },
   "c8": {
    "id": "c8",
@@ -617,9 +845,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 13248548,
-    "at_time_iso": "2024-12-15T02:37:35.507Z",
+    "at_time_iso": "2024-12-16T01:41:39.286Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -671,7 +899,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.551Z"
+   "fetchedAt": "2026-10-26T12:25:56.279Z"
   },
   "c7": {
    "id": "c7",
@@ -684,9 +912,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 12892696,
-    "at_time_iso": "2024-11-21T09:41:14.947Z",
+    "at_time_iso": "2024-11-22T09:33:31.803Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -713,7 +941,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.661Z"
+   "fetchedAt": "2026-10-26T12:25:56.388Z"
   },
   "c6": {
    "id": "c6",
@@ -726,9 +954,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 9600054,
-    "at_time_iso": "2024-04-16T01:23:05.754Z",
+    "at_time_iso": "2024-04-17T08:41:31.789Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -755,7 +983,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.763Z"
+   "fetchedAt": "2026-10-26T12:25:56.495Z"
   },
   "c5": {
    "id": "c5",
@@ -768,9 +996,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 8999811,
-    "at_time_iso": "2024-03-07T01:42:41.717Z",
+    "at_time_iso": "2024-03-08T10:22:27.728Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -797,7 +1025,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.865Z"
+   "fetchedAt": "2026-10-26T12:25:56.624Z"
   },
   "c4": {
    "id": "c4",
@@ -810,9 +1038,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 8282395,
-    "at_time_iso": "2024-01-19T06:42:03.989Z",
+    "at_time_iso": "2024-01-20T16:59:02.592Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -839,7 +1067,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:57.969Z"
+   "fetchedAt": "2026-10-26T12:25:56.722Z"
   },
   "c3": {
    "id": "c3",
@@ -852,9 +1080,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 6314166,
-    "at_time_iso": "2023-09-10T03:52:50.620Z",
+    "at_time_iso": "2023-09-11T18:36:30.924Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -881,7 +1109,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:58.076Z"
+   "fetchedAt": "2026-10-26T12:25:56.822Z"
   },
   "c2": {
    "id": "c2",
@@ -894,9 +1122,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 5450208,
-    "at_time_iso": "2023-07-14T14:34:39.783Z",
+    "at_time_iso": "2023-07-16T07:15:24.067Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -948,7 +1176,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:58.181Z"
+   "fetchedAt": "2026-10-26T12:25:56.938Z"
   },
   "c1": {
    "id": "c1",
@@ -961,9 +1189,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 5131149,
-    "at_time_iso": "2023-06-23T08:27:49.026Z",
+    "at_time_iso": "2023-06-25T01:51:47.258Z",
     "estimated": true,
-    "estimate_basis": "height 23458531 + 5.76s/block"
+    "estimate_basis": "height 23462282 + 5.75s/block"
    },
    "live": false,
    "votes": {
@@ -1059,7 +1287,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-10-26T06:25:58.285Z"
+   "fetchedAt": "2026-10-26T12:25:57.055Z"
   }
  }
 }

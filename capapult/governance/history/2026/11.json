@@ -1,7 +1,7 @@
 {
  "dao": "capapult",
  "daoName": "Capapult (CAPA)",
- "exportedAt": "2026-11-13T00:25:50.727Z",
+ "exportedAt": "2026-11-13T06:25:52.260Z",
  "source": "org dao-governance cron (chain-derived, anchor-gov)",
  "governanceKind": "anchor-gov",
  "govAddress": "terra1sf66d5vap897xlvv2hlcp4l20y4pp42r6ala4snk8mgd246jvufqwe0cnm",
@@ -13,16 +13,16 @@
    "title": "xCAPA: governance takes ownership of the hub",
    "description": "Eris is winding down ampCAPA. Solid's replacement, xCAPA, runs the exact contract code of the Eris hub (code id 3418) at terra1em2n05k385nj7zmjey0vq0gpxzntz9l5z4mnhjqvg32yak07q8rqqyjrhc. Its contract admin is already Solid governance. Its settings owner is the deployer wallet, which has proposed governance as the new owner.\n\nOn execution this poll calls accept_ownership on the hub. Governance then owns its settings: reward fee and recipient, operator, harvest route and vote operator, and every later change needs a passed poll.\n\nNothing else changes. CAPA in xCAPA stays staked in governance, and the ampCAPA DAO keeps voting the hub's CAPA. Holders switch from Eris ampCAPA to xCAPA in one transaction at app.solidcapa.com/xcapa.",
    "link": "https://app.solidcapa.com/xcapa",
-   "status": "Open",
+   "status": "Rejected",
    "proposer": "terra1wn5mgk6efjzry9qvdry8fc8gd6v7lmv7502gt4",
    "startHeight": null,
    "expiration": {
     "at_height": 23726480,
-    "at_time_iso": "2026-11-13T04:39:31.997Z",
+    "at_time_iso": "2026-11-13T04:39:54.010Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
-   "live": true,
+   "live": false,
    "votes": {
     "yes": 6558986343224,
     "no": 0,
@@ -39,107 +39,10 @@
     "quorumThreshold": 30,
     "passThreshold": 50
    },
-   "outcome": "pending",
-   "outcomeReason": "Voting in progress",
+   "outcome": "rejected",
+   "outcomeReason": "Did not reach quorum (3.64% < 30% needed)",
    "totalPower": 180135823057658,
-   "voters": [
-    {
-     "address": "terra1gszaqmyt9pmhg38cpax3vprccpjuczzp40m35s",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 1719870494838
-    },
-    {
-     "address": "terra1hr8zsfpch47qygc96c8e6rzkd2t7mafqx77ulw",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 1142056388048
-    },
-    {
-     "address": "terra15g4l56kwce6r2whmgdeknwdjwx0jttdxrx7jz5",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 623205221671
-    },
-    {
-     "address": "terra1je9hqw9m8guxwny2qd6j802cqafp5av8vq4pf2",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 526933394591
-    },
-    {
-     "address": "terra1gygragtv7rhv86scnq4lkw0kw499939qer9ur5",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 504741969706
-    },
-    {
-     "address": "terra1tvemey847va2gc3tl2626hcxzp37knmy3x8a9q",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 501828330488
-    },
-    {
-     "address": "terra1myw3av4f2rmzzgltthdvw0jxkkvp8tg2kxz0jz",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 411047343843
-    },
-    {
-     "address": "terra14gvc6zysjwcxthan290sjhddk365tdkzzn7a53",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 376060290596
-    },
-    {
-     "address": "terra13mypj4s89p56wcq5a3s2tch5kuw7w3945973pw",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 271572722662
-    },
-    {
-     "address": "terra1x9jh7pl623jaj8dlt4q53mpmv5mv5nlpzdpxfs",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 177519096719
-    },
-    {
-     "address": "terra17kd3mufq333r0hmuprn2gsamfkveljg0eqaqed",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 144038728157
-    },
-    {
-     "address": "terra1zla8ld2ewhenmyf5l0f0guxq00z3653mqumcgr",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 60827027448
-    },
-    {
-     "address": "terra10ldzm9m9jj2ngceey9weneu8x0dz22dq06r9uv",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 38487545876
-    },
-    {
-     "address": "terra1gl8pr2xghfetskkd60ev6sy79mnlylmcdf8ppe",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 33707351775
-    },
-    {
-     "address": "terra1q0q3gw737l3xqzpeewkc3t42y7pddg40tvuktr",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 22354876166
-    },
-    {
-     "address": "terra1w2vmuy5exxl7guxlypyz06cwm4cvpua2qall66",
-     "name": "Unknown Member",
-     "vote": "yes",
-     "power": 4735560640
-    }
-   ],
+   "voters": [],
    "decodedActions": [
     {
      "type": "wasm.execute",
@@ -166,7 +69,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:48.577Z"
+   "fetchedAt": "2026-11-13T06:25:50.154Z"
   },
   "c19": {
    "id": "c19",
@@ -179,9 +82,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23562329,
-    "at_time_iso": "2026-11-02T05:50:20.078Z",
+    "at_time_iso": "2026-11-02T05:19:09.102Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -394,7 +297,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:48.698Z"
+   "fetchedAt": "2026-11-13T06:25:50.260Z"
   },
   "c18": {
    "id": "c18",
@@ -407,9 +310,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23193377,
-    "at_time_iso": "2026-10-08T15:06:53.218Z",
+    "at_time_iso": "2026-10-08T13:24:47.487Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -516,7 +419,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:48.805Z"
+   "fetchedAt": "2026-11-13T06:25:50.375Z"
   },
   "c17": {
    "id": "c17",
@@ -529,9 +432,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23142389,
-    "at_time_iso": "2026-10-05T05:28:42.873Z",
+    "at_time_iso": "2026-10-05T03:36:49.148Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -558,7 +461,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:48.917Z"
+   "fetchedAt": "2026-11-13T06:25:50.489Z"
   },
   "c16": {
    "id": "c16",
@@ -571,9 +474,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23111813,
-    "at_time_iso": "2026-10-03T04:31:25.500Z",
+    "at_time_iso": "2026-10-03T02:33:39.172Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -625,7 +528,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.021Z"
+   "fetchedAt": "2026-11-13T06:25:50.591Z"
   },
   "c15": {
    "id": "c15",
@@ -638,9 +541,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 23074489,
-    "at_time_iso": "2026-09-30T16:45:53.248Z",
+    "at_time_iso": "2026-09-30T14:40:56.501Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -692,7 +595,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.138Z"
+   "fetchedAt": "2026-11-13T06:25:50.693Z"
   },
   "c14": {
    "id": "c14",
@@ -705,9 +608,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 21409761,
-    "at_time_iso": "2026-06-11T15:23:27.552Z",
+    "at_time_iso": "2026-06-11T07:58:33.161Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -758,7 +661,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.248Z"
+   "fetchedAt": "2026-11-13T06:25:50.806Z"
   },
   "c13": {
    "id": "c13",
@@ -771,9 +674,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 17549798,
-    "at_time_iso": "2025-09-27T03:15:20.497Z",
+    "at_time_iso": "2025-09-26T07:28:33.013Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -800,7 +703,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.365Z"
+   "fetchedAt": "2026-11-13T06:25:50.914Z"
   },
   "c12": {
    "id": "c12",
@@ -813,9 +716,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 17330868,
-    "at_time_iso": "2025-09-12T12:43:47.243Z",
+    "at_time_iso": "2025-09-11T16:14:55.058Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -867,7 +770,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.496Z"
+   "fetchedAt": "2026-11-13T06:25:51.018Z"
   },
   "c11": {
    "id": "c11",
@@ -880,9 +783,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 15992605,
-    "at_time_iso": "2025-06-15T06:03:17.078Z",
+    "at_time_iso": "2025-06-14T05:17:12.044Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -909,7 +812,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.612Z"
+   "fetchedAt": "2026-11-13T06:25:51.122Z"
   },
   "c10": {
    "id": "c10",
@@ -922,9 +825,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 15771877,
-    "at_time_iso": "2025-05-31T12:39:00.310Z",
+    "at_time_iso": "2025-05-30T11:10:29.841Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -951,7 +854,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.731Z"
+   "fetchedAt": "2026-11-13T06:25:51.229Z"
   },
   "c9": {
    "id": "c9",
@@ -964,9 +867,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 15290886,
-    "at_time_iso": "2025-04-29T10:32:30.513Z",
+    "at_time_iso": "2025-04-28T07:31:33.256Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -993,7 +896,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.836Z"
+   "fetchedAt": "2026-11-13T06:25:51.362Z"
   },
   "c8": {
    "id": "c8",
@@ -1006,9 +909,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 13248548,
-    "at_time_iso": "2024-12-14T04:34:54.007Z",
+    "at_time_iso": "2024-12-12T19:01:24.508Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -1060,7 +963,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:49.949Z"
+   "fetchedAt": "2026-11-13T06:25:51.471Z"
   },
   "c7": {
    "id": "c7",
@@ -1073,9 +976,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 12892696,
-    "at_time_iso": "2024-11-20T10:49:54.394Z",
+    "at_time_iso": "2024-11-19T00:08:01.209Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -1102,7 +1005,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:50.056Z"
+   "fetchedAt": "2026-11-13T06:25:51.574Z"
   },
   "c6": {
    "id": "c6",
@@ -1115,9 +1018,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 9600054,
-    "at_time_iso": "2024-04-14T19:01:35.658Z",
+    "at_time_iso": "2024-04-12T21:46:51.726Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -1144,7 +1047,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:50.169Z"
+   "fetchedAt": "2026-11-13T06:25:51.680Z"
   },
   "c5": {
    "id": "c5",
@@ -1157,9 +1060,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 8999811,
-    "at_time_iso": "2024-03-05T17:59:07.828Z",
+    "at_time_iso": "2024-03-03T18:49:01.894Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -1186,7 +1089,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:50.284Z"
+   "fetchedAt": "2026-11-13T06:25:51.787Z"
   },
   "c4": {
    "id": "c4",
@@ -1199,9 +1102,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 8282395,
-    "at_time_iso": "2024-01-17T21:20:25.136Z",
+    "at_time_iso": "2024-01-15T19:52:25.961Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -1228,7 +1131,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:50.388Z"
+   "fetchedAt": "2026-11-13T06:25:51.899Z"
   },
   "c3": {
    "id": "c3",
@@ -1241,9 +1144,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 6314166,
-    "at_time_iso": "2023-09-08T14:02:06.385Z",
+    "at_time_iso": "2023-09-06T06:15:49.592Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -1270,7 +1173,7 @@
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:50.493Z"
+   "fetchedAt": "2026-11-13T06:25:52.018Z"
   },
   "c2": {
    "id": "c2",
@@ -1283,9 +1186,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 5450208,
-    "at_time_iso": "2023-07-12T22:45:48.501Z",
+    "at_time_iso": "2023-07-10T12:13:28.545Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -1337,7 +1240,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:50.608Z"
+   "fetchedAt": "2026-11-13T06:25:52.146Z"
   },
   "c1": {
    "id": "c1",
@@ -1350,9 +1253,9 @@
    "startHeight": null,
    "expiration": {
     "at_height": 5131149,
-    "at_time_iso": "2023-06-21T15:55:20.502Z",
+    "at_time_iso": "2023-06-19T04:21:41.158Z",
     "estimated": true,
-    "estimate_basis": "height 23723837 + 5.76s/block"
+    "estimate_basis": "height 23727579 + 5.78s/block"
    },
    "live": false,
    "votes": {
@@ -1448,7 +1351,7 @@
     }
    ],
    "governanceKind": "anchor-gov",
-   "fetchedAt": "2026-11-13T00:25:50.727Z"
+   "fetchedAt": "2026-11-13T06:25:52.260Z"
   }
  }
 }

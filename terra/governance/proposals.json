@@ -1,13 +1,293 @@
 {
  "dao": "terra",
  "daoName": "Terra (LUNA) governance",
- "exportedAt": "2026-11-25T18:26:50.846Z",
+ "exportedAt": "2026-11-26T00:26:55.334Z",
  "source": "org dao-governance cron (chain-derived, x/gov)",
  "governanceKind": "x-gov",
- "bondedTokens": "313504307255907",
+ "bondedTokens": "313551018528017",
  "window": "newest 60",
  "proposalCount": 60,
  "proposals": {
+  "l4859": {
+   "id": "l4859",
+   "daoId": "terra",
+   "title": "Authorize PFC to upload CosmWasm code for bLUNA maintenance",
+   "description": "Add the PFC wallet (terra1hr7svdp2rga9vf3ry95sx7g5wyspgwmg94qac8) to Terra’s CosmWasm code-upload allowlist so PFC can upload updated code for the bLUNA smart contracts. A YES vote grants this address ongoing, chain-wide permission to upload CosmWasm code. Any migration of an existing bLUNA contract requires separate authorization from its contract administrator or through governance.",
+   "status": "Open",
+   "proposer": "terra1hr7svdp2rga9vf3ry95sx7g5wyspgwmg94qac8",
+   "startHeight": null,
+   "submitTime": "2026-11-25T19:39:47.510028746Z",
+   "votingStartTime": "2026-11-25T19:39:47.510028746Z",
+   "expiration": {
+    "at_time_iso": "2026-11-26T19:39:47.510Z"
+   },
+   "live": true,
+   "votes": {
+    "yes": 25950371124890,
+    "no": 0,
+    "abstain": 14850242498,
+    "total": 26322664211886,
+    "noWithVeto": 357442844498
+   },
+   "voting": {
+    "turnout": 8.395017925777832,
+    "yesPercent": 98.58565575277942,
+    "noPercent": 0,
+    "abstainPercent": 0.056416183325753065,
+    "vetoPercent": 1.3579280638948266,
+    "quorumReached": false,
+    "thresholdReached": true,
+    "vetoed": false,
+    "quorumThreshold": 30,
+    "passThreshold": 50,
+    "vetoThreshold": 33.4
+   },
+   "outcome": "pending",
+   "outcomeReason": "Voting in progress",
+   "totalPower": 313551018528017,
+   "voters": [],
+   "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
+   "decodedActions": [
+    {
+     "type": "/cosmwasm.wasm.v1.MsgAddCodeUploadParamsAddresses",
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "raw": {
+      "@type": "/cosmwasm.wasm.v1.MsgAddCodeUploadParamsAddresses",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "addresses": [
+       "terra1hr7svdp2rga9vf3ry95sx7g5wyspgwmg94qac8"
+      ]
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "/cosmwasm.wasm.v1.MsgAddCodeUploadParamsAddresses": {
+      "@type": "/cosmwasm.wasm.v1.MsgAddCodeUploadParamsAddresses",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "addresses": [
+       "terra1hr7svdp2rga9vf3ry95sx7g5wyspgwmg94qac8"
+      ]
+     }
+    }
+   ],
+   "governanceKind": "x-gov",
+   "fetchedAt": "2026-11-26T00:26:55.215Z"
+  },
+  "l4858": {
+   "id": "l4858",
+   "daoId": "terra",
+   "title": "Suspend Terra Alliance Rewards",
+   "description": "## What the proposal does\n\nKeep AllianceNFT’s reward weight at **0.008**. Cut TLA Stable from **0.10 to 0.001** and disable its scheduled increases. Set TLA Bluechip, Project, Single and the Phoenix Directive Treasury to zero. ampROAR and Chain Alliance are already at zero. The five governance messages update weights while all eight assets remain listed. [Governance messages](https://gist.github.com/PFC-developer/7b5d010f9e6ec303c9c7f030713b0121/382c56da8e4d1db39224c496ad714f4d214b417e#file-02-alliance-messages-review-json)\n\n## Why\n\nThe launch terms assigned two powers to ERIS wallets. [Launch terms and wallet assignments](https://github.com/phoenix-directive/docs/blob/7cebbd26048f0e1568a2aed55177090b90788d8b/common_backup/2024-08-12_24385_launching-terra-liquidity-alliance.md#L140-L169)\n\n| ERIS permission | Exact wording | Handover to PD Stewardship |\n|---|---|---|\n| Owner | “Is allowed to change technical configurations in contracts” | After 3 months |\n| Contract Admin | “Is allowed to migrate contracts” | After 1 month |\n\nOn November 24, 2026, the ERIS owner wallet used its configuration power to move four registry roles from Stewardship to itself. **The three-month handover applied to that action.** Board motion A305 proposed removing end-of-life assets. It contained no role transfer. We found no board decision extending ERIS’s authority or approving the reassignment. Earlier that day, voters passed proposal 4856, which reaffirmed that “contract administration was to transfer to PD Stewardship after one month and contract ownership after three months.” [Transaction](https://terra-api.polkachu.com/cosmos/tx/v1beta1/txs/C8365D87F99BC1BBA4D0F1B61C4D2DDA87BBB96D6D5500306BF1D0903CA63B8A) · [A305](https://terra-api.polkachu.com/cosmwasm/wasm/v1/contract/terra1660g9mle5kfsq8c0p4k4hgr9ujdyr3m48c22cawy0akr98rmwksqehqnup/smart/eyJwcm9wb3NhbCI6eyJwcm9wb3NhbF9pZCI6MzA1fX0=) · [4856, §3](https://terra-api.polkachu.com/cosmos/gov/v1/proposals/4856)\n\n## What a YES vote means\n\n**YES approves the five Alliance reward-weight changes.** YES also authorizes Terra Core maintainers to rectify issues with TLA and the Phoenix Directive (PD) through a validator-adopted software update, including the issues raised in proposals [4855](https://terra-api.polkachu.com/cosmos/gov/v1/proposals/4855), [4856](https://terra-api.polkachu.com/cosmos/gov/v1/proposals/4856), and [4857](https://terra-api.polkachu.com/cosmos/gov/v1/proposals/4857).",
+   "status": "Open",
+   "proposer": "terra1hr7svdp2rga9vf3ry95sx7g5wyspgwmg94qac8",
+   "startHeight": null,
+   "submitTime": "2026-11-25T19:32:43.278248288Z",
+   "votingStartTime": "2026-11-25T19:32:43.278248288Z",
+   "expiration": {
+    "at_time_iso": "2026-11-26T19:32:43.278Z"
+   },
+   "live": true,
+   "votes": {
+    "yes": 2647599067784,
+    "no": 346242844495,
+    "abstain": 14850242498,
+    "total": 3019892154780,
+    "noWithVeto": 11200000003
+   },
+   "voting": {
+    "turnout": 0.9631262462348408,
+    "yesPercent": 87.67197409991213,
+    "noPercent": 11.465404284287228,
+    "abstainPercent": 0.49174744450706537,
+    "vetoPercent": 0.3708741712935747,
+    "quorumReached": false,
+    "thresholdReached": true,
+    "vetoed": false,
+    "quorumThreshold": 30,
+    "passThreshold": 50,
+    "vetoThreshold": 33.4
+   },
+   "outcome": "pending",
+   "outcomeReason": "Voting in progress",
+   "totalPower": 313551018528017,
+   "voters": [],
+   "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
+   "decodedActions": [
+    {
+     "type": "/alliance.alliance.MsgUpdateAlliance",
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "raw": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra16l43xt2uq09yvz4axg73n8rtm0qte9lremdwm6ph0e35r2jnm43qnl8h53/vt",
+      "reward_weight": "0.000000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.000000000000000000",
+       "max": "0.000000000000000000"
+      }
+     }
+    },
+    {
+     "type": "/alliance.alliance.MsgUpdateAlliance",
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "raw": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra16st8yfprkdl06kccktshd3p2vccq93xcn9mkhjl8s4jumyjtd4kqye0me5/vt",
+      "reward_weight": "0.000000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.000000000000000000",
+       "max": "0.000000000000000000"
+      }
+     }
+    },
+    {
+     "type": "/alliance.alliance.MsgUpdateAlliance",
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "raw": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra1u72y7gppxrsncctvgfyqduv3md6pgq77pqhz9rxgwl3dqgye00cq7vmf8u/vt",
+      "reward_weight": "0.000000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.000000000000000000",
+       "max": "0.000000000000000000"
+      }
+     }
+    },
+    {
+     "type": "/alliance.alliance.MsgUpdateAlliance",
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "raw": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra1x8v9fujf3c78q2we23x0vgzmxgtt0hgvuvfsxy4w3ar9kcua4c6qqcnhyh/vt",
+      "reward_weight": "0.000000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.000000000000000000",
+       "max": "0.000000000000000000"
+      }
+     }
+    },
+    {
+     "type": "/alliance.alliance.MsgUpdateAlliance",
+     "trusted": false,
+     "verificationStatus": "not_yet_verified",
+     "raw": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra1ym2495f63mdx63tu96085x2vf3xpy9z9k5urxwhvmf9jldm99q5qr4q6n8/vt",
+      "reward_weight": "0.001000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.001000000000000000",
+       "max": "0.001000000000000000"
+      }
+     }
+    }
+   ],
+   "treasuryImpact": null,
+   "rawMsgs": [
+    {
+     "/alliance.alliance.MsgUpdateAlliance": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra16l43xt2uq09yvz4axg73n8rtm0qte9lremdwm6ph0e35r2jnm43qnl8h53/vt",
+      "reward_weight": "0.000000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.000000000000000000",
+       "max": "0.000000000000000000"
+      }
+     }
+    },
+    {
+     "/alliance.alliance.MsgUpdateAlliance": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra16st8yfprkdl06kccktshd3p2vccq93xcn9mkhjl8s4jumyjtd4kqye0me5/vt",
+      "reward_weight": "0.000000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.000000000000000000",
+       "max": "0.000000000000000000"
+      }
+     }
+    },
+    {
+     "/alliance.alliance.MsgUpdateAlliance": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra1u72y7gppxrsncctvgfyqduv3md6pgq77pqhz9rxgwl3dqgye00cq7vmf8u/vt",
+      "reward_weight": "0.000000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.000000000000000000",
+       "max": "0.000000000000000000"
+      }
+     }
+    },
+    {
+     "/alliance.alliance.MsgUpdateAlliance": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra1x8v9fujf3c78q2we23x0vgzmxgtt0hgvuvfsxy4w3ar9kcua4c6qqcnhyh/vt",
+      "reward_weight": "0.000000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.000000000000000000",
+       "max": "0.000000000000000000"
+      }
+     }
+    },
+    {
+     "/alliance.alliance.MsgUpdateAlliance": {
+      "@type": "/alliance.alliance.MsgUpdateAlliance",
+      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n",
+      "denom": "factory/terra1ym2495f63mdx63tu96085x2vf3xpy9z9k5urxwhvmf9jldm99q5qr4q6n8/vt",
+      "reward_weight": "0.001000000000000000",
+      "take_rate": "0.000000000000000000",
+      "reward_change_rate": "1.000000000000000000",
+      "reward_change_interval": "0s",
+      "reward_weight_range": {
+       "min": "0.001000000000000000",
+       "max": "0.001000000000000000"
+      }
+     }
+    }
+   ],
+   "governanceKind": "x-gov",
+   "fetchedAt": "2026-11-26T00:26:55.333Z"
+  },
   "l4857": {
    "id": "l4857",
    "daoId": "terra",
@@ -30,7 +310,7 @@
     "noWithVeto": 7378165172014
    },
    "voting": {
-    "turnout": 71.52453598112345,
+    "turnout": 71.51388061129418,
     "yesPercent": 86.43415187865881,
     "noPercent": 3.196082646577113,
     "abstainPercent": 7.079357020321146,
@@ -44,14 +324,14 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.333Z"
   },
   "l4856": {
    "id": "l4856",
@@ -75,7 +355,7 @@
     "noWithVeto": 37515827777458
    },
    "voting": {
-    "turnout": 78.85401999077003,
+    "turnout": 78.84227271084714,
     "yesPercent": 51.42946727028645,
     "noPercent": 6.946722373662108,
     "abstainPercent": 26.448164510679874,
@@ -89,14 +369,14 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.333Z"
   },
   "l4855": {
    "id": "l4855",
@@ -120,7 +400,7 @@
     "noWithVeto": 11353378845604
    },
    "voting": {
-    "turnout": 74.55593274810548,
+    "turnout": 74.54482577585465,
     "yesPercent": 76.46197216488704,
     "noPercent": 8.024533065097003,
     "abstainPercent": 10.656144636586612,
@@ -134,14 +414,14 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.333Z"
   },
   "l4854": {
    "id": "l4854",
@@ -165,7 +445,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 70.5948115016879,
+    "turnout": 70.58429463759002,
     "yesPercent": 84.98966212598373,
     "noPercent": 0.3579728428694648,
     "abstainPercent": 14.652365031146811,
@@ -179,7 +459,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -233,7 +513,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.333Z"
   },
   "l4853": {
    "id": "l4853",
@@ -257,7 +537,7 @@
     "noWithVeto": 30055480011262
    },
    "voting": {
-    "turnout": 68.00199701298877,
+    "turnout": 67.9918664135048,
     "yesPercent": 13.815215239894885,
     "noPercent": 27.771796829692715,
     "abstainPercent": 44.3149560087216,
@@ -271,14 +551,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (24.81% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.333Z"
   },
   "l4852": {
    "id": "l4852",
@@ -302,7 +582,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 65.16703977257352,
+    "turnout": 65.15733151092694,
     "yesPercent": 94.026106342407,
     "noPercent": 0,
     "abstainPercent": 5.973893657593,
@@ -316,7 +596,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -354,7 +634,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.333Z"
   },
   "l4851": {
    "id": "l4851",
@@ -378,7 +658,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 76.18425364050331,
+    "turnout": 76.17290408910013,
     "yesPercent": 97.69646231154874,
     "noPercent": 0,
     "abstainPercent": 2.303537688451253,
@@ -392,7 +672,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -430,7 +710,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.333Z"
   },
   "l4849": {
    "id": "l4849",
@@ -454,7 +734,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 81.85777607207967,
+    "turnout": 81.84558130750716,
     "yesPercent": 99.99997888980894,
     "noPercent": 0.00002111019104750802,
     "abstainPercent": 0,
@@ -468,7 +748,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -506,7 +786,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4848": {
    "id": "l4848",
@@ -530,7 +810,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 73.56771624217018,
+    "turnout": 73.55675648950208,
     "yesPercent": 76.55928880779396,
     "noPercent": 0.2240797259237321,
     "abstainPercent": 23.2166314662823,
@@ -544,7 +824,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -584,7 +864,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4847": {
    "id": "l4847",
@@ -608,7 +888,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 68.95537918563471,
+    "turnout": 68.94510655601384,
     "yesPercent": 25.40767473980688,
     "noPercent": 16.082689699532615,
     "abstainPercent": 58.50963556066051,
@@ -622,7 +902,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -656,7 +936,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4846": {
    "id": "l4846",
@@ -680,7 +960,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 70.80600875811236,
+    "turnout": 70.79546043089707,
     "yesPercent": 99.99940105169597,
     "noPercent": 0,
     "abstainPercent": 0.0005989483040355793,
@@ -694,7 +974,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -732,7 +1012,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4845": {
    "id": "l4845",
@@ -756,7 +1036,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 82.36274398969326,
+    "turnout": 82.3504739975105,
     "yesPercent": 99.99941203274918,
     "noPercent": 3.872805450858706e-8,
     "abstainPercent": 0.0005879285227693828,
@@ -770,7 +1050,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -808,7 +1088,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4844": {
    "id": "l4844",
@@ -832,7 +1112,7 @@
     "noWithVeto": 13086009
    },
    "voting": {
-    "turnout": 77.52977887800114,
+    "turnout": 77.51822887693656,
     "yesPercent": 66.09979433602653,
     "noPercent": 7.820829876731198,
     "abstainPercent": 26.07937040336492,
@@ -846,7 +1126,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -884,7 +1164,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4842": {
    "id": "l4842",
@@ -908,7 +1188,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 76.18261983209639,
+    "turnout": 76.17127052408988,
     "yesPercent": 99.99644347181884,
     "noPercent": 0.0000021353583157513627,
     "abstainPercent": 0.003554392822839666,
@@ -922,7 +1202,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -960,7 +1240,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4838": {
    "id": "l4838",
@@ -984,7 +1264,7 @@
     "noWithVeto": 1310300000
    },
    "voting": {
-    "turnout": 83.40588275727022,
+    "turnout": 83.39345736345922,
     "yesPercent": 95.07636782083097,
     "noPercent": 0.00006796081445629861,
     "abstainPercent": 4.923063111266539,
@@ -998,7 +1278,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1068,7 +1348,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4837": {
    "id": "l4837",
@@ -1092,7 +1372,7 @@
     "noWithVeto": 182043389148322
    },
    "voting": {
-    "turnout": 58.58196819603395,
+    "turnout": 58.57324094561713,
     "yesPercent": 0.008586658575025647,
     "noPercent": 0.8699259622173546,
     "abstainPercent": 0.00008415364315610284,
@@ -1106,14 +1386,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0.01% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4836": {
    "id": "l4836",
@@ -1137,7 +1417,7 @@
     "noWithVeto": 215550945
    },
    "voting": {
-    "turnout": 64.40866039287484,
+    "turnout": 64.39906511081843,
     "yesPercent": 22.021442640369813,
     "noPercent": 35.316077080806174,
     "abstainPercent": 42.662373530232706,
@@ -1151,7 +1431,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (38.41% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1185,7 +1465,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4835": {
    "id": "l4835",
@@ -1209,7 +1489,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 80.86391704938828,
+    "turnout": 80.85187034499259,
     "yesPercent": 99.99992807437181,
     "noPercent": 0,
     "abstainPercent": 0.00007192562820016346,
@@ -1223,7 +1503,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1261,7 +1541,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4834": {
    "id": "l4834",
@@ -1285,7 +1565,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 103.02859848413586,
+    "turnout": 103.01324979567839,
     "yesPercent": 99.99992612013642,
     "noPercent": 0,
     "abstainPercent": 0.00007387986358704935,
@@ -1299,7 +1579,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1337,7 +1617,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4833": {
    "id": "l4833",
@@ -1361,7 +1641,7 @@
     "noWithVeto": 279451517203458
    },
    "voting": {
-    "turnout": 89.84382595834013,
+    "turnout": 89.8304414717534,
     "yesPercent": 0.00005018917306037997,
     "noPercent": 0.7855471551894342,
     "abstainPercent": 0,
@@ -1375,14 +1655,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4832": {
    "id": "l4832",
@@ -1406,7 +1686,7 @@
     "noWithVeto": 5909633154
    },
    "voting": {
-    "turnout": 98.72440793172717,
+    "turnout": 98.70970046018253,
     "yesPercent": 53.09183392505924,
     "noPercent": 4.236165181988879,
     "abstainPercent": 42.67009151249723,
@@ -1420,7 +1700,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1454,7 +1734,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4831": {
    "id": "l4831",
@@ -1478,7 +1758,7 @@
     "noWithVeto": 254060068988388
    },
    "voting": {
-    "turnout": 81.74696292501615,
+    "turnout": 81.73478466883543,
     "yesPercent": 0.001593041722432568,
     "noPercent": 0.8647167242385796,
     "abstainPercent": 0,
@@ -1492,14 +1772,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4830": {
    "id": "l4830",
@@ -1523,7 +1803,7 @@
     "noWithVeto": 10490278474
    },
    "voting": {
-    "turnout": 87.49424364959589,
+    "turnout": 87.48120919210199,
     "yesPercent": 6.158431380472216,
     "noPercent": 42.44265683829471,
     "abstainPercent": 51.39508737494252,
@@ -1537,14 +1817,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (12.67% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4829": {
    "id": "l4829",
@@ -1568,7 +1848,7 @@
     "noWithVeto": 84500000
    },
    "voting": {
-    "turnout": 91.75205789583748,
+    "turnout": 91.73838913034233,
     "yesPercent": 82.96132556893176,
     "noPercent": 1.8279017730488771,
     "abstainPercent": 15.210743281699852,
@@ -1582,7 +1862,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1620,7 +1900,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4828": {
    "id": "l4828",
@@ -1644,7 +1924,7 @@
     "noWithVeto": 115255872
    },
    "voting": {
-    "turnout": 95.40834331426375,
+    "turnout": 95.39412985354197,
     "yesPercent": 99.9998729375959,
     "noPercent": 0,
     "abstainPercent": 0.00008852937113693257,
@@ -1658,7 +1938,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1696,7 +1976,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4824": {
    "id": "l4824",
@@ -1720,7 +2000,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 96.32210378867873,
+    "turnout": 96.3077542004637,
     "yesPercent": 99.99997223499027,
     "noPercent": 0.00002493126822422,
     "abstainPercent": 0.000002833741507793935,
@@ -1734,7 +2014,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1772,7 +2052,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.845Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4823": {
    "id": "l4823",
@@ -1796,7 +2076,7 @@
     "noWithVeto": 2171826866
    },
    "voting": {
-    "turnout": 73.0240272112936,
+    "turnout": 73.01314845471468,
     "yesPercent": 42.9506841335065,
     "noPercent": 10.084447059776874,
     "abstainPercent": 46.963920135096025,
@@ -1810,7 +2090,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1918,7 +2198,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4822": {
    "id": "l4822",
@@ -1942,7 +2222,7 @@
     "noWithVeto": 10000000
    },
    "voting": {
-    "turnout": 86.75336194668772,
+    "turnout": 86.74043786206708,
     "yesPercent": 74.1304401278549,
     "noPercent": 0.014769516100532497,
     "abstainPercent": 25.85478667924316,
@@ -1956,7 +2236,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1998,7 +2278,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4820": {
    "id": "l4820",
@@ -2022,7 +2302,7 @@
     "noWithVeto": 190549202707489
    },
    "voting": {
-    "turnout": 61.64956289257788,
+    "turnout": 61.64037864715187,
     "yesPercent": 0.002373968370492608,
     "noPercent": 1.4072987609009673,
     "abstainPercent": 0.0001557374221978778,
@@ -2036,14 +2316,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4819": {
    "id": "l4819",
@@ -2067,7 +2347,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 92.032377115536,
+    "turnout": 92.01866658947692,
     "yesPercent": 83.31621116930114,
     "noPercent": 1.4108185558600679,
     "abstainPercent": 15.272970274838782,
@@ -2081,7 +2361,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2119,7 +2399,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4818": {
    "id": "l4818",
@@ -2143,7 +2423,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 87.65419864075895,
+    "turnout": 87.64114035396558,
     "yesPercent": 98.67436490725542,
     "noPercent": 1.8694599084519105e-7,
     "abstainPercent": 1.3256349057985912,
@@ -2157,7 +2437,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2195,7 +2475,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4817": {
    "id": "l4817",
@@ -2219,7 +2499,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 76.73173519897993,
+    "turnout": 76.72030408649566,
     "yesPercent": 82.05338394767175,
     "noPercent": 0.00005217052347636493,
     "abstainPercent": 17.946563881804785,
@@ -2233,7 +2513,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2341,7 +2621,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4816": {
    "id": "l4816",
@@ -2365,7 +2645,7 @@
     "noWithVeto": 383005493
    },
    "voting": {
-    "turnout": 110.65315875794357,
+    "turnout": 110.63667420039745,
     "yesPercent": 52.19272244434791,
     "noPercent": 17.23625609174213,
     "abstainPercent": 30.57091105663915,
@@ -2379,7 +2659,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2417,7 +2697,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4814": {
    "id": "l4814",
@@ -2441,7 +2721,7 @@
     "noWithVeto": 4669634538
    },
    "voting": {
-    "turnout": 116.90541875980698,
+    "turnout": 116.8880027716451,
     "yesPercent": 3.756494134238949,
     "noPercent": 53.640269772768754,
     "abstainPercent": 42.601961989404735,
@@ -2455,7 +2735,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (6.54% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2493,7 +2773,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4813": {
    "id": "l4813",
@@ -2517,7 +2797,7 @@
     "noWithVeto": 173942998
    },
    "voting": {
-    "turnout": 114.91584378463047,
+    "turnout": 114.89872419345843,
     "yesPercent": 78.24296006644813,
     "noPercent": 0.003623137362616651,
     "abstainPercent": 21.753368514380792,
@@ -2531,7 +2811,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2569,7 +2849,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4812": {
    "id": "l4812",
@@ -2593,7 +2873,7 @@
     "noWithVeto": 2238420663
    },
    "voting": {
-    "turnout": 120.43931621641369,
+    "turnout": 120.4213737657754,
     "yesPercent": 11.942913836633904,
     "noPercent": 76.55415019139285,
     "abstainPercent": 11.502343142328026,
@@ -2607,7 +2887,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (13.5% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2649,7 +2929,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4811": {
    "id": "l4811",
@@ -2673,7 +2953,7 @@
     "noWithVeto": 2242326672
    },
    "voting": {
-    "turnout": 115.25635489846012,
+    "turnout": 115.23918457963498,
     "yesPercent": 3.259615054166909,
     "noPercent": 75.02167507219548,
     "abstainPercent": 21.71808930404695,
@@ -2687,7 +2967,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (4.16% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2729,7 +3009,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4810": {
    "id": "l4810",
@@ -2753,7 +3033,7 @@
     "noWithVeto": 2464888759
    },
    "voting": {
-    "turnout": 114.65767193124144,
+    "turnout": 114.64059080122877,
     "yesPercent": 0.016450937315551722,
     "noPercent": 83.91293446986461,
     "abstainPercent": 16.069928866699282,
@@ -2767,7 +3047,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0.02% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2809,7 +3089,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4809": {
    "id": "l4809",
@@ -2833,7 +3113,7 @@
     "noWithVeto": 325805131661258
    },
    "voting": {
-    "turnout": 103.92832944401052,
+    "turnout": 103.91284671810712,
     "yesPercent": 0.0018220646365196113,
     "noPercent": 0.0022865767462380347,
     "abstainPercent": 0.0003900432603748832,
@@ -2847,14 +3127,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4807": {
    "id": "l4807",
@@ -2878,7 +3158,7 @@
     "noWithVeto": 2760134390
    },
    "voting": {
-    "turnout": 128.3894814893536,
+    "turnout": 128.3703546626124,
     "yesPercent": 98.97896590866556,
     "noPercent": 0.00003714829468394941,
     "abstainPercent": 1.0203112065321358,
@@ -2892,7 +3172,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2930,7 +3210,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4805": {
    "id": "l4805",
@@ -2954,7 +3234,7 @@
     "noWithVeto": 5549472
    },
    "voting": {
-    "turnout": 148.77307168103636,
+    "turnout": 148.75090820835317,
     "yesPercent": 99.99990082668123,
     "noPercent": 0.000040462547534110126,
     "abstainPercent": 0.000057520944242685226,
@@ -2968,7 +3248,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3006,7 +3286,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4803": {
    "id": "l4803",
@@ -3030,7 +3310,7 @@
     "noWithVeto": 1658830173363
    },
    "voting": {
-    "turnout": 130.19873624493022,
+    "turnout": 130.17933988440916,
     "yesPercent": 54.270936894912346,
     "noPercent": 22.301417428155066,
     "abstainPercent": 23.021247598755608,
@@ -3044,7 +3324,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3078,7 +3358,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4802": {
    "id": "l4802",
@@ -3102,7 +3382,7 @@
     "noWithVeto": 96876274
    },
    "voting": {
-    "turnout": 141.47272579252677,
+    "turnout": 141.4516498890848,
     "yesPercent": 91.17411858312244,
     "noPercent": 3.20686521995142,
     "abstainPercent": 5.618994354484029,
@@ -3116,7 +3396,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3168,7 +3448,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4801": {
    "id": "l4801",
@@ -3192,7 +3472,7 @@
     "noWithVeto": 33329368
    },
    "voting": {
-    "turnout": 144.36936971576523,
+    "turnout": 144.3478622847105,
     "yesPercent": 97.84292413055506,
     "noPercent": 1.0847024921296777,
     "abstainPercent": 1.072366013404677,
@@ -3206,7 +3486,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3258,7 +3538,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4799": {
    "id": "l4799",
@@ -3282,7 +3562,7 @@
     "noWithVeto": 339184804537829
    },
    "voting": {
-    "turnout": 109.12093000729331,
+    "turnout": 109.1046737135699,
     "yesPercent": 0.008318116983994156,
     "noPercent": 0.842448078399606,
     "abstainPercent": 0.0010377335065699495,
@@ -3296,7 +3576,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0.01% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3330,7 +3610,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4798": {
    "id": "l4798",
@@ -3354,7 +3634,7 @@
     "noWithVeto": 1904000000
    },
    "voting": {
-    "turnout": 153.77044465980612,
+    "turnout": 153.74753670333797,
     "yesPercent": 99.99959424896196,
     "noPercent": 0.000005828944734213266,
     "abstainPercent": 0.00000496441452788852,
@@ -3368,7 +3648,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3406,7 +3686,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4797": {
    "id": "l4797",
@@ -3430,7 +3710,7 @@
     "noWithVeto": 78830091567
    },
    "voting": {
-    "turnout": 150.94836481901558,
+    "turnout": 150.92587728197384,
     "yesPercent": 21.013757288580344,
     "noPercent": 50.55080455168854,
     "abstainPercent": 28.41878026526948,
@@ -3444,7 +3724,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (29.36% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3478,7 +3758,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4792": {
    "id": "l4792",
@@ -3502,7 +3782,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 80.10949908857526,
+    "turnout": 80.09756477361724,
     "yesPercent": 99.99999877983281,
     "noPercent": 5.432720541931957e-7,
     "abstainPercent": 3.1853888739789106e-7,
@@ -3516,7 +3796,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3554,7 +3834,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4790": {
    "id": "l4790",
@@ -3578,7 +3858,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 86.94371319505507,
+    "turnout": 86.93076075285164,
     "yesPercent": 86.90107158976608,
     "noPercent": 0.017680188611092315,
     "abstainPercent": 13.081247891435185,
@@ -3592,7 +3872,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3630,7 +3910,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4787": {
    "id": "l4787",
@@ -3654,7 +3934,7 @@
     "noWithVeto": 254869653409978
    },
    "voting": {
-    "turnout": 84.32455095094708,
+    "turnout": 84.31198869851521,
     "yesPercent": 0.002000297917089031,
     "noPercent": 3.5883334974588967,
     "abstainPercent": 1.987054832878841e-9,
@@ -3668,7 +3948,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3702,7 +3982,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4785": {
    "id": "l4785",
@@ -3726,7 +4006,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 91.92600845828696,
+    "turnout": 91.91231377850171,
     "yesPercent": 97.69635661372422,
     "noPercent": 0,
     "abstainPercent": 2.3036430739839684,
@@ -3740,7 +4020,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3788,7 +4068,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4775": {
    "id": "l4775",
@@ -3812,7 +4092,7 @@
     "noWithVeto": 81000000
    },
    "voting": {
-    "turnout": 87.5887175904822,
+    "turnout": 87.57566905873021,
     "yesPercent": 18.407109972030927,
     "noPercent": 48.820001200609404,
     "abstainPercent": 32.77285932930752,
@@ -3826,7 +4106,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (27.38% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3874,7 +4154,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4770": {
    "id": "l4770",
@@ -3898,7 +4178,7 @@
     "noWithVeto": 24404433812803
    },
    "voting": {
-    "turnout": 61.77478835318711,
+    "turnout": 61.76558545229447,
     "yesPercent": 1.243788422420285,
     "noPercent": 81.5251956370337,
     "abstainPercent": 4.629756350841811,
@@ -3912,7 +4192,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (1.3% yes < 50% needed)",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3960,7 +4240,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4765": {
    "id": "l4765",
@@ -3984,7 +4264,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 82.21118892024339,
+    "turnout": 82.19894150598152,
     "yesPercent": 65.4824472665145,
     "noPercent": 5.806535294459739,
     "abstainPercent": 28.711017089830715,
@@ -3998,7 +4278,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4046,7 +4326,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4746": {
    "id": "l4746",
@@ -4070,7 +4350,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 73.22759111956394,
+    "turnout": 73.21668203704587,
     "yesPercent": 86.7480936808099,
     "noPercent": 2.014378570309777,
     "abstainPercent": 11.237527356845854,
@@ -4084,7 +4364,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4136,7 +4416,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4745": {
    "id": "l4745",
@@ -4160,7 +4440,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 81.02518939469239,
+    "turnout": 81.01311866474437,
     "yesPercent": 84.80089059580204,
     "noPercent": 1.8204079474033847,
     "abstainPercent": 13.378701102488211,
@@ -4174,7 +4454,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4248,7 +4528,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4744": {
    "id": "l4744",
@@ -4272,7 +4552,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 96.75085247127875,
+    "turnout": 96.73643901021624,
     "yesPercent": 53.50647841799242,
     "noPercent": 6.678822443247504,
     "abstainPercent": 39.81469884204187,
@@ -4286,7 +4566,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4334,7 +4614,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   },
   "l4743": {
    "id": "l4743",
@@ -4358,7 +4638,7 @@
     "noWithVeto": 3666203345487
    },
    "voting": {
-    "turnout": 92.28479482212784,
+    "turnout": 92.27104669213358,
     "yesPercent": 49.25477030561958,
     "noPercent": 10.086993098686758,
     "abstainPercent": 39.39104324208862,
@@ -4372,7 +4652,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
+   "totalPower": 313551018528017,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4406,179 +4686,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
-  },
-  "l4742": {
-   "id": "l4742",
-   "daoId": "terra",
-   "title": "Chainscope Grant",
-   "description": "https://agora.terra.money/discussion/12494-chainscope-funding-the-next-generation-lens-for-terra",
-   "status": "Passed",
-   "proposer": null,
-   "startHeight": null,
-   "submitTime": "2023-08-06T04:26:51.878513992Z",
-   "votingStartTime": "2023-08-06T04:31:28.741382402Z",
-   "expiration": {
-    "at_time_iso": "2023-08-13T04:31:28.741Z"
-   },
-   "live": false,
-   "votes": {
-    "yes": 120459668174749,
-    "no": 104829064926688,
-    "abstain": 72923273341503,
-    "total": 298212342992527,
-    "noWithVeto": 336549587
-   },
-   "voting": {
-    "turnout": 95.12224747492944,
-    "yesPercent": 40.393924331216446,
-    "noPercent": 35.15249029424478,
-    "abstainPercent": 24.453472518852248,
-    "vetoPercent": 0.0001128556865295256,
-    "quorumReached": true,
-    "thresholdReached": true,
-    "vetoed": false,
-    "quorumThreshold": 30,
-    "passThreshold": 50,
-    "vetoThreshold": 33.4
-   },
-   "outcome": "passed",
-   "outcomeReason": "Proposal passed",
-   "totalPower": 313504307255907,
-   "voters": [],
-   "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
-   "decodedActions": [
-    {
-     "type": "/cosmos.gov.v1.MsgExecLegacyContent",
-     "trusted": false,
-     "verificationStatus": "not_yet_verified",
-     "raw": {
-      "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
-      "content": {
-       "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
-       "title": "Chainscope Grant",
-       "description": "https://agora.terra.money/discussion/12494-chainscope-funding-the-next-generation-lens-for-terra",
-       "recipient": "terra12lctlzn35jes5t9a8p876xg86wsj65yphvlalc",
-       "amount": [
-        {
-         "denom": "uluna",
-         "amount": "643509845701"
-        }
-       ]
-      },
-      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n"
-     }
-    }
-   ],
-   "treasuryImpact": null,
-   "rawMsgs": [
-    {
-     "/cosmos.gov.v1.MsgExecLegacyContent": {
-      "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
-      "content": {
-       "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
-       "title": "Chainscope Grant",
-       "description": "https://agora.terra.money/discussion/12494-chainscope-funding-the-next-generation-lens-for-terra",
-       "recipient": "terra12lctlzn35jes5t9a8p876xg86wsj65yphvlalc",
-       "amount": [
-        {
-         "denom": "uluna",
-         "amount": "643509845701"
-        }
-       ]
-      },
-      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n"
-     }
-    }
-   ],
-   "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
-  },
-  "l4739": {
-   "id": "l4739",
-   "daoId": "terra",
-   "title": "Deploy LUNA to the stLUNA liquidity pool",
-   "description": "This proposal aims to deploy 2.5M LUNA to the stLUNA liquidity pool on Astroport. This LUNA would be stewarded by a multisig of trusted Terra community members, and would not be spent in any way. At any time, Terra governance could pass a signaling proposal to order the LUNA returned.\n\nstLUNA is a key LUNA liquid staking token, with integrations on Cavern and Demex. stLUNA is also stakable on the Alliance chain Carbon, and contingent on this proposal passing will be supported as collateral on Shade, to back the SILK stablecoin. Crucially, stLUNA is a strongly decentralized LUNA LST. As a Cosmos chain with Tendermint consensus, the Stride codebase can only be altered through an open, transparent, decentralized governance process.   \n\nPreviously, Terra governance deployed 2.5M LUNA to ampLUNA liquidity pools and 2.5M to bLUNA liquidity pools. By extending the same treatment to stLUNA, governance would level the playing field, and increase the diversity and resilience of the Terra DeFi ecosystem.\n\nhttps://agora.terra.money/discussion/12174-deploy-luna-to-the-stluna-liquidity-pool",
-   "status": "Rejected",
-   "proposer": null,
-   "startHeight": null,
-   "submitTime": "2023-07-21T17:05:50.893666143Z",
-   "votingStartTime": "2023-07-21T17:30:33.098638708Z",
-   "expiration": {
-    "at_time_iso": "2023-07-28T17:30:33.098Z"
-   },
-   "live": false,
-   "votes": {
-    "yes": 79053185366341,
-    "no": 101245922654560,
-    "abstain": 70916135319315,
-    "total": 251676447934724,
-    "noWithVeto": 461204594508
-   },
-   "voting": {
-    "turnout": 80.27846575303535,
-    "yesPercent": 31.41064093007408,
-    "noPercent": 40.22860441864613,
-    "abstainPercent": 28.17750166980589,
-    "vetoPercent": 0.18325298147390423,
-    "quorumReached": true,
-    "thresholdReached": false,
-    "vetoed": false,
-    "quorumThreshold": 30,
-    "passThreshold": 50,
-    "vetoThreshold": 33.4
-   },
-   "outcome": "rejected",
-   "outcomeReason": "Did not reach pass threshold (43.73% yes < 50% needed)",
-   "totalPower": 313504307255907,
-   "voters": [],
-   "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
-   "decodedActions": [
-    {
-     "type": "/cosmos.gov.v1.MsgExecLegacyContent",
-     "trusted": false,
-     "verificationStatus": "not_yet_verified",
-     "raw": {
-      "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
-      "content": {
-       "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
-       "title": "Deploy LUNA to the stLUNA liquidity pool",
-       "description": "This proposal aims to deploy 2.5M LUNA to the stLUNA liquidity pool on Astroport. This LUNA would be stewarded by a multisig of trusted Terra community members, and would not be spent in any way. At any time, Terra governance could pass a signaling proposal to order the LUNA returned.\n\nstLUNA is a key LUNA liquid staking token, with integrations on Cavern and Demex. stLUNA is also stakable on the Alliance chain Carbon, and contingent on this proposal passing will be supported as collateral on Shade, to back the SILK stablecoin. Crucially, stLUNA is a strongly decentralized LUNA LST. As a Cosmos chain with Tendermint consensus, the Stride codebase can only be altered through an open, transparent, decentralized governance process.   \n\nPreviously, Terra governance deployed 2.5M LUNA to ampLUNA liquidity pools and 2.5M to bLUNA liquidity pools. By extending the same treatment to stLUNA, governance would level the playing field, and increase the diversity and resilience of the Terra DeFi ecosystem.\n\nhttps://agora.terra.money/discussion/12174-deploy-luna-to-the-stluna-liquidity-pool",
-       "recipient": "terra164axm975pxtlnd0l09k3l02er0pedgg2qmq7sd3d9p8enm8zdexqe9tnn5",
-       "amount": [
-        {
-         "denom": "uluna",
-         "amount": "2500000000000"
-        }
-       ]
-      },
-      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n"
-     }
-    }
-   ],
-   "treasuryImpact": null,
-   "rawMsgs": [
-    {
-     "/cosmos.gov.v1.MsgExecLegacyContent": {
-      "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
-      "content": {
-       "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
-       "title": "Deploy LUNA to the stLUNA liquidity pool",
-       "description": "This proposal aims to deploy 2.5M LUNA to the stLUNA liquidity pool on Astroport. This LUNA would be stewarded by a multisig of trusted Terra community members, and would not be spent in any way. At any time, Terra governance could pass a signaling proposal to order the LUNA returned.\n\nstLUNA is a key LUNA liquid staking token, with integrations on Cavern and Demex. stLUNA is also stakable on the Alliance chain Carbon, and contingent on this proposal passing will be supported as collateral on Shade, to back the SILK stablecoin. Crucially, stLUNA is a strongly decentralized LUNA LST. As a Cosmos chain with Tendermint consensus, the Stride codebase can only be altered through an open, transparent, decentralized governance process.   \n\nPreviously, Terra governance deployed 2.5M LUNA to ampLUNA liquidity pools and 2.5M to bLUNA liquidity pools. By extending the same treatment to stLUNA, governance would level the playing field, and increase the diversity and resilience of the Terra DeFi ecosystem.\n\nhttps://agora.terra.money/discussion/12174-deploy-luna-to-the-stluna-liquidity-pool",
-       "recipient": "terra164axm975pxtlnd0l09k3l02er0pedgg2qmq7sd3d9p8enm8zdexqe9tnn5",
-       "amount": [
-        {
-         "denom": "uluna",
-         "amount": "2500000000000"
-        }
-       ]
-      },
-      "authority": "terra10d07y265gmmuvt4z0w9aw880jnsr700juxf95n"
-     }
-    }
-   ],
-   "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-25T18:26:50.846Z"
+   "fetchedAt": "2026-11-26T00:26:55.334Z"
   }
  }
 }

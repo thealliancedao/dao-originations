@@ -1,10 +1,10 @@
 {
  "dao": "terra",
  "daoName": "Terra (LUNA) governance",
- "exportedAt": "2026-11-27T18:26:44.446Z",
+ "exportedAt": "2026-11-28T00:26:51.289Z",
  "source": "org dao-governance cron (chain-derived, x/gov)",
  "governanceKind": "x-gov",
- "bondedTokens": "313346889247188",
+ "bondedTokens": "313397674957481",
  "window": "newest 60",
  "proposalCount": 60,
  "proposals": {
@@ -23,18 +23,18 @@
    },
    "live": true,
    "votes": {
-    "yes": 33067125589570,
-    "no": 1231750778822,
-    "abstain": 2554020857848,
-    "total": 55290346814788,
-    "noWithVeto": 18437449588548
+    "yes": 43543640786435,
+    "no": 1232636778822,
+    "abstain": 2556273662144,
+    "total": 65774634565009,
+    "noWithVeto": 18442083337608
    },
    "voting": {
-    "turnout": 17.645091977017028,
-    "yesPercent": 59.80632695312708,
-    "noPercent": 2.2277863131300797,
-    "abstainPercent": 4.619288908430033,
-    "vetoPercent": 33.3465978253128,
+    "turnout": 20.98759493794353,
+    "yesPercent": 66.20126599623784,
+    "noPercent": 1.8740306000540548,
+    "abstainPercent": 3.8864125647364594,
+    "vetoPercent": 28.03829083897165,
     "quorumReached": false,
     "thresholdReached": true,
     "vetoed": false,
@@ -44,9 +44,9 @@
    },
    "outcome": "pending",
    "outcomeReason": "Voting in progress",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
-   "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
+   "votersNote": "x/gov: delegators' votes are not captured (they run to thousands). validatorVotes is how each bonded validator's own account voted, read while the vote was open — the chain drops individual votes when a vote closes.",
    "decodedActions": [
     {
      "type": "/cosmos.gov.v1.MsgUpdateParams",
@@ -124,7 +124,745 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.209Z"
+   "fetchedAt": "2026-11-28T00:26:49.976Z",
+   "validatorVotes": {
+    "version": "1.0.0",
+    "proposal_id": 4861,
+    "read_at": "2026-11-28T00:26:50.368Z",
+    "validators": 100,
+    "voted": 17,
+    "voted_stake_pct": 19.6804,
+    "voters_total": 29,
+    "complete": true,
+    "by": {
+     "yes": {
+      "n": 11,
+      "stake_pct": 12.9718
+     },
+     "no": {
+      "n": 3,
+      "stake_pct": 0.3717
+     },
+     "no_with_veto": {
+      "n": 1,
+      "stake_pct": 5.5659
+     },
+     "abstain": {
+      "n": 2,
+      "stake_pct": 0.7709
+     },
+     "split": {
+      "n": 0,
+      "stake_pct": 0
+     },
+     "none": {
+      "n": 83,
+      "stake_pct": 80.3195
+     }
+    },
+    "list": [
+     {
+      "rank": 1,
+      "moniker": "KuCoin LUNA Node",
+      "operator": "terravaloper1gdvfugy7vt9vk8evntwe54knsqyncmpjzyhljt",
+      "stake_pct": 5.9378,
+      "vote": null
+     },
+     {
+      "rank": 2,
+      "moniker": "Allnodes",
+      "operator": "terravaloper120ppepaj2lh5vreadx42wnjjznh55vvktp78wk",
+      "stake_pct": 5.8516,
+      "vote": null
+     },
+     {
+      "rank": 3,
+      "moniker": "Smart Stake",
+      "operator": "terravaloper188e99yz54744uhr8xjfxmmplhnuw75xea55zfp",
+      "stake_pct": 5.5659,
+      "vote": "no_with_veto"
+     },
+     {
+      "rank": 4,
+      "moniker": "Galactic Punks Validator",
+      "operator": "terravaloper15lsftv92eyssjwkh2393s0nhjc07kryqen2fqf",
+      "stake_pct": 5.0895,
+      "vote": null
+     },
+     {
+      "rank": 5,
+      "moniker": "VegasNode",
+      "operator": "terravaloper1zan8943qgnkdnrxcpg3krhagpsll7acdpr7kqj",
+      "stake_pct": 4.7505,
+      "vote": "yes"
+     },
+     {
+      "rank": 6,
+      "moniker": " polkachu.com",
+      "operator": "terravaloper1rr2g4z2ch4cqwl8s70yj94a5l2vakg0v36nmjh",
+      "stake_pct": 4.4166,
+      "vote": null
+     },
+     {
+      "rank": 7,
+      "moniker": "Stakely.io",
+      "operator": "terravaloper16vc0num5aaq4mqdh4vjhs02s3ypd0j8c7ujxpm",
+      "stake_pct": 3.1511,
+      "vote": null
+     },
+     {
+      "rank": 8,
+      "moniker": "ERIS ⚡️ Delegate for claimdrop",
+      "operator": "terravaloper1vm5azhvaxeanc7auxh02y8jmxrk8tj93f43e7j",
+      "stake_pct": 3.099,
+      "vote": "yes"
+     },
+     {
+      "rank": 9,
+      "moniker": "🦁 The Lion DAO",
+      "operator": "terravaloper1pet430t7ykswxuyhh56d4gk6rt7qgu9as6a5r0",
+      "stake_pct": 3.0032,
+      "vote": null
+     },
+     {
+      "rank": 10,
+      "moniker": "cosmosrescue",
+      "operator": "terravaloper1htey4gcdcass29vn4dwjcuq58mrvv8ra5pjz4k",
+      "stake_pct": 2.9855,
+      "vote": null
+     },
+     {
+      "rank": 11,
+      "moniker": "DELIGHT",
+      "operator": "terravaloper1f6wuq93320s6w7vvnkc0576g9mtqfmz9a8wqxk",
+      "stake_pct": 2.8997,
+      "vote": null
+     },
+     {
+      "rank": 12,
+      "moniker": "HighStakes.ch | Stake for Airdrop",
+      "operator": "terravaloper1pgyelqv0hwjavgf6vhdm4e4pt766wfxxczu20l",
+      "stake_pct": 2.8317,
+      "vote": null
+     },
+     {
+      "rank": 13,
+      "moniker": "Orbital Command",
+      "operator": "terravaloper1lelhxdzwn9ddecv6sv0kcxj5tguurxnzcfs5wf",
+      "stake_pct": 2.5622,
+      "vote": null
+     },
+     {
+      "rank": 14,
+      "moniker": " Lavender.Five Nodes 🐝",
+      "operator": "terravaloper1vcd42qfvlvnjwaw7hvl6y32wrzqxvas653yus9",
+      "stake_pct": 2.4681,
+      "vote": null
+     },
+     {
+      "rank": 15,
+      "moniker": "Terrascope",
+      "operator": "terravaloper1jt8pcx4sesgztjkjsvjjqtvyfgcehqx09u4exq",
+      "stake_pct": 2.3179,
+      "vote": null
+     },
+     {
+      "rank": 16,
+      "moniker": "01node",
+      "operator": "terravaloper1wdymftapg5pcvf2aqw4pd0yuuh5w9m6yqdnukv",
+      "stake_pct": 2.1988,
+      "vote": null
+     },
+     {
+      "rank": 17,
+      "moniker": "Synergy Nodes",
+      "operator": "terravaloper1tm0xkark2ufecmdhgaaw7gqsycyt4qag6py8x6",
+      "stake_pct": 2.1317,
+      "vote": null
+     },
+     {
+      "rank": 18,
+      "moniker": "Active Nodes",
+      "operator": "terravaloper1a9zv7n6pmkzlm3wj6c23qyejqlmyxsl5faanrv",
+      "stake_pct": 1.8251,
+      "vote": "yes"
+     },
+     {
+      "rank": 19,
+      "moniker": "Stakin by The Tie",
+      "operator": "terravaloper1mgpgp53tynj4djmckxdjhufa7q8lqqjuwnrlqm",
+      "stake_pct": 1.7085,
+      "vote": "yes"
+     },
+     {
+      "rank": 20,
+      "moniker": "WildSage 🧙",
+      "operator": "terravaloper1l920a79akuc98hz4389axf9ctcymrf5ays578x",
+      "stake_pct": 1.6298,
+      "vote": null
+     },
+     {
+      "rank": 21,
+      "moniker": "SOLID",
+      "operator": "terravaloper1cqc26lnatzxvu0z5nd4yx8m4ecllkm7jlakwrw",
+      "stake_pct": 1.5793,
+      "vote": null
+     },
+     {
+      "rank": 22,
+      "moniker": "SCV-Security",
+      "operator": "terravaloper10c04ysz9uznx2mkenuk3j3esjczyqh0j783nzt",
+      "stake_pct": 1.5567,
+      "vote": null
+     },
+     {
+      "rank": 23,
+      "moniker": "BackBone Labs | Delegate for $SOUL Claim Drop",
+      "operator": "terravaloper1wr0p7dzss74wfmzfqm8r65mk26efg5zhzpm77s",
+      "stake_pct": 1.5401,
+      "vote": null
+     },
+     {
+      "rank": 24,
+      "moniker": "Pro-Nodes75",
+      "operator": "terravaloper1puzp2yjqps43x7nse33svljc550xjz35jxg432",
+      "stake_pct": 1.5166,
+      "vote": "yes"
+     },
+     {
+      "rank": 25,
+      "moniker": "0base.vc",
+      "operator": "terravaloper1plxp55happ379eevsnk2xeuwzsrldsmqduyu36",
+      "stake_pct": 1.3711,
+      "vote": null
+     },
+     {
+      "rank": 26,
+      "moniker": "TdrSys | Auto-Compound",
+      "operator": "terravaloper1cs0dspacdhym4cwcm3f7suurfszvl6k5s9p06a",
+      "stake_pct": 1.2943,
+      "vote": null
+     },
+     {
+      "rank": 27,
+      "moniker": "LUNAStaker",
+      "operator": "terravaloper19kg9ncvkuk08pxz0rnnywh65h5tvux9mlj7tc3",
+      "stake_pct": 1.2473,
+      "vote": null
+     },
+     {
+      "rank": 28,
+      "moniker": "Aardvark",
+      "operator": "terravaloper1wzvgc8j840qtsfsa55kuf9cypqwa2tqnkrduqx",
+      "stake_pct": 1.0315,
+      "vote": null
+     },
+     {
+      "rank": 29,
+      "moniker": "Centauri Alpha",
+      "operator": "terravaloper1fs8g3mlg3f4f4yrckvwk7dk4lt3nv4gtx2uqwj",
+      "stake_pct": 0.8724,
+      "vote": null
+     },
+     {
+      "rank": 30,
+      "moniker": "Node39.TOP",
+      "operator": "terravaloper1l63t9c0nruewg5zdrmv8pvcxdg0az6fqgg008k",
+      "stake_pct": 0.7664,
+      "vote": "abstain"
+     },
+     {
+      "rank": 31,
+      "moniker": "owlstake",
+      "operator": "terravaloper1lg8zwpjvyx4pqy0j5ue2kf08edkuwy6l0j7f0h",
+      "stake_pct": 0.7657,
+      "vote": null
+     },
+     {
+      "rank": 32,
+      "moniker": "Orion - Auto-Compound",
+      "operator": "terravaloper1dvl464gpzxwru4a97q6pzqv7n7rcnxwlyspnau",
+      "stake_pct": 0.74,
+      "vote": null
+     },
+     {
+      "rank": 33,
+      "moniker": "Coinage x DAIC",
+      "operator": "terravaloper17kh8ngu3s74epwympaxrp4ukahm5rvtf5zc8ma",
+      "stake_pct": 0.7306,
+      "vote": null
+     },
+     {
+      "rank": 34,
+      "moniker": "ISS",
+      "operator": "terravaloper17q3y0exn6ndxkf78rcvj70gp7mrezmdx4z54xu",
+      "stake_pct": 0.7223,
+      "vote": null
+     },
+     {
+      "rank": 35,
+      "moniker": "Ceres Ventures",
+      "operator": "terravaloper1q8w4u2wyhx574m70gwe8km5za2ptanny9mnqy3",
+      "stake_pct": 0.632,
+      "vote": null
+     },
+     {
+      "rank": 36,
+      "moniker": "Burrito Node",
+      "operator": "terravaloper16x9dcx9pm9j8ykl0td4hptwule706ysjel6500",
+      "stake_pct": 0.6309,
+      "vote": null
+     },
+     {
+      "rank": 37,
+      "moniker": "NFTSwitch.xyz | Delegate for $SOUL Claim Drop",
+      "operator": "terravaloper1vrkzjujfds9p8t5g0xety3e3ft4dep02etv9le",
+      "stake_pct": 0.5913,
+      "vote": null
+     },
+     {
+      "rank": 38,
+      "moniker": "HEXXAGON",
+      "operator": "terravaloper1aa6f2qeu0hrqpsxe4rggz0k7e43jfce43arz82",
+      "stake_pct": 0.5546,
+      "vote": null
+     },
+     {
+      "rank": 39,
+      "moniker": "Secure Secrets",
+      "operator": "terravaloper1wzu2j73nvccghywtghku5ch59f67jykw58na64",
+      "stake_pct": 0.551,
+      "vote": null
+     },
+     {
+      "rank": 40,
+      "moniker": "Y",
+      "operator": "terravaloper18pmvpy25zc7x0u8ppefuyyl2zaafe2wut0nm5e",
+      "stake_pct": 0.5459,
+      "vote": null
+     },
+     {
+      "rank": 41,
+      "moniker": "TERRA-FIRMA",
+      "operator": "terravaloper1s6j9wxyprdsxmdf6mvsegsldvmtk0p92pa7aey",
+      "stake_pct": 0.5425,
+      "vote": null
+     },
+     {
+      "rank": 42,
+      "moniker": "Luna Whale",
+      "operator": "terravaloper1znh6eq79l3z5l7ctnrjr2d8ksaght25lku6mlw",
+      "stake_pct": 0.5219,
+      "vote": null
+     },
+     {
+      "rank": 43,
+      "moniker": "Futura Meridian",
+      "operator": "terravaloper1t3zvwaz7v3epg3f33waxajv4nj95mt8ma9yc7g",
+      "stake_pct": 0.5037,
+      "vote": null
+     },
+     {
+      "rank": 44,
+      "moniker": "Core Dev (Engineering@Terra)",
+      "operator": "terravaloper14rftkw37eltf74degzajq4s5phg23vjlu9h9as",
+      "stake_pct": 0.4895,
+      "vote": null
+     },
+     {
+      "rank": 45,
+      "moniker": "Free Do",
+      "operator": "terravaloper1hr7svdp2rga9vf3ry95sx7g5wyspgwmg96vqg5",
+      "stake_pct": 0.4888,
+      "vote": null
+     },
+     {
+      "rank": 46,
+      "moniker": "BIG Labs",
+      "operator": "terravaloper1mnfavz2tcq6shdfph5azt7gwt6va2s6weqdnkq",
+      "stake_pct": 0.4803,
+      "vote": null
+     },
+     {
+      "rank": 47,
+      "moniker": "Easy 2 Stake",
+      "operator": "terravaloper1kgn6zznfq2xwrw3hrh7qtqjwu98es7vt8azjl3",
+      "stake_pct": 0.4796,
+      "vote": null
+     },
+     {
+      "rank": 48,
+      "moniker": "Talis Protocol",
+      "operator": "terravaloper1vjr8z6g38f39j23y55pdektc3l2uqc9y02f9k5",
+      "stake_pct": 0.4754,
+      "vote": null
+     },
+     {
+      "rank": 49,
+      "moniker": "LUNA REWARDS",
+      "operator": "terravaloper1hy8lzd38kp0t8662r2vnxsc4ezs3l74506jx02",
+      "stake_pct": 0.4633,
+      "vote": null
+     },
+     {
+      "rank": 50,
+      "moniker": "Autism Staking",
+      "operator": "terravaloper10mmhvx5nrnuye2x9zhe02jcg0hfzzzjlwc0sxw",
+      "stake_pct": 0.4561,
+      "vote": null
+     },
+     {
+      "rank": 51,
+      "moniker": "Mario",
+      "operator": "terravaloper1rgdps79da300t87twwkcly6ec3vlpgpfgnsel5",
+      "stake_pct": 0.4527,
+      "vote": null
+     },
+     {
+      "rank": 52,
+      "moniker": "Solva (CryptoCrew)",
+      "operator": "terravaloper199fjq4rnfvz24cktl8cervx8h8e90rukmgdv5x",
+      "stake_pct": 0.4509,
+      "vote": null
+     },
+     {
+      "rank": 53,
+      "moniker": "TCB @THORmaximalist",
+      "operator": "terravaloper1kxyzu575tex8dv6d5uk26t4q8x5lusw082w3t8",
+      "stake_pct": 0.449,
+      "vote": null
+     },
+     {
+      "rank": 54,
+      "moniker": "Monster Node",
+      "operator": "terravaloper1xgejf5yvc2ff4ddrd4nuvcmexx5sn94aaz84tc",
+      "stake_pct": 0.4353,
+      "vote": null
+     },
+     {
+      "rank": 55,
+      "moniker": " AutoStake 🛡️ Slash Protected",
+      "operator": "terravaloper1yy5379nk24xffpq4egw7ue4ad3j7l79ma2enmz",
+      "stake_pct": 0.4057,
+      "vote": null
+     },
+     {
+      "rank": 56,
+      "moniker": "Nodeplus",
+      "operator": "terravaloper1kcsunyhnhmnc0afrrynd7qfzykmhm3w5ely6fh",
+      "stake_pct": 0.3883,
+      "vote": null
+     },
+     {
+      "rank": 57,
+      "moniker": "FreshSTAKING",
+      "operator": "terravaloper1ygwhuksjq3nymd9n8kmceaxd3vxv97u7ja33aj",
+      "stake_pct": 0.3597,
+      "vote": null
+     },
+     {
+      "rank": 58,
+      "moniker": "stakingcabin",
+      "operator": "terravaloper1jveyrzquwrt0txanmhg7jdhf2q4ry28k2esps4",
+      "stake_pct": 0.3334,
+      "vote": null
+     },
+     {
+      "rank": 59,
+      "moniker": "Moon Platoon",
+      "operator": "terravaloper1j4cc2p4f4t4m3z37gumr6cr64vm605aa4wmcyf",
+      "stake_pct": 0.3259,
+      "vote": null
+     },
+     {
+      "rank": 60,
+      "moniker": "moonshot",
+      "operator": "terravaloper1l9mchtvqgvpyskgtemsrkjn0e57a7wm6c863uj",
+      "stake_pct": 0.3211,
+      "vote": null
+     },
+     {
+      "rank": 61,
+      "moniker": "MissionControl",
+      "operator": "terravaloper1sextn6xd46edrc02tf6d2fysmqw62qu7ng3kkm",
+      "stake_pct": 0.3068,
+      "vote": null
+     },
+     {
+      "rank": 62,
+      "moniker": "🙏 uGaenn ⛅",
+      "operator": "terravaloper1cl8j3r09vmlxf5zsq4xms7td8x2qcfml8637yf",
+      "stake_pct": 0.2922,
+      "vote": null
+     },
+     {
+      "rank": 63,
+      "moniker": "Interstake One",
+      "operator": "terravaloper15389y60f0rk596tm38qewqycr8ztt8hshsf2mk",
+      "stake_pct": 0.27,
+      "vote": null
+     },
+     {
+      "rank": 64,
+      "moniker": "Interstellar 🍸 ",
+      "operator": "terravaloper1kepapcnh78hsk8nx2u9nv05rn7vjwwf4fr59zu",
+      "stake_pct": 0.2541,
+      "vote": null
+     },
+     {
+      "rank": 65,
+      "moniker": "KK Validator",
+      "operator": "terravaloper1lnlasdy5r2hdjz3ta2r86ufkz309zdjvqshec4",
+      "stake_pct": 0.235,
+      "vote": null
+     },
+     {
+      "rank": 66,
+      "moniker": "AuraStake",
+      "operator": "terravaloper1ulwqct0df2xuuaqzcq4yax3msdqgew6ehhcl7r",
+      "stake_pct": 0.2149,
+      "vote": null
+     },
+     {
+      "rank": 67,
+      "moniker": "Wave",
+      "operator": "terravaloper1g50t9cxzhu0edk2r5lagmujupt722mhefxvzzy",
+      "stake_pct": 0.214,
+      "vote": null
+     },
+     {
+      "rank": 68,
+      "moniker": "Stakeflow",
+      "operator": "terravaloper1tfy452kxfcsa2353nenltade9esj7ffrc38gwn",
+      "stake_pct": 0.2133,
+      "vote": null
+     },
+     {
+      "rank": 69,
+      "moniker": "Staker Space (shutting down - please redelegate)",
+      "operator": "terravaloper1jncrqd24wtcdpes9y89qsh0jn5c8sayn92302l",
+      "stake_pct": 0.2058,
+      "vote": null
+     },
+     {
+      "rank": 70,
+      "moniker": "SafePoint",
+      "operator": "terravaloper1wuqf6xq54n5n4hus2wn849ttx02xznvj0ewmxp",
+      "stake_pct": 0.2053,
+      "vote": null
+     },
+     {
+      "rank": 71,
+      "moniker": "StakeSabai",
+      "operator": "terravaloper1g0deaesmwy2qg9zupynx6ychspe60lquu3eyze",
+      "stake_pct": 0.2031,
+      "vote": null
+     },
+     {
+      "rank": 72,
+      "moniker": "Enigma",
+      "operator": "terravaloper1u8lglu36g5x6shp2xyd35hcs45x9cvmj6tmvd8",
+      "stake_pct": 0.2014,
+      "vote": null
+     },
+     {
+      "rank": 73,
+      "moniker": "OneStar",
+      "operator": "terravaloper1yt7hhu4xpwe2dqg6euda5t3pvx0mhsmvap548h",
+      "stake_pct": 0.1996,
+      "vote": null
+     },
+     {
+      "rank": 74,
+      "moniker": "8moon",
+      "operator": "terravaloper1uv45luc5fzq66u9enmnv44k8c7j2zuge5kr60r",
+      "stake_pct": 0.199,
+      "vote": null
+     },
+     {
+      "rank": 75,
+      "moniker": "Luna Station 88",
+      "operator": "terravaloper1ccwgk6gvgtm556gxe0v79p48nrgsey05w3fle4",
+      "stake_pct": 0.1953,
+      "vote": null
+     },
+     {
+      "rank": 76,
+      "moniker": "Inotel",
+      "operator": "terravaloper10qz4hfudfnllkgvhnm7k40dewg27nhxz3yn895",
+      "stake_pct": 0.1909,
+      "vote": null
+     },
+     {
+      "rank": 77,
+      "moniker": "NITAWA",
+      "operator": "terravaloper150pqxd0j27mjg4yy4fafhkm7gfhsk8xvyfft0y",
+      "stake_pct": 0.19,
+      "vote": null
+     },
+     {
+      "rank": 78,
+      "moniker": "Sapient Nodes",
+      "operator": "terravaloper12y453v20w2dlv2y0vlepf88ng0r6sfsz6k7qm4",
+      "stake_pct": 0.1847,
+      "vote": null
+     },
+     {
+      "rank": 79,
+      "moniker": "RuneTerra",
+      "operator": "terravaloper1ettjrqla8cpmx0wvdurjynn7776gurx5yp9pe4",
+      "stake_pct": 0.1731,
+      "vote": null
+     },
+     {
+      "rank": 80,
+      "moniker": "Encapsulate",
+      "operator": "terravaloper1yh4u76y405t3ff9lyrzhhe8legjx9k3as5mujs",
+      "stake_pct": 0.1691,
+      "vote": null
+     },
+     {
+      "rank": 81,
+      "moniker": "The Bear Validator",
+      "operator": "terravaloper10ge6t62gzesz378e09kkgqvx9ev7tf6xcsrqqu",
+      "stake_pct": 0.169,
+      "vote": "no"
+     },
+     {
+      "rank": 82,
+      "moniker": "Defi Suffrage",
+      "operator": "terravaloper1w6pd8at32vh8r2kz8me8c6535sfwhjzkuennrf",
+      "stake_pct": 0.1633,
+      "vote": null
+     },
+     {
+      "rank": 83,
+      "moniker": "Noderunners",
+      "operator": "terravaloper17utc33x2x8qxqxhynch45lfa8ecwhawjugsuw5",
+      "stake_pct": 0.151,
+      "vote": null
+     },
+     {
+      "rank": 84,
+      "moniker": "Lunatic Validator",
+      "operator": "terravaloper1s0wcr80ud0xd5zwkwg7wkue4wegmtae2tsxsg2",
+      "stake_pct": 0.1509,
+      "vote": null
+     },
+     {
+      "rank": 85,
+      "moniker": "Long Live Luna",
+      "operator": "terravaloper1arm3fzjp7qv8e5gyhraeykcpjte6wh562yre97",
+      "stake_pct": 0.1355,
+      "vote": null
+     },
+     {
+      "rank": 86,
+      "moniker": "Crypto Plant",
+      "operator": "terravaloper1zq2zstc4f6n7xcr343f9dgqun3dd07kycefdfr",
+      "stake_pct": 0.1255,
+      "vote": null
+     },
+     {
+      "rank": 87,
+      "moniker": "Bit Cat🐱",
+      "operator": "terravaloper1k4ef8m95t7eq522evmmuzvfkpla04pezmu4j7k",
+      "stake_pct": 0.1194,
+      "vote": "no"
+     },
+     {
+      "rank": 88,
+      "moniker": "DEEPSTATE",
+      "operator": "terravaloper1re2zywqcy5j9a55mzln0c8wya35qluen2w5vnr",
+      "stake_pct": 0.0832,
+      "vote": "no"
+     },
+     {
+      "rank": 89,
+      "moniker": "Noddex",
+      "operator": "terravaloper1dqcr3pgv3wvpg3788rcps38gwcdgrl8nxm685k",
+      "stake_pct": 0.0533,
+      "vote": "yes"
+     },
+     {
+      "rank": 90,
+      "moniker": "0%(100% cashback)",
+      "operator": "terravaloper1jrzpm3mrq96q72tqmvywpr4wtnrgwywaac6jkk",
+      "stake_pct": 0.0092,
+      "vote": null
+     },
+     {
+      "rank": 91,
+      "moniker": "NODESYNC",
+      "operator": "terravaloper15n2zy7f4cpqkshrr8d75hvkqwdqa0a8gjm0z7x",
+      "stake_pct": 0.008,
+      "vote": "yes"
+     },
+     {
+      "rank": 92,
+      "moniker": "Basement 🗲 Nodes",
+      "operator": "terravaloper1ymc8xyylgassjcpnx07q0ns9emusecxkz9stpl",
+      "stake_pct": 0.0073,
+      "vote": "yes"
+     },
+     {
+      "rank": 93,
+      "moniker": "NodesHub",
+      "operator": "terravaloper1g2q6xx8z05wa2ukqg2j0jdcqql5pw6hx606hn2",
+      "stake_pct": 0.0056,
+      "vote": null
+     },
+     {
+      "rank": 94,
+      "moniker": "Cosmos Spaces",
+      "operator": "terravaloper145celszsx43p8rumldtp6qjqrj07ysmsfyfe4t",
+      "stake_pct": 0.0044,
+      "vote": "abstain"
+     },
+     {
+      "rank": 95,
+      "moniker": "LuckyStar",
+      "operator": "terravaloper1mdye6w3787x48mwjwe4cykj4nmtqrfdf85f8xm",
+      "stake_pct": 0.0025,
+      "vote": "yes"
+     },
+     {
+      "rank": 96,
+      "moniker": "navs",
+      "operator": "terravaloper1hvqw5jpfwervu0xx0k3d4ywq77wpfsqy8perex",
+      "stake_pct": 0.0004,
+      "vote": null
+     },
+     {
+      "rank": 97,
+      "moniker": "InnoS",
+      "operator": "terravaloper1jcdntlxtq8l68ulz6fmavzfwqhh9gz3vegxsnc",
+      "stake_pct": 0.0003,
+      "vote": "yes"
+     },
+     {
+      "rank": 98,
+      "moniker": "VALIDATORSG",
+      "operator": "terravaloper1r0kg3zka8kulupy5t8q288fdq53qx7kxa8a70e",
+      "stake_pct": 0.0003,
+      "vote": null
+     },
+     {
+      "rank": 99,
+      "moniker": "hhhhhhhhhhhhhhh",
+      "operator": "terravaloper1jw2ceerdcmejfqrtwmmw75jd0uvp7peh8dn3kh",
+      "stake_pct": 0.0003,
+      "vote": null
+     },
+     {
+      "rank": 100,
+      "moniker": "BoyGau",
+      "operator": "terravaloper1ahuu2ag403lkg24avx46su56s2htfaug9aft3f",
+      "stake_pct": 0.0003,
+      "vote": "yes"
+     }
+    ]
+   }
   },
   "l4860": {
    "id": "l4860",
@@ -141,18 +879,18 @@
    },
    "live": true,
    "votes": {
-    "yes": 11245209671248,
-    "no": 20375320198656,
-    "abstain": 2554020857848,
-    "total": 69754549736537,
-    "noWithVeto": 35579999008785
+    "yes": 11253296252546,
+    "no": 20417357084128,
+    "abstain": 2554363661201,
+    "total": 69809649755720,
+    "noWithVeto": 35584632757845
    },
    "voting": {
-    "turnout": 22.26112724594823,
-    "yesPercent": 16.121112835967214,
-    "noPercent": 29.210023253843087,
-    "abstainPercent": 3.6614398164629245,
-    "vetoPercent": 51.00742409372677,
+    "turnout": 22.275101359699352,
+    "yesPercent": 16.119972370472947,
+    "noPercent": 29.247184530466807,
+    "abstainPercent": 3.6590409350846267,
+    "vetoPercent": 50.97380216397561,
     "quorumReached": false,
     "thresholdReached": false,
     "vetoed": true,
@@ -162,9 +900,9 @@
    },
    "outcome": "pending",
    "outcomeReason": "Voting in progress",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
-   "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
+   "votersNote": "x/gov: delegators' votes are not captured (they run to thousands). validatorVotes is how each bonded validator's own account voted, read while the vote was open — the chain drops individual votes when a vote closes.",
    "decodedActions": [
     {
      "type": "/cosmos.gov.v1.MsgUpdateParams",
@@ -242,7 +980,745 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.335Z"
+   "fetchedAt": "2026-11-28T00:26:50.479Z",
+   "validatorVotes": {
+    "version": "1.0.0",
+    "proposal_id": 4860,
+    "read_at": "2026-11-28T00:26:50.809Z",
+    "validators": 100,
+    "voted": 19,
+    "voted_stake_pct": 20.9416,
+    "voters_total": 32,
+    "complete": true,
+    "by": {
+     "yes": {
+      "n": 8,
+      "stake_pct": 3.2835
+     },
+     "no": {
+      "n": 5,
+      "stake_pct": 6.1475
+     },
+     "no_with_veto": {
+      "n": 4,
+      "stake_pct": 10.7396
+     },
+     "abstain": {
+      "n": 2,
+      "stake_pct": 0.7709
+     },
+     "split": {
+      "n": 0,
+      "stake_pct": 0
+     },
+     "none": {
+      "n": 81,
+      "stake_pct": 79.0583
+     }
+    },
+    "list": [
+     {
+      "rank": 1,
+      "moniker": "KuCoin LUNA Node",
+      "operator": "terravaloper1gdvfugy7vt9vk8evntwe54knsqyncmpjzyhljt",
+      "stake_pct": 5.9378,
+      "vote": null
+     },
+     {
+      "rank": 2,
+      "moniker": "Allnodes",
+      "operator": "terravaloper120ppepaj2lh5vreadx42wnjjznh55vvktp78wk",
+      "stake_pct": 5.8516,
+      "vote": null
+     },
+     {
+      "rank": 3,
+      "moniker": "Smart Stake",
+      "operator": "terravaloper188e99yz54744uhr8xjfxmmplhnuw75xea55zfp",
+      "stake_pct": 5.5659,
+      "vote": "no_with_veto"
+     },
+     {
+      "rank": 4,
+      "moniker": "Galactic Punks Validator",
+      "operator": "terravaloper15lsftv92eyssjwkh2393s0nhjc07kryqen2fqf",
+      "stake_pct": 5.0895,
+      "vote": null
+     },
+     {
+      "rank": 5,
+      "moniker": "VegasNode",
+      "operator": "terravaloper1zan8943qgnkdnrxcpg3krhagpsll7acdpr7kqj",
+      "stake_pct": 4.7505,
+      "vote": "no_with_veto"
+     },
+     {
+      "rank": 6,
+      "moniker": " polkachu.com",
+      "operator": "terravaloper1rr2g4z2ch4cqwl8s70yj94a5l2vakg0v36nmjh",
+      "stake_pct": 4.4166,
+      "vote": null
+     },
+     {
+      "rank": 7,
+      "moniker": "Stakely.io",
+      "operator": "terravaloper16vc0num5aaq4mqdh4vjhs02s3ypd0j8c7ujxpm",
+      "stake_pct": 3.1511,
+      "vote": null
+     },
+     {
+      "rank": 8,
+      "moniker": "ERIS ⚡️ Delegate for claimdrop",
+      "operator": "terravaloper1vm5azhvaxeanc7auxh02y8jmxrk8tj93f43e7j",
+      "stake_pct": 3.099,
+      "vote": "yes"
+     },
+     {
+      "rank": 9,
+      "moniker": "🦁 The Lion DAO",
+      "operator": "terravaloper1pet430t7ykswxuyhh56d4gk6rt7qgu9as6a5r0",
+      "stake_pct": 3.0032,
+      "vote": null
+     },
+     {
+      "rank": 10,
+      "moniker": "cosmosrescue",
+      "operator": "terravaloper1htey4gcdcass29vn4dwjcuq58mrvv8ra5pjz4k",
+      "stake_pct": 2.9855,
+      "vote": null
+     },
+     {
+      "rank": 11,
+      "moniker": "DELIGHT",
+      "operator": "terravaloper1f6wuq93320s6w7vvnkc0576g9mtqfmz9a8wqxk",
+      "stake_pct": 2.8997,
+      "vote": null
+     },
+     {
+      "rank": 12,
+      "moniker": "HighStakes.ch | Stake for Airdrop",
+      "operator": "terravaloper1pgyelqv0hwjavgf6vhdm4e4pt766wfxxczu20l",
+      "stake_pct": 2.8317,
+      "vote": "no"
+     },
+     {
+      "rank": 13,
+      "moniker": "Orbital Command",
+      "operator": "terravaloper1lelhxdzwn9ddecv6sv0kcxj5tguurxnzcfs5wf",
+      "stake_pct": 2.5622,
+      "vote": null
+     },
+     {
+      "rank": 14,
+      "moniker": " Lavender.Five Nodes 🐝",
+      "operator": "terravaloper1vcd42qfvlvnjwaw7hvl6y32wrzqxvas653yus9",
+      "stake_pct": 2.4681,
+      "vote": null
+     },
+     {
+      "rank": 15,
+      "moniker": "Terrascope",
+      "operator": "terravaloper1jt8pcx4sesgztjkjsvjjqtvyfgcehqx09u4exq",
+      "stake_pct": 2.3179,
+      "vote": null
+     },
+     {
+      "rank": 16,
+      "moniker": "01node",
+      "operator": "terravaloper1wdymftapg5pcvf2aqw4pd0yuuh5w9m6yqdnukv",
+      "stake_pct": 2.1988,
+      "vote": null
+     },
+     {
+      "rank": 17,
+      "moniker": "Synergy Nodes",
+      "operator": "terravaloper1tm0xkark2ufecmdhgaaw7gqsycyt4qag6py8x6",
+      "stake_pct": 2.1317,
+      "vote": null
+     },
+     {
+      "rank": 18,
+      "moniker": "Active Nodes",
+      "operator": "terravaloper1a9zv7n6pmkzlm3wj6c23qyejqlmyxsl5faanrv",
+      "stake_pct": 1.8251,
+      "vote": null
+     },
+     {
+      "rank": 19,
+      "moniker": "Stakin by The Tie",
+      "operator": "terravaloper1mgpgp53tynj4djmckxdjhufa7q8lqqjuwnrlqm",
+      "stake_pct": 1.7085,
+      "vote": "no"
+     },
+     {
+      "rank": 20,
+      "moniker": "WildSage 🧙",
+      "operator": "terravaloper1l920a79akuc98hz4389axf9ctcymrf5ays578x",
+      "stake_pct": 1.6298,
+      "vote": null
+     },
+     {
+      "rank": 21,
+      "moniker": "SOLID",
+      "operator": "terravaloper1cqc26lnatzxvu0z5nd4yx8m4ecllkm7jlakwrw",
+      "stake_pct": 1.5793,
+      "vote": null
+     },
+     {
+      "rank": 22,
+      "moniker": "SCV-Security",
+      "operator": "terravaloper10c04ysz9uznx2mkenuk3j3esjczyqh0j783nzt",
+      "stake_pct": 1.5567,
+      "vote": null
+     },
+     {
+      "rank": 23,
+      "moniker": "BackBone Labs | Delegate for $SOUL Claim Drop",
+      "operator": "terravaloper1wr0p7dzss74wfmzfqm8r65mk26efg5zhzpm77s",
+      "stake_pct": 1.5401,
+      "vote": null
+     },
+     {
+      "rank": 24,
+      "moniker": "Pro-Nodes75",
+      "operator": "terravaloper1puzp2yjqps43x7nse33svljc550xjz35jxg432",
+      "stake_pct": 1.5166,
+      "vote": "no"
+     },
+     {
+      "rank": 25,
+      "moniker": "0base.vc",
+      "operator": "terravaloper1plxp55happ379eevsnk2xeuwzsrldsmqduyu36",
+      "stake_pct": 1.3711,
+      "vote": null
+     },
+     {
+      "rank": 26,
+      "moniker": "TdrSys | Auto-Compound",
+      "operator": "terravaloper1cs0dspacdhym4cwcm3f7suurfszvl6k5s9p06a",
+      "stake_pct": 1.2943,
+      "vote": null
+     },
+     {
+      "rank": 27,
+      "moniker": "LUNAStaker",
+      "operator": "terravaloper19kg9ncvkuk08pxz0rnnywh65h5tvux9mlj7tc3",
+      "stake_pct": 1.2473,
+      "vote": null
+     },
+     {
+      "rank": 28,
+      "moniker": "Aardvark",
+      "operator": "terravaloper1wzvgc8j840qtsfsa55kuf9cypqwa2tqnkrduqx",
+      "stake_pct": 1.0315,
+      "vote": null
+     },
+     {
+      "rank": 29,
+      "moniker": "Centauri Alpha",
+      "operator": "terravaloper1fs8g3mlg3f4f4yrckvwk7dk4lt3nv4gtx2uqwj",
+      "stake_pct": 0.8724,
+      "vote": null
+     },
+     {
+      "rank": 30,
+      "moniker": "Node39.TOP",
+      "operator": "terravaloper1l63t9c0nruewg5zdrmv8pvcxdg0az6fqgg008k",
+      "stake_pct": 0.7664,
+      "vote": "abstain"
+     },
+     {
+      "rank": 31,
+      "moniker": "owlstake",
+      "operator": "terravaloper1lg8zwpjvyx4pqy0j5ue2kf08edkuwy6l0j7f0h",
+      "stake_pct": 0.7657,
+      "vote": null
+     },
+     {
+      "rank": 32,
+      "moniker": "Orion - Auto-Compound",
+      "operator": "terravaloper1dvl464gpzxwru4a97q6pzqv7n7rcnxwlyspnau",
+      "stake_pct": 0.74,
+      "vote": null
+     },
+     {
+      "rank": 33,
+      "moniker": "Coinage x DAIC",
+      "operator": "terravaloper17kh8ngu3s74epwympaxrp4ukahm5rvtf5zc8ma",
+      "stake_pct": 0.7306,
+      "vote": null
+     },
+     {
+      "rank": 34,
+      "moniker": "ISS",
+      "operator": "terravaloper17q3y0exn6ndxkf78rcvj70gp7mrezmdx4z54xu",
+      "stake_pct": 0.7223,
+      "vote": null
+     },
+     {
+      "rank": 35,
+      "moniker": "Ceres Ventures",
+      "operator": "terravaloper1q8w4u2wyhx574m70gwe8km5za2ptanny9mnqy3",
+      "stake_pct": 0.632,
+      "vote": null
+     },
+     {
+      "rank": 36,
+      "moniker": "Burrito Node",
+      "operator": "terravaloper16x9dcx9pm9j8ykl0td4hptwule706ysjel6500",
+      "stake_pct": 0.6309,
+      "vote": null
+     },
+     {
+      "rank": 37,
+      "moniker": "NFTSwitch.xyz | Delegate for $SOUL Claim Drop",
+      "operator": "terravaloper1vrkzjujfds9p8t5g0xety3e3ft4dep02etv9le",
+      "stake_pct": 0.5913,
+      "vote": null
+     },
+     {
+      "rank": 38,
+      "moniker": "HEXXAGON",
+      "operator": "terravaloper1aa6f2qeu0hrqpsxe4rggz0k7e43jfce43arz82",
+      "stake_pct": 0.5546,
+      "vote": null
+     },
+     {
+      "rank": 39,
+      "moniker": "Secure Secrets",
+      "operator": "terravaloper1wzu2j73nvccghywtghku5ch59f67jykw58na64",
+      "stake_pct": 0.551,
+      "vote": null
+     },
+     {
+      "rank": 40,
+      "moniker": "Y",
+      "operator": "terravaloper18pmvpy25zc7x0u8ppefuyyl2zaafe2wut0nm5e",
+      "stake_pct": 0.5459,
+      "vote": null
+     },
+     {
+      "rank": 41,
+      "moniker": "TERRA-FIRMA",
+      "operator": "terravaloper1s6j9wxyprdsxmdf6mvsegsldvmtk0p92pa7aey",
+      "stake_pct": 0.5425,
+      "vote": null
+     },
+     {
+      "rank": 42,
+      "moniker": "Luna Whale",
+      "operator": "terravaloper1znh6eq79l3z5l7ctnrjr2d8ksaght25lku6mlw",
+      "stake_pct": 0.5219,
+      "vote": null
+     },
+     {
+      "rank": 43,
+      "moniker": "Futura Meridian",
+      "operator": "terravaloper1t3zvwaz7v3epg3f33waxajv4nj95mt8ma9yc7g",
+      "stake_pct": 0.5037,
+      "vote": null
+     },
+     {
+      "rank": 44,
+      "moniker": "Core Dev (Engineering@Terra)",
+      "operator": "terravaloper14rftkw37eltf74degzajq4s5phg23vjlu9h9as",
+      "stake_pct": 0.4895,
+      "vote": null
+     },
+     {
+      "rank": 45,
+      "moniker": "Free Do",
+      "operator": "terravaloper1hr7svdp2rga9vf3ry95sx7g5wyspgwmg96vqg5",
+      "stake_pct": 0.4888,
+      "vote": null
+     },
+     {
+      "rank": 46,
+      "moniker": "BIG Labs",
+      "operator": "terravaloper1mnfavz2tcq6shdfph5azt7gwt6va2s6weqdnkq",
+      "stake_pct": 0.4803,
+      "vote": null
+     },
+     {
+      "rank": 47,
+      "moniker": "Easy 2 Stake",
+      "operator": "terravaloper1kgn6zznfq2xwrw3hrh7qtqjwu98es7vt8azjl3",
+      "stake_pct": 0.4796,
+      "vote": null
+     },
+     {
+      "rank": 48,
+      "moniker": "Talis Protocol",
+      "operator": "terravaloper1vjr8z6g38f39j23y55pdektc3l2uqc9y02f9k5",
+      "stake_pct": 0.4754,
+      "vote": null
+     },
+     {
+      "rank": 49,
+      "moniker": "LUNA REWARDS",
+      "operator": "terravaloper1hy8lzd38kp0t8662r2vnxsc4ezs3l74506jx02",
+      "stake_pct": 0.4633,
+      "vote": null
+     },
+     {
+      "rank": 50,
+      "moniker": "Autism Staking",
+      "operator": "terravaloper10mmhvx5nrnuye2x9zhe02jcg0hfzzzjlwc0sxw",
+      "stake_pct": 0.4561,
+      "vote": null
+     },
+     {
+      "rank": 51,
+      "moniker": "Mario",
+      "operator": "terravaloper1rgdps79da300t87twwkcly6ec3vlpgpfgnsel5",
+      "stake_pct": 0.4527,
+      "vote": null
+     },
+     {
+      "rank": 52,
+      "moniker": "Solva (CryptoCrew)",
+      "operator": "terravaloper199fjq4rnfvz24cktl8cervx8h8e90rukmgdv5x",
+      "stake_pct": 0.4509,
+      "vote": null
+     },
+     {
+      "rank": 53,
+      "moniker": "TCB @THORmaximalist",
+      "operator": "terravaloper1kxyzu575tex8dv6d5uk26t4q8x5lusw082w3t8",
+      "stake_pct": 0.449,
+      "vote": null
+     },
+     {
+      "rank": 54,
+      "moniker": "Monster Node",
+      "operator": "terravaloper1xgejf5yvc2ff4ddrd4nuvcmexx5sn94aaz84tc",
+      "stake_pct": 0.4353,
+      "vote": null
+     },
+     {
+      "rank": 55,
+      "moniker": " AutoStake 🛡️ Slash Protected",
+      "operator": "terravaloper1yy5379nk24xffpq4egw7ue4ad3j7l79ma2enmz",
+      "stake_pct": 0.4057,
+      "vote": null
+     },
+     {
+      "rank": 56,
+      "moniker": "Nodeplus",
+      "operator": "terravaloper1kcsunyhnhmnc0afrrynd7qfzykmhm3w5ely6fh",
+      "stake_pct": 0.3883,
+      "vote": null
+     },
+     {
+      "rank": 57,
+      "moniker": "FreshSTAKING",
+      "operator": "terravaloper1ygwhuksjq3nymd9n8kmceaxd3vxv97u7ja33aj",
+      "stake_pct": 0.3597,
+      "vote": null
+     },
+     {
+      "rank": 58,
+      "moniker": "stakingcabin",
+      "operator": "terravaloper1jveyrzquwrt0txanmhg7jdhf2q4ry28k2esps4",
+      "stake_pct": 0.3334,
+      "vote": null
+     },
+     {
+      "rank": 59,
+      "moniker": "Moon Platoon",
+      "operator": "terravaloper1j4cc2p4f4t4m3z37gumr6cr64vm605aa4wmcyf",
+      "stake_pct": 0.3259,
+      "vote": null
+     },
+     {
+      "rank": 60,
+      "moniker": "moonshot",
+      "operator": "terravaloper1l9mchtvqgvpyskgtemsrkjn0e57a7wm6c863uj",
+      "stake_pct": 0.3211,
+      "vote": null
+     },
+     {
+      "rank": 61,
+      "moniker": "MissionControl",
+      "operator": "terravaloper1sextn6xd46edrc02tf6d2fysmqw62qu7ng3kkm",
+      "stake_pct": 0.3068,
+      "vote": null
+     },
+     {
+      "rank": 62,
+      "moniker": "🙏 uGaenn ⛅",
+      "operator": "terravaloper1cl8j3r09vmlxf5zsq4xms7td8x2qcfml8637yf",
+      "stake_pct": 0.2922,
+      "vote": null
+     },
+     {
+      "rank": 63,
+      "moniker": "Interstake One",
+      "operator": "terravaloper15389y60f0rk596tm38qewqycr8ztt8hshsf2mk",
+      "stake_pct": 0.27,
+      "vote": null
+     },
+     {
+      "rank": 64,
+      "moniker": "Interstellar 🍸 ",
+      "operator": "terravaloper1kepapcnh78hsk8nx2u9nv05rn7vjwwf4fr59zu",
+      "stake_pct": 0.2541,
+      "vote": "no_with_veto"
+     },
+     {
+      "rank": 65,
+      "moniker": "KK Validator",
+      "operator": "terravaloper1lnlasdy5r2hdjz3ta2r86ufkz309zdjvqshec4",
+      "stake_pct": 0.235,
+      "vote": null
+     },
+     {
+      "rank": 66,
+      "moniker": "AuraStake",
+      "operator": "terravaloper1ulwqct0df2xuuaqzcq4yax3msdqgew6ehhcl7r",
+      "stake_pct": 0.2149,
+      "vote": null
+     },
+     {
+      "rank": 67,
+      "moniker": "Wave",
+      "operator": "terravaloper1g50t9cxzhu0edk2r5lagmujupt722mhefxvzzy",
+      "stake_pct": 0.214,
+      "vote": null
+     },
+     {
+      "rank": 68,
+      "moniker": "Stakeflow",
+      "operator": "terravaloper1tfy452kxfcsa2353nenltade9esj7ffrc38gwn",
+      "stake_pct": 0.2133,
+      "vote": null
+     },
+     {
+      "rank": 69,
+      "moniker": "Staker Space (shutting down - please redelegate)",
+      "operator": "terravaloper1jncrqd24wtcdpes9y89qsh0jn5c8sayn92302l",
+      "stake_pct": 0.2058,
+      "vote": null
+     },
+     {
+      "rank": 70,
+      "moniker": "SafePoint",
+      "operator": "terravaloper1wuqf6xq54n5n4hus2wn849ttx02xznvj0ewmxp",
+      "stake_pct": 0.2053,
+      "vote": null
+     },
+     {
+      "rank": 71,
+      "moniker": "StakeSabai",
+      "operator": "terravaloper1g0deaesmwy2qg9zupynx6ychspe60lquu3eyze",
+      "stake_pct": 0.2031,
+      "vote": null
+     },
+     {
+      "rank": 72,
+      "moniker": "Enigma",
+      "operator": "terravaloper1u8lglu36g5x6shp2xyd35hcs45x9cvmj6tmvd8",
+      "stake_pct": 0.2014,
+      "vote": null
+     },
+     {
+      "rank": 73,
+      "moniker": "OneStar",
+      "operator": "terravaloper1yt7hhu4xpwe2dqg6euda5t3pvx0mhsmvap548h",
+      "stake_pct": 0.1996,
+      "vote": null
+     },
+     {
+      "rank": 74,
+      "moniker": "8moon",
+      "operator": "terravaloper1uv45luc5fzq66u9enmnv44k8c7j2zuge5kr60r",
+      "stake_pct": 0.199,
+      "vote": null
+     },
+     {
+      "rank": 75,
+      "moniker": "Luna Station 88",
+      "operator": "terravaloper1ccwgk6gvgtm556gxe0v79p48nrgsey05w3fle4",
+      "stake_pct": 0.1953,
+      "vote": null
+     },
+     {
+      "rank": 76,
+      "moniker": "Inotel",
+      "operator": "terravaloper10qz4hfudfnllkgvhnm7k40dewg27nhxz3yn895",
+      "stake_pct": 0.1909,
+      "vote": null
+     },
+     {
+      "rank": 77,
+      "moniker": "NITAWA",
+      "operator": "terravaloper150pqxd0j27mjg4yy4fafhkm7gfhsk8xvyfft0y",
+      "stake_pct": 0.19,
+      "vote": null
+     },
+     {
+      "rank": 78,
+      "moniker": "Sapient Nodes",
+      "operator": "terravaloper12y453v20w2dlv2y0vlepf88ng0r6sfsz6k7qm4",
+      "stake_pct": 0.1847,
+      "vote": null
+     },
+     {
+      "rank": 79,
+      "moniker": "RuneTerra",
+      "operator": "terravaloper1ettjrqla8cpmx0wvdurjynn7776gurx5yp9pe4",
+      "stake_pct": 0.1731,
+      "vote": null
+     },
+     {
+      "rank": 80,
+      "moniker": "Encapsulate",
+      "operator": "terravaloper1yh4u76y405t3ff9lyrzhhe8legjx9k3as5mujs",
+      "stake_pct": 0.1691,
+      "vote": null
+     },
+     {
+      "rank": 81,
+      "moniker": "The Bear Validator",
+      "operator": "terravaloper10ge6t62gzesz378e09kkgqvx9ev7tf6xcsrqqu",
+      "stake_pct": 0.169,
+      "vote": "no_with_veto"
+     },
+     {
+      "rank": 82,
+      "moniker": "Defi Suffrage",
+      "operator": "terravaloper1w6pd8at32vh8r2kz8me8c6535sfwhjzkuennrf",
+      "stake_pct": 0.1633,
+      "vote": null
+     },
+     {
+      "rank": 83,
+      "moniker": "Noderunners",
+      "operator": "terravaloper17utc33x2x8qxqxhynch45lfa8ecwhawjugsuw5",
+      "stake_pct": 0.151,
+      "vote": null
+     },
+     {
+      "rank": 84,
+      "moniker": "Lunatic Validator",
+      "operator": "terravaloper1s0wcr80ud0xd5zwkwg7wkue4wegmtae2tsxsg2",
+      "stake_pct": 0.1509,
+      "vote": null
+     },
+     {
+      "rank": 85,
+      "moniker": "Long Live Luna",
+      "operator": "terravaloper1arm3fzjp7qv8e5gyhraeykcpjte6wh562yre97",
+      "stake_pct": 0.1355,
+      "vote": null
+     },
+     {
+      "rank": 86,
+      "moniker": "Crypto Plant",
+      "operator": "terravaloper1zq2zstc4f6n7xcr343f9dgqun3dd07kycefdfr",
+      "stake_pct": 0.1255,
+      "vote": null
+     },
+     {
+      "rank": 87,
+      "moniker": "Bit Cat🐱",
+      "operator": "terravaloper1k4ef8m95t7eq522evmmuzvfkpla04pezmu4j7k",
+      "stake_pct": 0.1194,
+      "vote": "yes"
+     },
+     {
+      "rank": 88,
+      "moniker": "DEEPSTATE",
+      "operator": "terravaloper1re2zywqcy5j9a55mzln0c8wya35qluen2w5vnr",
+      "stake_pct": 0.0832,
+      "vote": "no"
+     },
+     {
+      "rank": 89,
+      "moniker": "Noddex",
+      "operator": "terravaloper1dqcr3pgv3wvpg3788rcps38gwcdgrl8nxm685k",
+      "stake_pct": 0.0533,
+      "vote": "yes"
+     },
+     {
+      "rank": 90,
+      "moniker": "0%(100% cashback)",
+      "operator": "terravaloper1jrzpm3mrq96q72tqmvywpr4wtnrgwywaac6jkk",
+      "stake_pct": 0.0092,
+      "vote": null
+     },
+     {
+      "rank": 91,
+      "moniker": "NODESYNC",
+      "operator": "terravaloper15n2zy7f4cpqkshrr8d75hvkqwdqa0a8gjm0z7x",
+      "stake_pct": 0.008,
+      "vote": "yes"
+     },
+     {
+      "rank": 92,
+      "moniker": "Basement 🗲 Nodes",
+      "operator": "terravaloper1ymc8xyylgassjcpnx07q0ns9emusecxkz9stpl",
+      "stake_pct": 0.0073,
+      "vote": "no"
+     },
+     {
+      "rank": 93,
+      "moniker": "NodesHub",
+      "operator": "terravaloper1g2q6xx8z05wa2ukqg2j0jdcqql5pw6hx606hn2",
+      "stake_pct": 0.0056,
+      "vote": null
+     },
+     {
+      "rank": 94,
+      "moniker": "Cosmos Spaces",
+      "operator": "terravaloper145celszsx43p8rumldtp6qjqrj07ysmsfyfe4t",
+      "stake_pct": 0.0044,
+      "vote": "abstain"
+     },
+     {
+      "rank": 95,
+      "moniker": "LuckyStar",
+      "operator": "terravaloper1mdye6w3787x48mwjwe4cykj4nmtqrfdf85f8xm",
+      "stake_pct": 0.0025,
+      "vote": "yes"
+     },
+     {
+      "rank": 96,
+      "moniker": "navs",
+      "operator": "terravaloper1hvqw5jpfwervu0xx0k3d4ywq77wpfsqy8perex",
+      "stake_pct": 0.0004,
+      "vote": "yes"
+     },
+     {
+      "rank": 97,
+      "moniker": "InnoS",
+      "operator": "terravaloper1jcdntlxtq8l68ulz6fmavzfwqhh9gz3vegxsnc",
+      "stake_pct": 0.0003,
+      "vote": "yes"
+     },
+     {
+      "rank": 98,
+      "moniker": "VALIDATORSG",
+      "operator": "terravaloper1r0kg3zka8kulupy5t8q288fdq53qx7kxa8a70e",
+      "stake_pct": 0.0003,
+      "vote": null
+     },
+     {
+      "rank": 99,
+      "moniker": "hhhhhhhhhhhhhhh",
+      "operator": "terravaloper1jw2ceerdcmejfqrtwmmw75jd0uvp7peh8dn3kh",
+      "stake_pct": 0.0003,
+      "vote": null
+     },
+     {
+      "rank": 100,
+      "moniker": "BoyGau",
+      "operator": "terravaloper1ahuu2ag403lkg24avx46su56s2htfaug9aft3f",
+      "stake_pct": 0.0003,
+      "vote": "yes"
+     }
+    ]
+   }
   },
   "l4859": {
    "id": "l4859",
@@ -266,7 +1742,7 @@
     "noWithVeto": 358124844498
    },
    "voting": {
-    "turnout": 52.71289992534855,
+    "turnout": 52.704357864324415,
     "yesPercent": 94.46803358598137,
     "noPercent": 0.16731997815268243,
     "abstainPercent": 5.147830023377962,
@@ -280,7 +1756,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -310,7 +1786,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.335Z"
+   "fetchedAt": "2026-11-28T00:26:50.810Z"
   },
   "l4858": {
    "id": "l4858",
@@ -327,18 +1803,18 @@
    },
    "live": true,
    "votes": {
-    "yes": 2394307824343,
-    "no": 32809934697239,
-    "abstain": 8587003552814,
-    "total": 43817143774399,
+    "yes": 2428307824402,
+    "no": 32813882401614,
+    "abstain": 8587435152822,
+    "total": 43855523078841,
     "noWithVeto": 25897700003
    },
    "voting": {
-    "turnout": 13.983589841810506,
-    "yesPercent": 5.464317429430259,
-    "noPercent": 74.87921820319295,
-    "abstainPercent": 19.597360332352654,
-    "vetoPercent": 0.05910403502414328,
+    "turnout": 13.993570017643215,
+    "yesPercent": 5.537062732182043,
+    "noPercent": 74.82269073070465,
+    "abstainPercent": 19.581194225831013,
+    "vetoPercent": 0.05905231128230432,
     "quorumReached": false,
     "thresholdReached": false,
     "vetoed": false,
@@ -348,9 +1824,9 @@
    },
    "outcome": "pending",
    "outcomeReason": "Voting in progress",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
-   "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
+   "votersNote": "x/gov: delegators' votes are not captured (they run to thousands). validatorVotes is how each bonded validator's own account voted, read while the vote was open — the chain drops individual votes when a vote closes.",
    "decodedActions": [
     {
      "type": "/alliance.alliance.MsgUpdateAlliance",
@@ -522,7 +1998,745 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.445Z"
+   "fetchedAt": "2026-11-28T00:26:50.908Z",
+   "validatorVotes": {
+    "version": "1.0.0",
+    "proposal_id": 4858,
+    "read_at": "2026-11-28T00:26:51.288Z",
+    "validators": 100,
+    "voted": 17,
+    "voted_stake_pct": 13.1274,
+    "voters_total": 34,
+    "complete": true,
+    "by": {
+     "yes": {
+      "n": 7,
+      "stake_pct": 0.7225
+     },
+     "no": {
+      "n": 6,
+      "stake_pct": 9.8125
+     },
+     "no_with_veto": {
+      "n": 0,
+      "stake_pct": 0
+     },
+     "abstain": {
+      "n": 4,
+      "stake_pct": 2.5924
+     },
+     "split": {
+      "n": 0,
+      "stake_pct": 0
+     },
+     "none": {
+      "n": 83,
+      "stake_pct": 86.8725
+     }
+    },
+    "list": [
+     {
+      "rank": 1,
+      "moniker": "KuCoin LUNA Node",
+      "operator": "terravaloper1gdvfugy7vt9vk8evntwe54knsqyncmpjzyhljt",
+      "stake_pct": 5.9378,
+      "vote": null
+     },
+     {
+      "rank": 2,
+      "moniker": "Allnodes",
+      "operator": "terravaloper120ppepaj2lh5vreadx42wnjjznh55vvktp78wk",
+      "stake_pct": 5.8516,
+      "vote": null
+     },
+     {
+      "rank": 3,
+      "moniker": "Smart Stake",
+      "operator": "terravaloper188e99yz54744uhr8xjfxmmplhnuw75xea55zfp",
+      "stake_pct": 5.5659,
+      "vote": null
+     },
+     {
+      "rank": 4,
+      "moniker": "Galactic Punks Validator",
+      "operator": "terravaloper15lsftv92eyssjwkh2393s0nhjc07kryqen2fqf",
+      "stake_pct": 5.0895,
+      "vote": "no"
+     },
+     {
+      "rank": 5,
+      "moniker": "VegasNode",
+      "operator": "terravaloper1zan8943qgnkdnrxcpg3krhagpsll7acdpr7kqj",
+      "stake_pct": 4.7505,
+      "vote": null
+     },
+     {
+      "rank": 6,
+      "moniker": " polkachu.com",
+      "operator": "terravaloper1rr2g4z2ch4cqwl8s70yj94a5l2vakg0v36nmjh",
+      "stake_pct": 4.4166,
+      "vote": null
+     },
+     {
+      "rank": 7,
+      "moniker": "Stakely.io",
+      "operator": "terravaloper16vc0num5aaq4mqdh4vjhs02s3ypd0j8c7ujxpm",
+      "stake_pct": 3.1511,
+      "vote": null
+     },
+     {
+      "rank": 8,
+      "moniker": "ERIS ⚡️ Delegate for claimdrop",
+      "operator": "terravaloper1vm5azhvaxeanc7auxh02y8jmxrk8tj93f43e7j",
+      "stake_pct": 3.099,
+      "vote": null
+     },
+     {
+      "rank": 9,
+      "moniker": "🦁 The Lion DAO",
+      "operator": "terravaloper1pet430t7ykswxuyhh56d4gk6rt7qgu9as6a5r0",
+      "stake_pct": 3.0032,
+      "vote": "no"
+     },
+     {
+      "rank": 10,
+      "moniker": "cosmosrescue",
+      "operator": "terravaloper1htey4gcdcass29vn4dwjcuq58mrvv8ra5pjz4k",
+      "stake_pct": 2.9855,
+      "vote": null
+     },
+     {
+      "rank": 11,
+      "moniker": "DELIGHT",
+      "operator": "terravaloper1f6wuq93320s6w7vvnkc0576g9mtqfmz9a8wqxk",
+      "stake_pct": 2.8997,
+      "vote": null
+     },
+     {
+      "rank": 12,
+      "moniker": "HighStakes.ch | Stake for Airdrop",
+      "operator": "terravaloper1pgyelqv0hwjavgf6vhdm4e4pt766wfxxczu20l",
+      "stake_pct": 2.8317,
+      "vote": null
+     },
+     {
+      "rank": 13,
+      "moniker": "Orbital Command",
+      "operator": "terravaloper1lelhxdzwn9ddecv6sv0kcxj5tguurxnzcfs5wf",
+      "stake_pct": 2.5622,
+      "vote": null
+     },
+     {
+      "rank": 14,
+      "moniker": " Lavender.Five Nodes 🐝",
+      "operator": "terravaloper1vcd42qfvlvnjwaw7hvl6y32wrzqxvas653yus9",
+      "stake_pct": 2.4681,
+      "vote": null
+     },
+     {
+      "rank": 15,
+      "moniker": "Terrascope",
+      "operator": "terravaloper1jt8pcx4sesgztjkjsvjjqtvyfgcehqx09u4exq",
+      "stake_pct": 2.3179,
+      "vote": null
+     },
+     {
+      "rank": 16,
+      "moniker": "01node",
+      "operator": "terravaloper1wdymftapg5pcvf2aqw4pd0yuuh5w9m6yqdnukv",
+      "stake_pct": 2.1988,
+      "vote": null
+     },
+     {
+      "rank": 17,
+      "moniker": "Synergy Nodes",
+      "operator": "terravaloper1tm0xkark2ufecmdhgaaw7gqsycyt4qag6py8x6",
+      "stake_pct": 2.1317,
+      "vote": null
+     },
+     {
+      "rank": 18,
+      "moniker": "Active Nodes",
+      "operator": "terravaloper1a9zv7n6pmkzlm3wj6c23qyejqlmyxsl5faanrv",
+      "stake_pct": 1.8251,
+      "vote": null
+     },
+     {
+      "rank": 19,
+      "moniker": "Stakin by The Tie",
+      "operator": "terravaloper1mgpgp53tynj4djmckxdjhufa7q8lqqjuwnrlqm",
+      "stake_pct": 1.7085,
+      "vote": null
+     },
+     {
+      "rank": 20,
+      "moniker": "WildSage 🧙",
+      "operator": "terravaloper1l920a79akuc98hz4389axf9ctcymrf5ays578x",
+      "stake_pct": 1.6298,
+      "vote": "abstain"
+     },
+     {
+      "rank": 21,
+      "moniker": "SOLID",
+      "operator": "terravaloper1cqc26lnatzxvu0z5nd4yx8m4ecllkm7jlakwrw",
+      "stake_pct": 1.5793,
+      "vote": null
+     },
+     {
+      "rank": 22,
+      "moniker": "SCV-Security",
+      "operator": "terravaloper10c04ysz9uznx2mkenuk3j3esjczyqh0j783nzt",
+      "stake_pct": 1.5567,
+      "vote": null
+     },
+     {
+      "rank": 23,
+      "moniker": "BackBone Labs | Delegate for $SOUL Claim Drop",
+      "operator": "terravaloper1wr0p7dzss74wfmzfqm8r65mk26efg5zhzpm77s",
+      "stake_pct": 1.5401,
+      "vote": null
+     },
+     {
+      "rank": 24,
+      "moniker": "Pro-Nodes75",
+      "operator": "terravaloper1puzp2yjqps43x7nse33svljc550xjz35jxg432",
+      "stake_pct": 1.5166,
+      "vote": "no"
+     },
+     {
+      "rank": 25,
+      "moniker": "0base.vc",
+      "operator": "terravaloper1plxp55happ379eevsnk2xeuwzsrldsmqduyu36",
+      "stake_pct": 1.3711,
+      "vote": null
+     },
+     {
+      "rank": 26,
+      "moniker": "TdrSys | Auto-Compound",
+      "operator": "terravaloper1cs0dspacdhym4cwcm3f7suurfszvl6k5s9p06a",
+      "stake_pct": 1.2943,
+      "vote": null
+     },
+     {
+      "rank": 27,
+      "moniker": "LUNAStaker",
+      "operator": "terravaloper19kg9ncvkuk08pxz0rnnywh65h5tvux9mlj7tc3",
+      "stake_pct": 1.2473,
+      "vote": null
+     },
+     {
+      "rank": 28,
+      "moniker": "Aardvark",
+      "operator": "terravaloper1wzvgc8j840qtsfsa55kuf9cypqwa2tqnkrduqx",
+      "stake_pct": 1.0315,
+      "vote": null
+     },
+     {
+      "rank": 29,
+      "moniker": "Centauri Alpha",
+      "operator": "terravaloper1fs8g3mlg3f4f4yrckvwk7dk4lt3nv4gtx2uqwj",
+      "stake_pct": 0.8724,
+      "vote": null
+     },
+     {
+      "rank": 30,
+      "moniker": "Node39.TOP",
+      "operator": "terravaloper1l63t9c0nruewg5zdrmv8pvcxdg0az6fqgg008k",
+      "stake_pct": 0.7664,
+      "vote": null
+     },
+     {
+      "rank": 31,
+      "moniker": "owlstake",
+      "operator": "terravaloper1lg8zwpjvyx4pqy0j5ue2kf08edkuwy6l0j7f0h",
+      "stake_pct": 0.7657,
+      "vote": null
+     },
+     {
+      "rank": 32,
+      "moniker": "Orion - Auto-Compound",
+      "operator": "terravaloper1dvl464gpzxwru4a97q6pzqv7n7rcnxwlyspnau",
+      "stake_pct": 0.74,
+      "vote": null
+     },
+     {
+      "rank": 33,
+      "moniker": "Coinage x DAIC",
+      "operator": "terravaloper17kh8ngu3s74epwympaxrp4ukahm5rvtf5zc8ma",
+      "stake_pct": 0.7306,
+      "vote": null
+     },
+     {
+      "rank": 34,
+      "moniker": "ISS",
+      "operator": "terravaloper17q3y0exn6ndxkf78rcvj70gp7mrezmdx4z54xu",
+      "stake_pct": 0.7223,
+      "vote": null
+     },
+     {
+      "rank": 35,
+      "moniker": "Ceres Ventures",
+      "operator": "terravaloper1q8w4u2wyhx574m70gwe8km5za2ptanny9mnqy3",
+      "stake_pct": 0.632,
+      "vote": "abstain"
+     },
+     {
+      "rank": 36,
+      "moniker": "Burrito Node",
+      "operator": "terravaloper16x9dcx9pm9j8ykl0td4hptwule706ysjel6500",
+      "stake_pct": 0.6309,
+      "vote": null
+     },
+     {
+      "rank": 37,
+      "moniker": "NFTSwitch.xyz | Delegate for $SOUL Claim Drop",
+      "operator": "terravaloper1vrkzjujfds9p8t5g0xety3e3ft4dep02etv9le",
+      "stake_pct": 0.5913,
+      "vote": null
+     },
+     {
+      "rank": 38,
+      "moniker": "HEXXAGON",
+      "operator": "terravaloper1aa6f2qeu0hrqpsxe4rggz0k7e43jfce43arz82",
+      "stake_pct": 0.5546,
+      "vote": null
+     },
+     {
+      "rank": 39,
+      "moniker": "Secure Secrets",
+      "operator": "terravaloper1wzu2j73nvccghywtghku5ch59f67jykw58na64",
+      "stake_pct": 0.551,
+      "vote": null
+     },
+     {
+      "rank": 40,
+      "moniker": "Y",
+      "operator": "terravaloper18pmvpy25zc7x0u8ppefuyyl2zaafe2wut0nm5e",
+      "stake_pct": 0.5459,
+      "vote": null
+     },
+     {
+      "rank": 41,
+      "moniker": "TERRA-FIRMA",
+      "operator": "terravaloper1s6j9wxyprdsxmdf6mvsegsldvmtk0p92pa7aey",
+      "stake_pct": 0.5425,
+      "vote": null
+     },
+     {
+      "rank": 42,
+      "moniker": "Luna Whale",
+      "operator": "terravaloper1znh6eq79l3z5l7ctnrjr2d8ksaght25lku6mlw",
+      "stake_pct": 0.5219,
+      "vote": null
+     },
+     {
+      "rank": 43,
+      "moniker": "Futura Meridian",
+      "operator": "terravaloper1t3zvwaz7v3epg3f33waxajv4nj95mt8ma9yc7g",
+      "stake_pct": 0.5037,
+      "vote": null
+     },
+     {
+      "rank": 44,
+      "moniker": "Core Dev (Engineering@Terra)",
+      "operator": "terravaloper14rftkw37eltf74degzajq4s5phg23vjlu9h9as",
+      "stake_pct": 0.4895,
+      "vote": null
+     },
+     {
+      "rank": 45,
+      "moniker": "Free Do",
+      "operator": "terravaloper1hr7svdp2rga9vf3ry95sx7g5wyspgwmg96vqg5",
+      "stake_pct": 0.4888,
+      "vote": "yes"
+     },
+     {
+      "rank": 46,
+      "moniker": "BIG Labs",
+      "operator": "terravaloper1mnfavz2tcq6shdfph5azt7gwt6va2s6weqdnkq",
+      "stake_pct": 0.4803,
+      "vote": null
+     },
+     {
+      "rank": 47,
+      "moniker": "Easy 2 Stake",
+      "operator": "terravaloper1kgn6zznfq2xwrw3hrh7qtqjwu98es7vt8azjl3",
+      "stake_pct": 0.4796,
+      "vote": null
+     },
+     {
+      "rank": 48,
+      "moniker": "Talis Protocol",
+      "operator": "terravaloper1vjr8z6g38f39j23y55pdektc3l2uqc9y02f9k5",
+      "stake_pct": 0.4754,
+      "vote": null
+     },
+     {
+      "rank": 49,
+      "moniker": "LUNA REWARDS",
+      "operator": "terravaloper1hy8lzd38kp0t8662r2vnxsc4ezs3l74506jx02",
+      "stake_pct": 0.4633,
+      "vote": null
+     },
+     {
+      "rank": 50,
+      "moniker": "Autism Staking",
+      "operator": "terravaloper10mmhvx5nrnuye2x9zhe02jcg0hfzzzjlwc0sxw",
+      "stake_pct": 0.4561,
+      "vote": null
+     },
+     {
+      "rank": 51,
+      "moniker": "Mario",
+      "operator": "terravaloper1rgdps79da300t87twwkcly6ec3vlpgpfgnsel5",
+      "stake_pct": 0.4527,
+      "vote": null
+     },
+     {
+      "rank": 52,
+      "moniker": "Solva (CryptoCrew)",
+      "operator": "terravaloper199fjq4rnfvz24cktl8cervx8h8e90rukmgdv5x",
+      "stake_pct": 0.4509,
+      "vote": null
+     },
+     {
+      "rank": 53,
+      "moniker": "TCB @THORmaximalist",
+      "operator": "terravaloper1kxyzu575tex8dv6d5uk26t4q8x5lusw082w3t8",
+      "stake_pct": 0.449,
+      "vote": null
+     },
+     {
+      "rank": 54,
+      "moniker": "Monster Node",
+      "operator": "terravaloper1xgejf5yvc2ff4ddrd4nuvcmexx5sn94aaz84tc",
+      "stake_pct": 0.4353,
+      "vote": null
+     },
+     {
+      "rank": 55,
+      "moniker": " AutoStake 🛡️ Slash Protected",
+      "operator": "terravaloper1yy5379nk24xffpq4egw7ue4ad3j7l79ma2enmz",
+      "stake_pct": 0.4057,
+      "vote": null
+     },
+     {
+      "rank": 56,
+      "moniker": "Nodeplus",
+      "operator": "terravaloper1kcsunyhnhmnc0afrrynd7qfzykmhm3w5ely6fh",
+      "stake_pct": 0.3883,
+      "vote": null
+     },
+     {
+      "rank": 57,
+      "moniker": "FreshSTAKING",
+      "operator": "terravaloper1ygwhuksjq3nymd9n8kmceaxd3vxv97u7ja33aj",
+      "stake_pct": 0.3597,
+      "vote": null
+     },
+     {
+      "rank": 58,
+      "moniker": "stakingcabin",
+      "operator": "terravaloper1jveyrzquwrt0txanmhg7jdhf2q4ry28k2esps4",
+      "stake_pct": 0.3334,
+      "vote": null
+     },
+     {
+      "rank": 59,
+      "moniker": "Moon Platoon",
+      "operator": "terravaloper1j4cc2p4f4t4m3z37gumr6cr64vm605aa4wmcyf",
+      "stake_pct": 0.3259,
+      "vote": "abstain"
+     },
+     {
+      "rank": 60,
+      "moniker": "moonshot",
+      "operator": "terravaloper1l9mchtvqgvpyskgtemsrkjn0e57a7wm6c863uj",
+      "stake_pct": 0.3211,
+      "vote": null
+     },
+     {
+      "rank": 61,
+      "moniker": "MissionControl",
+      "operator": "terravaloper1sextn6xd46edrc02tf6d2fysmqw62qu7ng3kkm",
+      "stake_pct": 0.3068,
+      "vote": null
+     },
+     {
+      "rank": 62,
+      "moniker": "🙏 uGaenn ⛅",
+      "operator": "terravaloper1cl8j3r09vmlxf5zsq4xms7td8x2qcfml8637yf",
+      "stake_pct": 0.2922,
+      "vote": null
+     },
+     {
+      "rank": 63,
+      "moniker": "Interstake One",
+      "operator": "terravaloper15389y60f0rk596tm38qewqycr8ztt8hshsf2mk",
+      "stake_pct": 0.27,
+      "vote": null
+     },
+     {
+      "rank": 64,
+      "moniker": "Interstellar 🍸 ",
+      "operator": "terravaloper1kepapcnh78hsk8nx2u9nv05rn7vjwwf4fr59zu",
+      "stake_pct": 0.2541,
+      "vote": null
+     },
+     {
+      "rank": 65,
+      "moniker": "KK Validator",
+      "operator": "terravaloper1lnlasdy5r2hdjz3ta2r86ufkz309zdjvqshec4",
+      "stake_pct": 0.235,
+      "vote": null
+     },
+     {
+      "rank": 66,
+      "moniker": "AuraStake",
+      "operator": "terravaloper1ulwqct0df2xuuaqzcq4yax3msdqgew6ehhcl7r",
+      "stake_pct": 0.2149,
+      "vote": null
+     },
+     {
+      "rank": 67,
+      "moniker": "Wave",
+      "operator": "terravaloper1g50t9cxzhu0edk2r5lagmujupt722mhefxvzzy",
+      "stake_pct": 0.214,
+      "vote": null
+     },
+     {
+      "rank": 68,
+      "moniker": "Stakeflow",
+      "operator": "terravaloper1tfy452kxfcsa2353nenltade9esj7ffrc38gwn",
+      "stake_pct": 0.2133,
+      "vote": null
+     },
+     {
+      "rank": 69,
+      "moniker": "Staker Space (shutting down - please redelegate)",
+      "operator": "terravaloper1jncrqd24wtcdpes9y89qsh0jn5c8sayn92302l",
+      "stake_pct": 0.2058,
+      "vote": null
+     },
+     {
+      "rank": 70,
+      "moniker": "SafePoint",
+      "operator": "terravaloper1wuqf6xq54n5n4hus2wn849ttx02xznvj0ewmxp",
+      "stake_pct": 0.2053,
+      "vote": null
+     },
+     {
+      "rank": 71,
+      "moniker": "StakeSabai",
+      "operator": "terravaloper1g0deaesmwy2qg9zupynx6ychspe60lquu3eyze",
+      "stake_pct": 0.2031,
+      "vote": null
+     },
+     {
+      "rank": 72,
+      "moniker": "Enigma",
+      "operator": "terravaloper1u8lglu36g5x6shp2xyd35hcs45x9cvmj6tmvd8",
+      "stake_pct": 0.2014,
+      "vote": null
+     },
+     {
+      "rank": 73,
+      "moniker": "OneStar",
+      "operator": "terravaloper1yt7hhu4xpwe2dqg6euda5t3pvx0mhsmvap548h",
+      "stake_pct": 0.1996,
+      "vote": null
+     },
+     {
+      "rank": 74,
+      "moniker": "8moon",
+      "operator": "terravaloper1uv45luc5fzq66u9enmnv44k8c7j2zuge5kr60r",
+      "stake_pct": 0.199,
+      "vote": null
+     },
+     {
+      "rank": 75,
+      "moniker": "Luna Station 88",
+      "operator": "terravaloper1ccwgk6gvgtm556gxe0v79p48nrgsey05w3fle4",
+      "stake_pct": 0.1953,
+      "vote": null
+     },
+     {
+      "rank": 76,
+      "moniker": "Inotel",
+      "operator": "terravaloper10qz4hfudfnllkgvhnm7k40dewg27nhxz3yn895",
+      "stake_pct": 0.1909,
+      "vote": null
+     },
+     {
+      "rank": 77,
+      "moniker": "NITAWA",
+      "operator": "terravaloper150pqxd0j27mjg4yy4fafhkm7gfhsk8xvyfft0y",
+      "stake_pct": 0.19,
+      "vote": null
+     },
+     {
+      "rank": 78,
+      "moniker": "Sapient Nodes",
+      "operator": "terravaloper12y453v20w2dlv2y0vlepf88ng0r6sfsz6k7qm4",
+      "stake_pct": 0.1847,
+      "vote": null
+     },
+     {
+      "rank": 79,
+      "moniker": "RuneTerra",
+      "operator": "terravaloper1ettjrqla8cpmx0wvdurjynn7776gurx5yp9pe4",
+      "stake_pct": 0.1731,
+      "vote": null
+     },
+     {
+      "rank": 80,
+      "moniker": "Encapsulate",
+      "operator": "terravaloper1yh4u76y405t3ff9lyrzhhe8legjx9k3as5mujs",
+      "stake_pct": 0.1691,
+      "vote": null
+     },
+     {
+      "rank": 81,
+      "moniker": "The Bear Validator",
+      "operator": "terravaloper10ge6t62gzesz378e09kkgqvx9ev7tf6xcsrqqu",
+      "stake_pct": 0.169,
+      "vote": "yes"
+     },
+     {
+      "rank": 82,
+      "moniker": "Defi Suffrage",
+      "operator": "terravaloper1w6pd8at32vh8r2kz8me8c6535sfwhjzkuennrf",
+      "stake_pct": 0.1633,
+      "vote": null
+     },
+     {
+      "rank": 83,
+      "moniker": "Noderunners",
+      "operator": "terravaloper17utc33x2x8qxqxhynch45lfa8ecwhawjugsuw5",
+      "stake_pct": 0.151,
+      "vote": null
+     },
+     {
+      "rank": 84,
+      "moniker": "Lunatic Validator",
+      "operator": "terravaloper1s0wcr80ud0xd5zwkwg7wkue4wegmtae2tsxsg2",
+      "stake_pct": 0.1509,
+      "vote": null
+     },
+     {
+      "rank": 85,
+      "moniker": "Long Live Luna",
+      "operator": "terravaloper1arm3fzjp7qv8e5gyhraeykcpjte6wh562yre97",
+      "stake_pct": 0.1355,
+      "vote": null
+     },
+     {
+      "rank": 86,
+      "moniker": "Crypto Plant",
+      "operator": "terravaloper1zq2zstc4f6n7xcr343f9dgqun3dd07kycefdfr",
+      "stake_pct": 0.1255,
+      "vote": null
+     },
+     {
+      "rank": 87,
+      "moniker": "Bit Cat🐱",
+      "operator": "terravaloper1k4ef8m95t7eq522evmmuzvfkpla04pezmu4j7k",
+      "stake_pct": 0.1194,
+      "vote": "no"
+     },
+     {
+      "rank": 88,
+      "moniker": "DEEPSTATE",
+      "operator": "terravaloper1re2zywqcy5j9a55mzln0c8wya35qluen2w5vnr",
+      "stake_pct": 0.0832,
+      "vote": "no"
+     },
+     {
+      "rank": 89,
+      "moniker": "Noddex",
+      "operator": "terravaloper1dqcr3pgv3wvpg3788rcps38gwcdgrl8nxm685k",
+      "stake_pct": 0.0533,
+      "vote": "yes"
+     },
+     {
+      "rank": 90,
+      "moniker": "0%(100% cashback)",
+      "operator": "terravaloper1jrzpm3mrq96q72tqmvywpr4wtnrgwywaac6jkk",
+      "stake_pct": 0.0092,
+      "vote": null
+     },
+     {
+      "rank": 91,
+      "moniker": "NODESYNC",
+      "operator": "terravaloper15n2zy7f4cpqkshrr8d75hvkqwdqa0a8gjm0z7x",
+      "stake_pct": 0.008,
+      "vote": "yes"
+     },
+     {
+      "rank": 92,
+      "moniker": "Basement 🗲 Nodes",
+      "operator": "terravaloper1ymc8xyylgassjcpnx07q0ns9emusecxkz9stpl",
+      "stake_pct": 0.0073,
+      "vote": null
+     },
+     {
+      "rank": 93,
+      "moniker": "NodesHub",
+      "operator": "terravaloper1g2q6xx8z05wa2ukqg2j0jdcqql5pw6hx606hn2",
+      "stake_pct": 0.0056,
+      "vote": null
+     },
+     {
+      "rank": 94,
+      "moniker": "Cosmos Spaces",
+      "operator": "terravaloper145celszsx43p8rumldtp6qjqrj07ysmsfyfe4t",
+      "stake_pct": 0.0044,
+      "vote": "abstain"
+     },
+     {
+      "rank": 95,
+      "moniker": "LuckyStar",
+      "operator": "terravaloper1mdye6w3787x48mwjwe4cykj4nmtqrfdf85f8xm",
+      "stake_pct": 0.0025,
+      "vote": "yes"
+     },
+     {
+      "rank": 96,
+      "moniker": "navs",
+      "operator": "terravaloper1hvqw5jpfwervu0xx0k3d4ywq77wpfsqy8perex",
+      "stake_pct": 0.0004,
+      "vote": "no"
+     },
+     {
+      "rank": 97,
+      "moniker": "InnoS",
+      "operator": "terravaloper1jcdntlxtq8l68ulz6fmavzfwqhh9gz3vegxsnc",
+      "stake_pct": 0.0003,
+      "vote": "yes"
+     },
+     {
+      "rank": 98,
+      "moniker": "VALIDATORSG",
+      "operator": "terravaloper1r0kg3zka8kulupy5t8q288fdq53qx7kxa8a70e",
+      "stake_pct": 0.0003,
+      "vote": null
+     },
+     {
+      "rank": 99,
+      "moniker": "hhhhhhhhhhhhhhh",
+      "operator": "terravaloper1jw2ceerdcmejfqrtwmmw75jd0uvp7peh8dn3kh",
+      "stake_pct": 0.0003,
+      "vote": null
+     },
+     {
+      "rank": 100,
+      "moniker": "BoyGau",
+      "operator": "terravaloper1ahuu2ag403lkg24avx46su56s2htfaug9aft3f",
+      "stake_pct": 0.0003,
+      "vote": "yes"
+     }
+    ]
+   }
   },
   "l4857": {
    "id": "l4857",
@@ -546,7 +2760,7 @@
     "noWithVeto": 7378165172014
    },
    "voting": {
-    "turnout": 71.56046820325513,
+    "turnout": 71.54887191682097,
     "yesPercent": 86.43415187865881,
     "noPercent": 3.196082646577113,
     "abstainPercent": 7.079357020321146,
@@ -560,14 +2774,14 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.445Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4856": {
    "id": "l4856",
@@ -591,7 +2805,7 @@
     "noWithVeto": 37515827777458
    },
    "voting": {
-    "turnout": 78.89363437097421,
+    "turnout": 78.88084975392282,
     "yesPercent": 51.42946727028645,
     "noPercent": 6.946722373662108,
     "abstainPercent": 26.448164510679874,
@@ -605,14 +2819,14 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.445Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4855": {
    "id": "l4855",
@@ -636,7 +2850,7 @@
     "noWithVeto": 11353378845604
    },
    "voting": {
-    "turnout": 74.59338787172133,
+    "turnout": 74.58130010436076,
     "yesPercent": 76.46197216488704,
     "noPercent": 8.024533065097003,
     "abstainPercent": 10.656144636586612,
@@ -650,14 +2864,14 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.445Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4854": {
    "id": "l4854",
@@ -681,7 +2895,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 70.63027665240054,
+    "turnout": 70.61883110237062,
     "yesPercent": 84.98966212598373,
     "noPercent": 0.3579728428694648,
     "abstainPercent": 14.652365031146811,
@@ -695,7 +2909,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -749,7 +2963,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.445Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4853": {
    "id": "l4853",
@@ -773,7 +2987,7 @@
     "noWithVeto": 30055480011262
    },
    "voting": {
-    "turnout": 68.0361595955005,
+    "turnout": 68.02513441896996,
     "yesPercent": 13.815215239894885,
     "noPercent": 27.771796829692715,
     "abstainPercent": 44.3149560087216,
@@ -787,14 +3001,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (24.81% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.445Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4852": {
    "id": "l4852",
@@ -818,7 +3032,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 65.1997781401372,
+    "turnout": 65.18921259575579,
     "yesPercent": 94.026106342407,
     "noPercent": 0,
     "abstainPercent": 5.973893657593,
@@ -832,7 +3046,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -870,7 +3084,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4851": {
    "id": "l4851",
@@ -894,7 +3108,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 76.22252679372542,
+    "turnout": 76.21017502639316,
     "yesPercent": 97.69646231154874,
     "noPercent": 0,
     "abstainPercent": 2.303537688451253,
@@ -908,7 +3122,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -946,7 +3160,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4849": {
    "id": "l4849",
@@ -970,7 +3184,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 81.89889946774636,
+    "turnout": 81.8856278511581,
     "yesPercent": 99.99997888980894,
     "noPercent": 0.00002111019104750802,
     "abstainPercent": 0,
@@ -984,7 +3198,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1022,7 +3236,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4848": {
    "id": "l4848",
@@ -1046,7 +3260,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 73.604674909367,
+    "turnout": 73.5927473617339,
     "yesPercent": 76.55928880779396,
     "noPercent": 0.2240797259237321,
     "abstainPercent": 23.2166314662823,
@@ -1060,7 +3274,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1100,7 +3314,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4847": {
    "id": "l4847",
@@ -1124,7 +3338,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 68.99002072462667,
+    "turnout": 68.97884097606567,
     "yesPercent": 25.40767473980688,
     "noPercent": 16.082689699532615,
     "abstainPercent": 58.50963556066051,
@@ -1138,7 +3352,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1172,7 +3386,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4846": {
    "id": "l4846",
@@ -1196,7 +3410,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 70.84158000929287,
+    "turnout": 70.83010021781216,
     "yesPercent": 99.99940105169597,
     "noPercent": 0,
     "abstainPercent": 0.0005989483040355793,
@@ -1210,7 +3424,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1248,7 +3462,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4845": {
    "id": "l4845",
@@ -1272,7 +3486,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 82.40412106920611,
+    "turnout": 82.39076758207466,
     "yesPercent": 99.99941203274918,
     "noPercent": 3.872805450858706e-8,
     "abstainPercent": 0.0005879285227693828,
@@ -1286,7 +3500,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1324,7 +3538,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4844": {
    "id": "l4844",
@@ -1348,7 +3562,7 @@
     "noWithVeto": 13086009
    },
    "voting": {
-    "turnout": 77.56872799103279,
+    "turnout": 77.55615807344138,
     "yesPercent": 66.09979433602653,
     "noPercent": 7.820829876731198,
     "abstainPercent": 26.07937040336492,
@@ -1362,7 +3576,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1400,7 +3614,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4842": {
    "id": "l4842",
@@ -1424,7 +3638,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 76.2208921645321,
+    "turnout": 76.2085406620895,
     "yesPercent": 99.99644347181884,
     "noPercent": 0.0000021353583157513627,
     "abstainPercent": 0.003554392822839666,
@@ -1438,7 +3652,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1476,7 +3690,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.288Z"
   },
   "l4838": {
    "id": "l4838",
@@ -1500,7 +3714,7 @@
     "noWithVeto": 1310300000
    },
    "voting": {
-    "turnout": 83.44778388483732,
+    "turnout": 83.43426127342182,
     "yesPercent": 95.07636782083097,
     "noPercent": 0.00006796081445629861,
     "abstainPercent": 4.923063111266539,
@@ -1514,7 +3728,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1584,7 +3798,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4837": {
    "id": "l4837",
@@ -1608,7 +3822,7 @@
     "noWithVeto": 182043389148322
    },
    "voting": {
-    "turnout": 58.61139838058889,
+    "turnout": 58.60190047509731,
     "yesPercent": 0.008586658575025647,
     "noPercent": 0.8699259622173546,
     "abstainPercent": 0.00008415364315610284,
@@ -1622,14 +3836,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0.01% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4836": {
    "id": "l4836",
@@ -1653,7 +3867,7 @@
     "noWithVeto": 215550945
    },
    "voting": {
-    "turnout": 64.44101776871368,
+    "turnout": 64.43057518052335,
     "yesPercent": 22.021442640369813,
     "noPercent": 35.316077080806174,
     "abstainPercent": 42.662373530232706,
@@ -1667,7 +3881,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (38.41% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1701,7 +3915,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4835": {
    "id": "l4835",
@@ -1725,7 +3939,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 80.90454115397,
+    "turnout": 80.8914306719315,
     "yesPercent": 99.99992807437181,
     "noPercent": 0,
     "abstainPercent": 0.00007192562820016346,
@@ -1739,7 +3953,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1777,7 +3991,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4834": {
    "id": "l4834",
@@ -1801,7 +4015,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 103.08035759638825,
+    "turnout": 103.06365355039142,
     "yesPercent": 99.99992612013642,
     "noPercent": 0,
     "abstainPercent": 0.00007387986358704935,
@@ -1815,7 +4029,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1853,7 +4067,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4833": {
    "id": "l4833",
@@ -1877,7 +4091,7 @@
     "noWithVeto": 279451517203458
    },
    "voting": {
-    "turnout": 89.88896135512687,
+    "turnout": 89.87439495877265,
     "yesPercent": 0.00005018917306037997,
     "noPercent": 0.7855471551894342,
     "abstainPercent": 0,
@@ -1891,14 +4105,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4832": {
    "id": "l4832",
@@ -1922,7 +4136,7 @@
     "noWithVeto": 5909633154
    },
    "voting": {
-    "turnout": 98.7740047212339,
+    "turnout": 98.75799851445863,
     "yesPercent": 53.09183392505924,
     "noPercent": 4.236165181988879,
     "abstainPercent": 42.67009151249723,
@@ -1936,7 +4150,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -1970,7 +4184,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4831": {
    "id": "l4831",
@@ -1994,7 +4208,7 @@
     "noWithVeto": 254060068988388
    },
    "voting": {
-    "turnout": 81.7880306507989,
+    "turnout": 81.77477700036697,
     "yesPercent": 0.001593041722432568,
     "noPercent": 0.8647167242385796,
     "abstainPercent": 0,
@@ -2008,14 +4222,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4830": {
    "id": "l4830",
@@ -2039,7 +4253,7 @@
     "noWithVeto": 10490278474
    },
    "voting": {
-    "turnout": 87.53819867223162,
+    "turnout": 87.52401321409782,
     "yesPercent": 6.158431380472216,
     "noPercent": 42.44265683829471,
     "abstainPercent": 51.39508737494252,
@@ -2053,14 +4267,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (12.67% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4829": {
    "id": "l4829",
@@ -2084,7 +4298,7 @@
     "noWithVeto": 84500000
    },
    "voting": {
-    "turnout": 91.79815194286802,
+    "turnout": 91.78327616451185,
     "yesPercent": 82.96132556893176,
     "noPercent": 1.8279017730488771,
     "abstainPercent": 15.210743281699852,
@@ -2098,7 +4312,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2136,7 +4350,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4828": {
    "id": "l4828",
@@ -2160,7 +4374,7 @@
     "noWithVeto": 115255872
    },
    "voting": {
-    "turnout": 95.45627419194308,
+    "turnout": 95.44080561934625,
     "yesPercent": 99.9998729375959,
     "noPercent": 0,
     "abstainPercent": 0.00008852937113693257,
@@ -2174,7 +4388,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2212,7 +4426,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4824": {
    "id": "l4824",
@@ -2236,7 +4450,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 96.37049371784147,
+    "turnout": 96.35487699708753,
     "yesPercent": 99.99997223499027,
     "noPercent": 0.00002493126822422,
     "abstainPercent": 0.000002833741507793935,
@@ -2250,7 +4464,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2288,7 +4502,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4823": {
    "id": "l4823",
@@ -2312,7 +4526,7 @@
     "noWithVeto": 2171826866
    },
    "voting": {
-    "turnout": 73.06071274207982,
+    "turnout": 73.04887334285127,
     "yesPercent": 42.9506841335065,
     "noPercent": 10.084447059776874,
     "abstainPercent": 46.963920135096025,
@@ -2326,7 +4540,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2434,7 +4648,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4822": {
    "id": "l4822",
@@ -2458,7 +4672,7 @@
     "noWithVeto": 10000000
    },
    "voting": {
-    "turnout": 86.7969447680144,
+    "turnout": 86.78287942917005,
     "yesPercent": 74.1304401278549,
     "noPercent": 0.014769516100532497,
     "abstainPercent": 25.85478667924316,
@@ -2472,7 +4686,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2514,7 +4728,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4820": {
    "id": "l4820",
@@ -2538,7 +4752,7 @@
     "noWithVeto": 190549202707489
    },
    "voting": {
-    "turnout": 61.68053416359405,
+    "turnout": 61.67053890839895,
     "yesPercent": 0.002373968370492608,
     "noPercent": 1.4072987609009673,
     "abstainPercent": 0.0001557374221978778,
@@ -2552,14 +4766,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4819": {
    "id": "l4819",
@@ -2583,7 +4797,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 92.07861198826126,
+    "turnout": 92.06369076169743,
     "yesPercent": 83.31621116930114,
     "noPercent": 1.4108185558600679,
     "abstainPercent": 15.272970274838782,
@@ -2597,7 +4811,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2635,7 +4849,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4818": {
    "id": "l4818",
@@ -2659,7 +4873,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 87.6982340209698,
+    "turnout": 87.68402262930329,
     "yesPercent": 98.67436490725542,
     "noPercent": 1.8694599084519105e-7,
     "abstainPercent": 1.3256349057985912,
@@ -2673,7 +4887,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2711,7 +4925,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4817": {
    "id": "l4817",
@@ -2735,7 +4949,7 @@
     "noWithVeto": 0
    },
    "voting": {
-    "turnout": 76.77028339388812,
+    "turnout": 76.7578428632681,
     "yesPercent": 82.05338394767175,
     "noPercent": 0.00005217052347636493,
     "abstainPercent": 17.946563881804785,
@@ -2749,7 +4963,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2857,7 +5071,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4816": {
    "id": "l4816",
@@ -2881,7 +5095,7 @@
     "noWithVeto": 383005493
    },
    "voting": {
-    "turnout": 110.70874826755062,
+    "turnout": 110.6908080501665,
     "yesPercent": 52.19272244434791,
     "noPercent": 17.23625609174213,
     "abstainPercent": 30.57091105663915,
@@ -2895,7 +5109,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -2933,7 +5147,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4814": {
    "id": "l4814",
@@ -2957,7 +5171,7 @@
     "noWithVeto": 4669634538
    },
    "voting": {
-    "turnout": 116.96414925582002,
+    "turnout": 116.94519535834908,
     "yesPercent": 3.756494134238949,
     "noPercent": 53.640269772768754,
     "abstainPercent": 42.601961989404735,
@@ -2971,7 +5185,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (6.54% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3009,7 +5223,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4813": {
    "id": "l4813",
@@ -3033,7 +5247,7 @@
     "noWithVeto": 173942998
    },
    "voting": {
-    "turnout": 114.97357476559633,
+    "turnout": 114.95494343828929,
     "yesPercent": 78.24296006644813,
     "noPercent": 0.003623137362616651,
     "abstainPercent": 21.753368514380792,
@@ -3047,7 +5261,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3085,7 +5299,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4812": {
    "id": "l4812",
@@ -3109,7 +5323,7 @@
     "noWithVeto": 2238420663
    },
    "voting": {
-    "turnout": 120.49982205828056,
+    "turnout": 120.48029520935215,
     "yesPercent": 11.942913836633904,
     "noPercent": 76.55415019139285,
     "abstainPercent": 11.502343142328026,
@@ -3123,7 +5337,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (13.5% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3165,7 +5379,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4811": {
    "id": "l4811",
@@ -3189,7 +5403,7 @@
     "noWithVeto": 2242326672
    },
    "voting": {
-    "turnout": 115.31425694409367,
+    "turnout": 115.29557040965588,
     "yesPercent": 3.259615054166909,
     "noPercent": 75.02167507219548,
     "abstainPercent": 21.71808930404695,
@@ -3203,7 +5417,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (4.16% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3245,7 +5459,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4810": {
    "id": "l4810",
@@ -3269,7 +5483,7 @@
     "noWithVeto": 2464888759
    },
    "voting": {
-    "turnout": 114.71527321282153,
+    "turnout": 114.6966837429655,
     "yesPercent": 0.016450937315551722,
     "noPercent": 83.91293446986461,
     "abstainPercent": 16.069928866699282,
@@ -3283,7 +5497,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0.02% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3325,7 +5539,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4809": {
    "id": "l4809",
@@ -3349,7 +5563,7 @@
     "noWithVeto": 325805131661258
    },
    "voting": {
-    "turnout": 103.9805405596526,
+    "turnout": 103.96369064010649,
     "yesPercent": 0.0018220646365196113,
     "noPercent": 0.0022865767462380347,
     "abstainPercent": 0.0003900432603748832,
@@ -3363,14 +5577,14 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [],
    "treasuryImpact": null,
    "rawMsgs": [],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4807": {
    "id": "l4807",
@@ -3394,7 +5608,7 @@
     "noWithVeto": 2760134390
    },
    "voting": {
-    "turnout": 128.4539813047661,
+    "turnout": 128.43316549405083,
     "yesPercent": 98.97896590866556,
     "noPercent": 0.00003714829468394941,
     "abstainPercent": 1.0203112065321358,
@@ -3408,7 +5622,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3446,7 +5660,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4805": {
    "id": "l4805",
@@ -3470,7 +5684,7 @@
     "noWithVeto": 5549472
    },
    "voting": {
-    "turnout": 148.84781172633026,
+    "turnout": 148.82369112031395,
     "yesPercent": 99.99990082668123,
     "noPercent": 0.000040462547534110126,
     "abstainPercent": 0.000057520944242685226,
@@ -3484,7 +5698,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3522,7 +5736,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4803": {
    "id": "l4803",
@@ -3546,7 +5760,7 @@
     "noWithVeto": 1658830173363
    },
    "voting": {
-    "turnout": 130.26414498680938,
+    "turnout": 130.24303584128123,
     "yesPercent": 54.270936894912346,
     "noPercent": 22.301417428155066,
     "abstainPercent": 23.021247598755608,
@@ -3560,7 +5774,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3594,7 +5808,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4802": {
    "id": "l4802",
@@ -3618,7 +5832,7 @@
     "noWithVeto": 96876274
    },
    "voting": {
-    "turnout": 141.54379831804576,
+    "turnout": 141.52086131847764,
     "yesPercent": 91.17411858312244,
     "noPercent": 3.20686521995142,
     "abstainPercent": 5.618994354484029,
@@ -3632,7 +5846,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3684,7 +5898,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4801": {
    "id": "l4801",
@@ -3708,7 +5922,7 @@
     "noWithVeto": 33329368
    },
    "voting": {
-    "turnout": 144.44189744615144,
+    "turnout": 144.4184908131607,
     "yesPercent": 97.84292413055506,
     "noPercent": 1.0847024921296777,
     "abstainPercent": 1.072366013404677,
@@ -3722,7 +5936,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3774,7 +5988,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4799": {
    "id": "l4799",
@@ -3798,7 +6012,7 @@
     "noWithVeto": 339184804537829
    },
    "voting": {
-    "turnout": 109.17574976169577,
+    "turnout": 109.15805796484639,
     "yesPercent": 0.008318116983994156,
     "noPercent": 0.842448078399606,
     "abstainPercent": 0.0010377335065699495,
@@ -3812,7 +6026,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0.01% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3846,7 +6060,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4798": {
    "id": "l4798",
@@ -3870,7 +6084,7 @@
     "noWithVeto": 1904000000
    },
    "voting": {
-    "turnout": 153.8476952661751,
+    "turnout": 153.8227644351404,
     "yesPercent": 99.99959424896196,
     "noPercent": 0.000005828944734213266,
     "abstainPercent": 0.00000496441452788852,
@@ -3884,7 +6098,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3922,7 +6136,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4797": {
    "id": "l4797",
@@ -3946,7 +6160,7 @@
     "noWithVeto": 78830091567
    },
    "voting": {
-    "turnout": 151.02419767973515,
+    "turnout": 150.99972439303437,
     "yesPercent": 21.013757288580344,
     "noPercent": 50.55080455168854,
     "abstainPercent": 28.41878026526948,
@@ -3960,7 +6174,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (29.36% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -3994,7 +6208,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4792": {
    "id": "l4792",
@@ -4018,7 +6232,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 80.14974419155457,
+    "turnout": 80.13675602344156,
     "yesPercent": 99.99999877983281,
     "noPercent": 5.432720541931957e-7,
     "abstainPercent": 3.1853888739789106e-7,
@@ -4032,7 +6246,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4070,7 +6284,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4790": {
    "id": "l4790",
@@ -4094,7 +6308,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 86.98739164431201,
+    "turnout": 86.97329544378405,
     "yesPercent": 86.90107158976608,
     "noPercent": 0.017680188611092315,
     "abstainPercent": 13.081247891435185,
@@ -4108,7 +6322,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4146,7 +6360,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4787": {
    "id": "l4787",
@@ -4170,7 +6384,7 @@
     "noWithVeto": 254869653409978
    },
    "voting": {
-    "turnout": 84.36691359551877,
+    "turnout": 84.35324204025673,
     "yesPercent": 0.002000297917089031,
     "noPercent": 3.5883334974588967,
     "abstainPercent": 1.987054832878841e-9,
@@ -4184,7 +6398,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (0% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4218,7 +6432,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4785": {
    "id": "l4785",
@@ -4242,7 +6456,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 91.97218989393406,
+    "turnout": 91.95728591294059,
     "yesPercent": 97.69635661372422,
     "noPercent": 0,
     "abstainPercent": 2.3036430739839684,
@@ -4256,7 +6470,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4304,7 +6518,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4775": {
    "id": "l4775",
@@ -4328,7 +6542,7 @@
     "noWithVeto": 81000000
    },
    "voting": {
-    "turnout": 87.6327200745741,
+    "turnout": 87.61851929936255,
     "yesPercent": 18.407109972030927,
     "noPercent": 48.820001200609404,
     "abstainPercent": 32.77285932930752,
@@ -4342,7 +6556,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (27.38% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4390,7 +6604,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4770": {
    "id": "l4770",
@@ -4414,7 +6628,7 @@
     "noWithVeto": 24404433812803
    },
    "voting": {
-    "turnout": 61.80582253449002,
+    "turnout": 61.7958069764675,
     "yesPercent": 1.243788422420285,
     "noPercent": 81.5251956370337,
     "abstainPercent": 4.629756350841811,
@@ -4428,7 +6642,7 @@
    },
    "outcome": "rejected",
    "outcomeReason": "Did not reach pass threshold (1.3% yes < 50% needed)",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4476,7 +6690,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4765": {
    "id": "l4765",
@@ -4500,7 +6714,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 82.25248986210158,
+    "turnout": 82.23916094662198,
     "yesPercent": 65.4824472665145,
     "noPercent": 5.806535294459739,
     "abstainPercent": 28.711017089830715,
@@ -4514,7 +6728,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4562,7 +6776,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4746": {
    "id": "l4746",
@@ -4586,7 +6800,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 73.26437891600584,
+    "turnout": 73.25250651292268,
     "yesPercent": 86.7480936808099,
     "noPercent": 2.014378570309777,
     "abstainPercent": 11.237527356845854,
@@ -4600,7 +6814,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4652,7 +6866,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   },
   "l4745": {
    "id": "l4745",
@@ -4676,7 +6890,7 @@
     "noWithVeto": 900000
    },
    "voting": {
-    "turnout": 81.06589451865656,
+    "turnout": 81.05275788950247,
     "yesPercent": 84.80089059580204,
     "noPercent": 1.8204079474033847,
     "abstainPercent": 13.378701102488211,
@@ -4690,7 +6904,7 @@
    },
    "outcome": "passed",
    "outcomeReason": "Proposal passed",
-   "totalPower": 313346889247188,
+   "totalPower": 313397674957481,
    "voters": [],
    "votersNote": "x/gov: per-voter list not captured (validator + delegator votes run to thousands); the chain tally is the record.",
    "decodedActions": [
@@ -4764,7 +6978,7 @@
     }
    ],
    "governanceKind": "x-gov",
-   "fetchedAt": "2026-11-27T18:26:44.446Z"
+   "fetchedAt": "2026-11-28T00:26:51.289Z"
   }
  }
 }
